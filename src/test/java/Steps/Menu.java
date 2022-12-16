@@ -1,6 +1,5 @@
 package Steps;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -18,6 +17,7 @@ public class Menu {
     @Step("Перейти с домашней страницы на страницу \"Menu\"")
     public void inputMenu(){
         widgets.click();
+        //Иногда не открываеться в нужном разрешении, прокрутка для перестраховки
         leftPannel.scrollIntoView(false);
         menu.click();
     }

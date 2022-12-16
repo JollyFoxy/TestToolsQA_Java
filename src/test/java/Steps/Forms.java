@@ -28,7 +28,6 @@ public class Forms {
     private SelenideElement hobbiesSports = $(By.xpath("//label[.='Sports']"));
     private SelenideElement hobbiesReading = $(By.xpath("//label[.='Reading']"));
     private SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
-    private SelenideElement state = $(By.xpath("//div[@id='state']"));
     private SelenideElement btnSubmit = $(By.xpath("//button[@id='submit']"));
     private SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
     private SelenideElement uploadPicture = $(By.xpath("//input[@id='uploadPicture']"));
@@ -106,6 +105,7 @@ public class Forms {
     }
     @Step("Загрузка аватара")
     public void avatrUpload(String way){
+        //Выбор просто для удобства работы на двух компьютеров
         switch (way){
             case ("Тех"):way="C:\\Users\\инет\\IdeaProjects\\TestToolsQA\\foxy.png";
             break;

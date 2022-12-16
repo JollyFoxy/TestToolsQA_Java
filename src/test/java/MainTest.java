@@ -14,7 +14,6 @@ public class MainTest {
 
     TextBox textBox = new TextBox();
     Forms forms = new Forms();
-    Register register= new Register();
     Register registerUser= new Register();
     Menu menu = new Menu();
     DatePicker datePicker = new DatePicker();

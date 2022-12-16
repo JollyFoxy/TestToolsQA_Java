@@ -106,6 +106,11 @@ public class Forms {
     }
     @Step("Загрузка аватара")
     public void avatrUpload(String way){
+        switch (way){
+            case ("Тех"):way="C:\\Users\\инет\\IdeaProjects\\TestToolsQA\\foxy.png";
+            break;
+            case ("Дом"):way="/Users/pavel.mizirev/IdeaProjects/TestToolsQA/foxy.png";
+        }
         uploadPicture.val(way);
     }
     @Step("Ввод адреса в поле \"Address\"")

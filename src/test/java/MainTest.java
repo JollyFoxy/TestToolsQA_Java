@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 import Steps.Forms;
 import Steps.Register;
 import Steps.TextBox;
-=======
 import Steps.*;
->>>>>>> 53bf597 (Update 2: Созданы тесты: (WidgetsMenu, WidgetsDatePicker))
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,13 +14,10 @@ public class MainTest {
 
     TextBox textBox = new TextBox();
     Forms forms = new Forms();
-<<<<<<< HEAD
     Register register= new Register();
-=======
-    Register register = new Register();
+    Register registerUser= new Register();
     Menu menu = new Menu();
     DatePicker datePicker = new DatePicker();
->>>>>>> 53bf597 (Update 2: Созданы тесты: (WidgetsMenu, WidgetsDatePicker))
 
 
     @BeforeAll
@@ -86,24 +80,23 @@ public class MainTest {
     @Test
     public void testBookStoreApplicationRegister(){
         //Прокрутка домашней страницы вниз
-        register.skroleBody();
+        registerUser.skroleBody();
         //Перейти с домашней страницы на страницу "Login"
-        register.inputBookStoreApplication();
+        registerUser.inputBookStoreApplication();
         //Нажатие кнопки "New User"
-        register.newUser();
+        registerUser.newUser();
         //Ввод в поле "First Name"(Павел)
-        register.inputFirstName("Павел");
+        registerUser.inputFirstName("Павел");
         //Ввод в поле "Last Name"(Мизирев)
-        register.inputLastName("Мизирев");
+        registerUser.inputLastName("Мизирев");
         //Ввод в поле "User Name"(JellyFox)
-        register.inputUserName("JellyFox");
+        registerUser.inputUserName("JellyFox");
         //Ввод в поле "Password"(Qq-123456!)
-        register.inputPassword("Qq-123456!");
+        registerUser.inputPassword("Qq-123456!");
         //Нажатие на кнопку "Register"
-        register.registerNewUser();
+        registerUser.registerNewUser();
     }
-<<<<<<< HEAD
-=======
+
 
     @Test
     public void testWidgetsMenu(){
@@ -130,5 +123,4 @@ public class MainTest {
         //Ввод в поле "Date And Time"(??????????????????????????????????????????????????????????????????????????????????????????????????????????????????)
         datePicker.inputDate("??????????????????????????????????????????????????????????????????????????????????????????????????????????????????","");
     }
->>>>>>> 53bf597 (Update 2: Созданы тесты: (WidgetsMenu, WidgetsDatePicker))
 }

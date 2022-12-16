@@ -6,10 +6,6 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-<<<<<<< HEAD
-import static com.codeborne.selenide.Selenide.sleep;
-=======
->>>>>>> 53bf597 (Update 2: Созданы тесты: (WidgetsMenu, WidgetsDatePicker))
 
 public class Forms {
 

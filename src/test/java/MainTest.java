@@ -8,12 +8,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class MainTest {
     private static String baseUrl ="https://demoqa.com/";
 
     TextBox textBox = new TextBox();
-    Forms forms = new Forms();
+    Forms forms = new  Forms();
     Register registerUser= new Register();
     Menu menu = new Menu();
     DatePicker datePicker = new DatePicker();
@@ -22,7 +23,7 @@ public class MainTest {
     @BeforeAll
     static void beforeConfig() {
         Configuration.timeout = 3000;
-        Configuration.browserSize = "1820x1180";
+        Configuration.browserSize = "1620x1080";
     }
     @BeforeEach
     public void before() {
@@ -67,7 +68,7 @@ public class MainTest {
         forms.inputHobbies("Music");
         //Загрузка аватара (foxy.png)
         //Требуеться указать полный путь к файлу
-        forms.avatrUpload("Тех");
+        forms.avatrUpload("Офис");
         //Ввод адреса в поле "Address" (Пушкина 23)
         forms.inputAddress("Пушкина 23");
         //Нажатие кнопки "Submit"

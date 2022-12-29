@@ -3,34 +3,37 @@ package Steps;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import lombok.Value;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
+@Value
 public class Forms {
-
-    private SelenideElement forms = $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
-    private SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Practice Form']"));
-    private SelenideElement firstName = $(By.xpath("//input[@id='firstName']"));
-    private SelenideElement lastName = $(By.xpath("//input[@id='lastName']"));
-    private SelenideElement userEmail = $(By.xpath("//input[@id='userEmail']"));
-    private SelenideElement genderMale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Male']"));
-    private SelenideElement genderFemale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Female']"));
-    private SelenideElement genderOther = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Other']"));
-    private SelenideElement userNumber = $(By.xpath("//input[@id='userNumber']"));
-    private SelenideElement dateOfBirth = $(By.xpath("//input[@id='dateOfBirthInput']"));
-    private SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));
-    private SelenideElement november = $(By.xpath("//option[@value='10']"));
-    private SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
-    private SelenideElement year2002 = $(By.xpath("//option[@value='2002']"));
-    private SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
-    private SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
-    private SelenideElement hobbiesSports = $(By.xpath("//label[.='Sports']"));
-    private SelenideElement hobbiesReading = $(By.xpath("//label[.='Reading']"));
-    private SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
-    private SelenideElement btnSubmit = $(By.xpath("//button[@id='submit']"));
-    private SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
-    private SelenideElement uploadPicture = $(By.xpath("//input[@id='uploadPicture']"));
+    SelenideElement forms = $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
+    SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Practice Form']"));
+    SelenideElement firstName = $(By.xpath("//input[@id='firstName']"));
+    SelenideElement lastName = $(By.xpath("//input[@id='lastName']"));
+    SelenideElement userEmail = $(By.xpath("//input[@id='userEmail']"));
+    SelenideElement genderMale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Male']"));
+    SelenideElement genderFemale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Female']"));
+    SelenideElement genderOther = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Other']"));
+    SelenideElement userNumber = $(By.xpath("//input[@id='userNumber']"));
+    SelenideElement dateOfBirth = $(By.xpath("//input[@id='dateOfBirthInput']"));
+    SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));
+    SelenideElement november = $(By.xpath("//option[@value='10']"));
+    SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
+    SelenideElement year2002 = $(By.xpath("//option[@value='2002']"));
+    SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
+    SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
+    SelenideElement hobbiesSports = $(By.xpath("//label[.='Sports']"));
+    SelenideElement hobbiesReading = $(By.xpath("//label[.='Reading']"));
+    SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
+    SelenideElement btnSubmit = $(By.xpath("//button[@id='submit']"));
+    SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
+    SelenideElement uploadPicture = $(By.xpath("//input[@id='uploadPicture']"));
+    SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
+    SelenideElement scrole = $(By.xpath("//div[@class='left-pannel']"));
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
     public void inputForms (){
@@ -110,17 +113,21 @@ public class Forms {
             case ("Тех"):way="C:\\Users\\инет\\IdeaProjects\\TestToolsQA\\foxy.png";
             break;
             case ("Дом"):way="/Users/pavel.mizirev/IdeaProjects/TestToolsQA/foxy.png";
+            break;
+            case ("Офис"):way="/home/pavel/IdeaProjects/TestToolsQA/foxy.png";
         }
         uploadPicture.val(way);
     }
-    @Step("Ввод адреса в поле \"Address\"")
+    @Step("Ввод адреса в пол    е \"Address\"")
     public void inputAddress(String address ){
         currentAddress.val(address);
     }
 
     @Step("Нажатие кнопки \"Submit\"")
     public void submit(){
-        btnSubmit.click();
+        element.click();
+        scrole.scrollTo();
+        btnSubmit.should(Condition.visible).click();
     }
     @Step("Нажатие кнопки \"Close\"")
     public void closeWidow(){

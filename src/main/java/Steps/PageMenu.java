@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class Menu {
+public class PageMenu {
     private SelenideElement widgets = $(By.xpath("//div[@class='card-body']//h5[.='Widgets']"));
     private SelenideElement menu = $(By.xpath("//div[@class='element-group']//li[@id='item-7']//span[.='Menu']"));
     private SelenideElement leftPannel = $(By.xpath("//div[@class='row']"));

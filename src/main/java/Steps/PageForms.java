@@ -3,23 +3,26 @@ package Steps;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import lombok.Value;
 import org.openqa.selenium.By;
+import tools.Button;
+import tools.Input;
+
+import java.io.File;
 
 import static com.codeborne.selenide.Selenide.$;
 
-@Value
-public class Forms {
-    SelenideElement forms = $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
+public class PageForms {
+    File file =new File("foxy.png");
+    private final SelenideElement forms = $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
     SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Practice Form']"));
-    SelenideElement firstName = $(By.xpath("//input[@id='firstName']"));
-    SelenideElement lastName = $(By.xpath("//input[@id='lastName']"));
-    SelenideElement userEmail = $(By.xpath("//input[@id='userEmail']"));
+    SelenideElement firstName = new Input("firstName").getId();
+    SelenideElement lastName = new Input("lastName").getId();
+    SelenideElement userEmail = new Input("userEmail").getId();
     SelenideElement genderMale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Male']"));
     SelenideElement genderFemale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Female']"));
     SelenideElement genderOther = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Other']"));
-    SelenideElement userNumber = $(By.xpath("//input[@id='userNumber']"));
-    SelenideElement dateOfBirth = $(By.xpath("//input[@id='dateOfBirthInput']"));
+    SelenideElement userNumber = new Input("userNumber").getId();
+    SelenideElement dateOfBirth = new  Input("dateOfBirthInput").getId();
     SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));
     SelenideElement november = $(By.xpath("//option[@value='10']"));
     SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
@@ -29,9 +32,9 @@ public class Forms {
     SelenideElement hobbiesSports = $(By.xpath("//label[.='Sports']"));
     SelenideElement hobbiesReading = $(By.xpath("//label[.='Reading']"));
     SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
-    SelenideElement btnSubmit = $(By.xpath("//button[@id='submit']"));
+    SelenideElement btnSubmit = new Button("submit").getId();
     SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
-    SelenideElement uploadPicture = $(By.xpath("//input[@id='uploadPicture']"));
+    SelenideElement uploadPicture = new Input("uploadPicture").getId();
     SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
     SelenideElement scrole = $(By.xpath("//div[@class='left-pannel']"));
 
@@ -107,18 +110,10 @@ public class Forms {
         }
     }
     @Step("Загрузка аватара")
-    public void avatrUpload(String way){
-        //Выбор просто для удобства работы на двух компьютеров
-        switch (way){
-            case ("Тех"):way="C:\\Users\\инет\\IdeaProjects\\TestToolsQA\\foxy.png";
-            break;
-            case ("Дом"):way="/Users/pavel.mizirev/IdeaProjects/TestToolsQA/foxy.png";
-            break;
-            case ("Офис"):way="/home/pavel/IdeaProjects/TestToolsQA/foxy.png";
-        }
-        uploadPicture.val(way);
+    public void avatarUpload(){
+        uploadPicture.uploadFile(file);
     }
-    @Step("Ввод адреса в пол    е \"Address\"")
+    @Step("Ввод адреса в поле \"Address\"")
     public void inputAddress(String address ){
         currentAddress.val(address);
     }
@@ -126,6 +121,7 @@ public class Forms {
     @Step("Нажатие кнопки \"Submit\"")
     public void submit(){
         element.click();
+        scrole.scrollTo();
         scrole.scrollTo();
         btnSubmit.should(Condition.visible).click();
     }

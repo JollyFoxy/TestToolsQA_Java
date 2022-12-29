@@ -5,21 +5,24 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
+import tools.Button;
+import tools.Input;
+import tools.TextArea;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class TextBox {
-    private SelenideElement element = $(By.xpath("//div[@class='card-body']//h5[.='Elements']"));
-    private SelenideElement textBox = $(By.xpath("//div[@class='element-group']//li[@id='item-0']"));
-    private SelenideElement fulName = $(By.xpath("//input[@id='userName']"));
-    private SelenideElement eMail = $(By.xpath("//input[@id='userEmail']"));
-    private SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
-    private SelenideElement permanentAddress = $(By.xpath("//textarea[@id='permanentAddress']"));
-    private SelenideElement btnSubmit = $(By.xpath("//button[@id='submit']"));
-    private SelenideElement checkName = $(By.xpath("//p[@id='name']"));
-    private SelenideElement checkEmail = $(By.xpath("//p[@id='email']"));
-    private SelenideElement checkCurrentAddress = $(By.xpath("//p[@id='currentAddress']"));
-    private SelenideElement checkPermanentAddress = $(By.xpath("//p[@id='permanentAddress']"));
+public class PageTextBox {
+    private final SelenideElement element = $(By.xpath("//div[@class='card-body']//h5[.='Elements']"));
+    private final SelenideElement textBox = $(By.xpath("//div[@class='element-group']//li[@id='item-0']"));
+    private final SelenideElement fulName = new Input("userName").getId();
+    private final SelenideElement eMail = new Input("userEmail").getId();
+    private final SelenideElement currentAddress = new TextArea("currentAddress").getId();
+    private final SelenideElement permanentAddress = new TextArea("permanentAddress").getId();
+    private final SelenideElement btnSubmit = new Button("submit").getId();
+    private final SelenideElement checkName = $(By.xpath("//p[@id='name']"));
+    private final SelenideElement checkEmail = $(By.xpath("//p[@id='email']"));
+    private final SelenideElement checkCurrentAddress = $(By.xpath("//p[@id='currentAddress']"));
+    private final SelenideElement checkPermanentAddress = $(By.xpath("//p[@id='permanentAddress']"));
 
     @Step("Перейти с домашней страницы на страницу \"Text Box\"")
     public void inputTextBox() {

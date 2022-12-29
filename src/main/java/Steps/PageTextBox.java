@@ -25,7 +25,7 @@ public class PageTextBox {
     private final SelenideElement checkPermanentAddress = $(By.xpath("//p[@id='permanentAddress']"));
 
     @Step("Перейти с домашней страницы на страницу \"Text Box\"")
-    public void inputTextBox() {
+    public void transitionTextBox() {
         element.should(Condition.visible).click();
         textBox.should(Condition.visible).click();
     }

@@ -15,7 +15,7 @@ public class PageMenu {
     private SelenideElement subItem2 = $(By.xpath("//a[.='Sub Sub Item 2']"));
 
     @Step("Перейти с домашней страницы на страницу \"Menu\"")
-    public void inputMenu(){
+    public void transitionMenu(){
         widgets.click();
         //Иногда не открываеться в нужном разрешении, прокрутка для перестраховки
         leftPannel.scrollIntoView(false);

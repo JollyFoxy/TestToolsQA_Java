@@ -21,6 +21,7 @@ public class MainTest {
     PageMenu menu = new PageMenu();
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
+    PageDroppable pageDroppable=new PageDroppable();
 
 
     @BeforeAll
@@ -35,7 +36,7 @@ public class MainTest {
 
     @Test
     public void testElementsTextBox(){
-        textBox.inputTextBox();
+        textBox.transitionTextBox();
         textBox.inputFullName("Павел");
         textBox.inputEmail("pavel@mial.com");
         textBox.inputCurrentAddress("Пушкина 23");
@@ -46,37 +47,24 @@ public class MainTest {
 
     @Test
     public void testFormsPracticeForm(){
-        //Переход с домашней страницы на страницу "Student Registration Form"
-        forms.inputForms();
-        //Ввод имени в поле "First Name"(Павел)
+        forms.transitionForms();
         forms.inputFirstName("Павел");
-        //Ввод фамилии в поле "Last Name"(Мизирев)
         forms.inputLastName("Мизирев");
-        //Ввод почты в поле "Email" (pavel@mial.com)
         forms.inputEmail("pavel@mial.com");
-        //Выбор гендера (Male)
-        forms.inputGender("Male");
-        //Ввод номера телефона в поле "Mobile" (88005553535)
+        forms.inputGender();
         forms.inputNumber("88005553535");
-        //Выбор даты рождения (18/11/2002)
         forms.inputDateOfBirth();
-        //Выбор хобби (Music)
-        forms.inputHobbies("Music");
-        //Загрузка аватара (foxy.png)
-        //Требуеться указать полный путь к файлу
+        forms.inputHobbies();
         forms.avatarUpload();
-        //Ввод адреса в поле "Address" (Пушкина 23)
         forms.inputAddress("Пушкина 23");
-        //Нажатие кнопки "Submit"
         forms.submit();
-        //Нажатие кнопки "Close"
         forms.closeWidow();
     }
 
     @Test
     public void testBookStoreApplicationRegister(){
         loginPage.skroleBody();
-        loginPage.inputBookStoreApplication();
+        loginPage.transitionBookStoreApplication();
         registerUser.newUser();
         registerUser.inputFirstName("Павел");
         registerUser.inputLastName("Мизирев");
@@ -88,7 +76,7 @@ public class MainTest {
 
     @Test
     public void testWidgetsMenu(){
-        menu.inputMenu();
+        menu.transitionMenu();
         menu.hoverMainItem2();
         menu.hoverSubList();
         menu.hoverSubItem2();
@@ -96,10 +84,16 @@ public class MainTest {
 
     @Test
     public void testWidgetsDatePicker(){
-        datePicker.inputDatePicker();
+        datePicker.transitionDatePicker();
         datePicker.inputDate("November 23 2009 16:20","November 23, 2009 4:20 PM");
         datePicker.inputDate("15/03/2012/16:20","January 1, 2022 12:00 AM");
         datePicker.inputDate("afafaaffaafafaffafaafaf","");
         datePicker.inputDate("??????????????????????????????????????????????????????????????????????????????????????????????????????????????????","");
+    }
+
+    @Test
+    public void testInteractionsDroppable(){
+        pageDroppable.transitionDroppable();
+        pageDroppable.drop();
     }
 }

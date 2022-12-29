@@ -12,7 +12,7 @@ public class PageLogin {
     private SelenideElement login = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Login']"));
 
     @Step("Вход в пункт \"Login\"")
-    public void inputBookStoreApplication (){
+    public void transitionBookStoreApplication(){
         bookStoreApplication.click();
         login.click();
     }

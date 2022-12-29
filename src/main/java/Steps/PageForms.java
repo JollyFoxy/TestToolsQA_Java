@@ -14,32 +14,28 @@ import static com.codeborne.selenide.Selenide.$;
 public class PageForms {
     File file =new File("foxy.png");
     private final SelenideElement forms = $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
-    SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Practice Form']"));
-    SelenideElement firstName = new Input("firstName").getId();
-    SelenideElement lastName = new Input("lastName").getId();
-    SelenideElement userEmail = new Input("userEmail").getId();
-    SelenideElement genderMale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Male']"));
-    SelenideElement genderFemale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Female']"));
-    SelenideElement genderOther = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Other']"));
-    SelenideElement userNumber = new Input("userNumber").getId();
-    SelenideElement dateOfBirth = new  Input("dateOfBirthInput").getId();
-    SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));
-    SelenideElement november = $(By.xpath("//option[@value='10']"));
-    SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
-    SelenideElement year2002 = $(By.xpath("//option[@value='2002']"));
-    SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
-    SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
-    SelenideElement hobbiesSports = $(By.xpath("//label[.='Sports']"));
-    SelenideElement hobbiesReading = $(By.xpath("//label[.='Reading']"));
-    SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
-    SelenideElement btnSubmit = new Button("submit").getId();
-    SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
-    SelenideElement uploadPicture = new Input("uploadPicture").getId();
-    SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
-    SelenideElement scrole = $(By.xpath("//div[@class='left-pannel']"));
+    private final SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Practice Form']"));
+    private final SelenideElement firstName = new Input("firstName").getId();
+    private final SelenideElement lastName = new Input("lastName").getId();
+    private final SelenideElement userEmail = new Input("userEmail").getId();
+    private final SelenideElement genderMale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Male']"));
+    private final SelenideElement userNumber = new Input("userNumber").getId();
+    private final SelenideElement dateOfBirth = new  Input("dateOfBirthInput").getId();
+    private final SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));
+    private final SelenideElement november = $(By.xpath("//option[@value='10']"));
+    private final SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
+    private final SelenideElement year2002 = $(By.xpath("//option[@value='2002']"));
+    private final SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
+    private final SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
+    private final SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
+    private final SelenideElement btnSubmit = new Button("submit").getId();
+    private final SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
+    private final SelenideElement uploadPicture = new Input("uploadPicture").getId();
+    private final SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
+    private final SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
-    public void inputForms (){
+    public void transitionForms(){
         forms.should(Condition.visible).click();
         registrationForm.should(Condition.visible).click();
     }
@@ -56,15 +52,8 @@ public class PageForms {
         userEmail.val(email);
     }
     @Step("Выбор гендера")
-    public void inputGender(String gender){
-        switch (gender){
-            case "Male": genderMale.click();
-                break;
-            case "Female": genderFemale.click();
-                break;
-            case "Other": genderOther.click();
-                break;
-        }
+    public void inputGender(){
+        genderMale.click();
     }
     @Step("Ввод номера телефона в поле \"Mobile\"")
     public void inputNumber(String number){
@@ -79,35 +68,9 @@ public class PageForms {
         year2002.click();
         date_18_11_2002.click();
     }
-    @Step("Выбор хобби")
-    public void inputHobbies(String hobbies) {
-        switch (hobbies){
-            case("Sports"):
-                hobbiesSports.click();
-                break;
-            case ("Reading"):
-                hobbiesReading.click();
-                break;
-            case ("Music"):
-                hobbiesMusic.click();
-                break;
-            case ("Sports & Reading"):
-                hobbiesSports.click();
-                hobbiesReading.click();
-                break;
-            case ("Sports & Music"):
-                hobbiesSports.click();
-                hobbiesMusic.click();
-                break;
-            case ("Reading & Music"):
-                hobbiesReading.click();
-                hobbiesMusic.click();
-                break;
-            case ("Sports & Reading & Music"):
-                hobbiesSports.click();
-                hobbiesReading.click();
-                hobbiesMusic.click();
-        }
+    @Step("Выбор хобби\"Music\"")
+    public void inputHobbies() {
+        hobbiesMusic.click();
     }
     @Step("Загрузка аватара")
     public void avatarUpload(){
@@ -121,8 +84,8 @@ public class PageForms {
     @Step("Нажатие кнопки \"Submit\"")
     public void submit(){
         element.click();
-        scrole.scrollTo();
-        scrole.scrollTo();
+        scroll.scrollTo();
+        scroll.scrollTo();
         btnSubmit.should(Condition.visible).click();
     }
     @Step("Нажатие кнопки \"Close\"")

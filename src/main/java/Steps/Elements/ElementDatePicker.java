@@ -15,7 +15,7 @@ public class ElementDatePicker {
     private final SelenideElement dateAndTimePickerInput = new Input("dateAndTimePickerInput").getId();
 
     @Step("Переход с домашней страницы на страницу \"Date Picker\"")
-    public void inputDatePicker(){
+    public void transitionDatePicker(){
         widgets.click();
         datePicker.click();
     }

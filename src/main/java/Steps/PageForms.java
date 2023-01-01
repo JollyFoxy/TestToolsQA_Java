@@ -6,6 +6,8 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import tools.Button;
 import tools.Input;
+import tools.Transition;
+import tools.TransitionElement;
 
 import java.io.File;
 
@@ -13,12 +15,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class PageForms {
     File file =new File("foxy.png");
-    private final SelenideElement forms = $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
-    private final SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//li[@id='item-0']//span[.='Practice Form']"));
+    private final SelenideElement forms = new Transition("Forms").getH5();
+    private final SelenideElement registrationForm = new TransitionElement("Practice Form").getSpan();
     private final SelenideElement firstName = new Input("firstName").getId();
     private final SelenideElement lastName = new Input("lastName").getId();
     private final SelenideElement userEmail = new Input("userEmail").getId();
-    private final SelenideElement genderMale = $(By.xpath("//div[@class='custom-control custom-radio custom-control-inline']//label[.='Male']"));
+    private final SelenideElement genderMale = $(By.xpath("//label[.='Male']"));
     private final SelenideElement userNumber = new Input("userNumber").getId();
     private final SelenideElement dateOfBirth = new  Input("dateOfBirthInput").getId();
     private final SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));

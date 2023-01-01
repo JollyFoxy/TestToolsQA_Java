@@ -5,12 +5,14 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
+import tools.Transition;
+import tools.TransitionElement;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class PageDroppable {
-    private final SelenideElement interactions = $(By.xpath("//div[@class='card-body']//h5[.='Interactions']"));
-    private final SelenideElement droppable = $(By.xpath("//div[@class='element-group']//li[@id='item-3']//span[.='Droppable']"));
+    private final SelenideElement interactions = new Transition("Interactions").getH5();
+    private final SelenideElement droppable = new TransitionElement("Droppable").getSpan();
     private final SelenideElement draggableObject = $(By.xpath("//div[@id='draggable']"));
     private final SelenideElement droppableObject = $(By.xpath("//div[@id='droppable']"));
     SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
@@ -18,7 +20,7 @@ public class PageDroppable {
     public void transitionDroppable() {
         interactions.click();
         scroll.scrollTo();
-        droppable.should(Condition.visible).click();
+        droppable.click();
     }
     @Step("Перемищение объекта в область")
     public void drop(){

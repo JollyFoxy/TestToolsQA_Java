@@ -5,15 +5,13 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-import tools.Button;
-import tools.Input;
-import tools.TextArea;
+import tools.*;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class PageTextBox {
-    private final SelenideElement element = $(By.xpath("//div[@class='card-body']//h5[.='Elements']"));
-    private final SelenideElement textBox = $(By.xpath("//div[@class='element-group']//li[@id='item-0']"));
+    private final SelenideElement element =new Transition("Elements").getH5();
+    private final SelenideElement textBox = new TransitionElement("Text Box").getSpan();
     private final SelenideElement fulName = new Input("userName").getId();
     private final SelenideElement eMail = new Input("userEmail").getId();
     private final SelenideElement currentAddress = new TextArea("currentAddress").getId();

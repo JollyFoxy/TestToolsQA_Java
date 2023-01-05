@@ -1,4 +1,4 @@
-package Steps;
+package Steps.Page;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -24,6 +24,7 @@ public class PageDroppable {
     }
     @Step("Перемищение объекта в область")
     public void drop(){
+        draggableObject.shouldBe(Condition.interactable);
         actions().dragAndDrop(draggableObject, droppableObject).build().perform();
         Assertions.assertEquals("Dropped!", droppableObject.getText());
     }

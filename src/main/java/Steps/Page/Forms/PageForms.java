@@ -1,13 +1,10 @@
-package Steps;
+package Steps.Page.Forms;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import tools.Button;
-import tools.Input;
-import tools.Transition;
-import tools.TransitionElement;
+import tools.*;
 
 import java.io.File;
 
@@ -28,13 +25,14 @@ public class PageForms {
     private final SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
     private final SelenideElement year2002 = $(By.xpath("//option[@value='2002']"));
     private final SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
-    private final SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
+//    private final SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
     private final SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
     private final SelenideElement btnSubmit = new Button("submit").getId();
     private final SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
     private final SelenideElement uploadPicture = new Input("uploadPicture").getId();
     private final SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
     private final SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
+
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
     public void transitionForms(){
@@ -70,10 +68,10 @@ public class PageForms {
         year2002.click();
         date_18_11_2002.click();
     }
-    @Step("Выбор хобби\"Music\"")
-    public void inputHobbies() {
-        hobbiesMusic.click();
-    }
+//    @Step("Выбор хобби\"Music\"")
+//    public void inputHobbies() {
+//        new SwitcherHobbies("Music","Reading");
+//    }
     @Step("Загрузка аватара")
     public void avatarUpload(){
         uploadPicture.uploadFile(file);

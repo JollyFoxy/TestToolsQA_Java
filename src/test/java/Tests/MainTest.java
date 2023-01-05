@@ -1,14 +1,16 @@
 package Tests;
 
+import Persons.Person;
 import Steps.Elements.ElementDatePicker;
-import Steps.PageForms;
-import Steps.PageRegister;
-import Steps.PageTextBox;
-import Steps.*;
+import Steps.Page.*;
+import Steps.Page.Forms.PageForms;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import Steps.Page.Forms.SwitcherHobbies;
+
+import java.time.Period;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -22,7 +24,10 @@ public class MainTest {
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
     PageDroppable pageDroppable=new PageDroppable();
-
+    Person person =new Person("Павел","Мизирев",
+            "JellyFox","Советская 43",
+            "Пушкина 23","pavel@mial.com",
+            "88005553535");
 
     @BeforeAll
     static void beforeConfig() {
@@ -37,10 +42,10 @@ public class MainTest {
     @Test
     public void testElementsTextBox(){
         textBox.transitionTextBox();
-        textBox.inputFullName("Павел");
-        textBox.inputEmail("pavel@mial.com");
-        textBox.inputCurrentAddress("Пушкина 23");
-        textBox.inputPermanentAddress("Советская 43");
+        textBox.inputFullName(person.getName());
+        textBox.inputEmail(person.getEMail());
+        textBox.inputCurrentAddress(person.getCurrentAddress());
+        textBox.inputPermanentAddress(person.getPermanentAddress());
         textBox.submit();
         textBox.checkInfo();
     }
@@ -48,15 +53,16 @@ public class MainTest {
     @Test
     public void testFormsPracticeForm(){
         forms.transitionForms();
-        forms.inputFirstName("Павел");
-        forms.inputLastName("Мизирев");
-        forms.inputEmail("pavel@mial.com");
+        forms.inputFirstName(person.getName());
+        forms.inputLastName(person.getLastName());
+        forms.inputEmail(person.getEMail());
         forms.inputGender();
-        forms.inputNumber("88005553535");
+        forms.inputNumber(person.getPhoneNumber());
         forms.inputDateOfBirth();
-        forms.inputHobbies();
+//        forms.inputHobbies();
+        new SwitcherHobbies("Reading");
         forms.avatarUpload();
-        forms.inputAddress("Пушкина 23");
+        forms.inputAddress(person.getPermanentAddress());
         forms.submit();
         forms.closeWidow();
     }
@@ -66,9 +72,9 @@ public class MainTest {
         loginPage.skroleBody();
         loginPage.transitionBookStoreApplication();
         registerUser.newUser();
-        registerUser.inputFirstName("Павел");
-        registerUser.inputLastName("Мизирев");
-        registerUser.inputUserName("JellyFox");
+        registerUser.inputFirstName(person.getName());
+        registerUser.inputLastName(person.getLastName());
+        registerUser.inputUserName(person.getUserName());
         registerUser.inputPassword("Qq-123456!");
         registerUser.registerNewUser();
     }
@@ -88,7 +94,7 @@ public class MainTest {
         datePicker.inputDate("November 23 2009 16:20","November 23, 2009 4:20 PM");
         datePicker.inputDate("15/03/2012/16:20","January 1, 2023 12:00 AM");
         datePicker.inputDate("afafaaffaafafaffafaafaf","");
-        datePicker.inputDate("??????????????????????????????????????????????????????????????????????????????????????????????????????????????????","");
+        datePicker.inputDate("???????????????????????????????????????????????","");
     }
 
     @Test

@@ -24,7 +24,8 @@ public class PageDroppable {
     }
     @Step("Перемищение объекта в область")
     public void drop(){
-        draggableObject.shouldBe(Condition.interactable);
+//        droppableObject.shouldHave(Condition.text("Drop here"));
+        draggableObject.shouldBe(Condition.interactable).click();
         actions().dragAndDrop(draggableObject, droppableObject).build().perform();
         Assertions.assertEquals("Dropped!", droppableObject.getText());
     }

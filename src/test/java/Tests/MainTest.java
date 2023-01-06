@@ -2,15 +2,12 @@ package Tests;
 
 import Persons.Person;
 import Steps.Elements.ElementDatePicker;
-import Steps.Page.*;
 import Steps.Page.Forms.PageForms;
+import Steps.Page.*;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import Steps.Page.Forms.SwitcherHobbies;
-
-import java.time.Period;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -59,8 +56,8 @@ public class MainTest {
         forms.inputGender();
         forms.inputNumber(person.getPhoneNumber());
         forms.inputDateOfBirth();
-//        forms.inputHobbies();
-        new SwitcherHobbies("Reading");
+        forms.inputHobbies("Reading","Sports","");
+//        new SwitcherHobbies("Reading");
         forms.avatarUpload();
         forms.inputAddress(person.getPermanentAddress());
         forms.submit();

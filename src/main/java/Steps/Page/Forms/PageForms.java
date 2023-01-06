@@ -68,10 +68,10 @@ public class PageForms {
         year2002.click();
         date_18_11_2002.click();
     }
-//    @Step("Выбор хобби\"Music\"")
-//    public void inputHobbies() {
-//        new SwitcherHobbies("Music","Reading");
-//    }
+    @Step("Выбор хобби")
+    public void inputHobbies(String arg, String arg1, String arg2) {
+        new SwitcherHobbies(arg,arg1,arg2);
+    }
     @Step("Загрузка аватара")
     public void avatarUpload(){
         uploadPicture.uploadFile(file);
@@ -85,7 +85,7 @@ public class PageForms {
     public void submit(){
         element.click();
         scroll.scrollTo();
-        scroll.scrollTo();
+        scroll.scrollIntoView(true);
         btnSubmit.should(Condition.visible).click();
     }
     @Step("Нажатие кнопки \"Close\"")

@@ -13,9 +13,10 @@ import static com.codeborne.selenide.Selenide.*;
 public class PageDroppable {
     private final SelenideElement interactions = new Transition("Interactions").getH5();
     private final SelenideElement droppable = new TransitionElement("Droppable").getSpan();
-    private final SelenideElement draggableObject = $(By.xpath("//div[@id='draggable']"));
-    private final SelenideElement droppableObject = $(By.xpath("//div[@id='droppable']"));
-    SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
+    private final SelenideElement draggableObject = $(By.cssSelector("div#draggable"));
+    private final SelenideElement droppableObject = $(By.cssSelector("div#droppable"));
+    private final SelenideElement scroll = $(By.cssSelector("div.left-pannel"));
+
     @Step("Переход на страницу \"droppable\"")
     public void transitionDroppable() {
         interactions.click();
@@ -24,7 +25,6 @@ public class PageDroppable {
     }
     @Step("Перемищение объекта в область")
     public void drop(){
-//        droppableObject.shouldHave(Condition.text("Drop here"));
         draggableObject.shouldBe(Condition.interactable).click();
         actions().dragAndDrop(draggableObject, droppableObject).build().perform();
         Assertions.assertEquals("Dropped!", droppableObject.getText());

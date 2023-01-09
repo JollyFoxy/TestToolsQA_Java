@@ -9,6 +9,6 @@ import static com.codeborne.selenide.Selenide.$;
 public class Input {
     private final SelenideElement id;
     public Input(String id){
-         this.id = $(By.xpath("//input[@id='"+id+"']"));
+         this.id = $(By.cssSelector("input#"+id));
     }
 }

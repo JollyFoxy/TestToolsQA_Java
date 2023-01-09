@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 9">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/Forms/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/Forms/SwitcherHobbies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/Forms/SwitcherHobbies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/TextArea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MainTest.testFormsPracticeForm">
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <option name="PACKAGE_NAME" value="Tests" />
@@ -117,9 +117,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest.testFormsPracticeForm" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testInteractionsDroppable" />
+        <item itemvalue="JUnit.MainTest.testFormsPracticeForm" />
         <item itemvalue="JUnit.MainTest.testBookStoreApplicationRegister" />
         <item itemvalue="JUnit.PageDroppable.d" />
       </list>
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672926699096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update 10">
+      <created>1673015928030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673015928030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +216,7 @@
     <MESSAGE value="Update 7" />
     <MESSAGE value="Update 8" />
     <MESSAGE value="Update 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 9" />
+    <MESSAGE value="Update 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10" />
   </component>
 </project>

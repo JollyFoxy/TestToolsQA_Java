@@ -1,4 +1,4 @@
-package Steps.Xpath.Page.Forms;
+package Steps.Xpath.Page;
 
 import Steps.tools.Button;
 import Steps.tools.Input;
@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import java.io.File;
+import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -71,7 +72,12 @@ public class PageForms {
     }
     @Step("Выбор хобби")
     public void inputHobbies(String arg, String arg1, String arg2) {
-        new SwitcherHobbies(arg,arg1,arg2);
+        if (!Objects.equals(arg, ""))
+            $(By.xpath("//label[.='"+arg+"']")).click();
+        if (!Objects.equals(arg1, ""))
+            $(By.xpath("//label[.='"+arg1+"']")).click();
+        if (!Objects.equals(arg2, ""))
+            $(By.xpath("//label[.='"+arg2+"']")).click();
     }
     @Step("Загрузка аватара")
     public void avatarUpload(){

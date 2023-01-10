@@ -2,19 +2,11 @@ package Tests;
 
 import Persons.Person;
 import Steps.Xpath.Elements.ElementDatePicker;
-import Steps.Xpath.Page.Forms.PageForms;
-import Steps.Xpath.Page.PageLogin;
-import Steps.Xpath.Page.PageMenu;
-import Steps.Xpath.Page.PageRegister;
-import Steps.Xpath.Page.PageTextBox;
+import Steps.Xpath.Page.*;
 import Steps.css.cssElement.ElementDroppable;
-import Steps.css.cssPage.PageButtons;
-import Steps.css.cssPage.PageWebTables;
+import Steps.css.cssPage.*;
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Selenide.open;
 
 public class MainTest {

@@ -1,18 +1,21 @@
 package Tests;
 
 import Persons.Person;
-import Steps.Elements.ElementDatePicker;
-import Steps.Elements.ElementDroppable;
-import Steps.Page.Forms.PageForms;
-import Steps.Page.*;
+import Steps.Xpath.Elements.ElementDatePicker;
+import Steps.Xpath.Page.Forms.PageForms;
+import Steps.Xpath.Page.PageLogin;
+import Steps.Xpath.Page.PageMenu;
+import Steps.Xpath.Page.PageRegister;
+import Steps.Xpath.Page.PageTextBox;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.sleep;
 
-public class MainTest {
+public class XpathTest {
     private static final String baseUrl ="https://demoqa.com/";
 
     PageTextBox textBox = new PageTextBox();
@@ -21,11 +24,10 @@ public class MainTest {
     PageMenu menu = new PageMenu();
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
-    ElementDroppable elementDroppable =new ElementDroppable();
     Person person =new Person("Павел","Мизирев",
             "JellyFox","Советская 43",
             "Пушкина 23","pavel@mial.com",
-            "88005553535");
+            "88005553535",20);
 
     @BeforeAll
     static void beforeConfig() {
@@ -41,10 +43,11 @@ public class MainTest {
     public void testElementsTextBox(){
         textBox.transitionTextBox();
         textBox.inputFullName(person.getName());
-        textBox.inputEmail(person.getEMail());
+        textBox.inputEmail(person.getEmail());
         textBox.inputCurrentAddress(person.getCurrentAddress());
         textBox.inputPermanentAddress(person.getPermanentAddress());
         textBox.submit();
+        sleep(500000);
         textBox.checkInfo();
     }
 
@@ -53,7 +56,7 @@ public class MainTest {
         forms.transitionForms();
         forms.inputFirstName(person.getName());
         forms.inputLastName(person.getLastName());
-        forms.inputEmail(person.getEMail());
+        forms.inputEmail(person.getEmail());
         forms.inputGender();
         forms.inputNumber(person.getPhoneNumber());
         forms.inputDateOfBirth();
@@ -92,11 +95,5 @@ public class MainTest {
         datePicker.inputDate("15/03/2012/16:20","January 1, 2023 12:00 AM");
         datePicker.inputDate("afafaaffaafafaffafaafaf","");
         datePicker.inputDate("???????????????????????????????????????????????","");
-    }
-
-    @Test
-    public void testInteractionsDroppable(){
-        elementDroppable.transitionDroppable();
-        elementDroppable.drop();
     }
 }

@@ -1,4 +1,4 @@
-package Steps.Page.Forms;
+package Steps.Xpath.Page.Forms;
 
 import org.openqa.selenium.By;
 

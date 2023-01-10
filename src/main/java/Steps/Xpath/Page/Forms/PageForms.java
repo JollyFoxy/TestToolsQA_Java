@@ -1,10 +1,10 @@
-package Steps.Page.Forms;
+package Steps.Xpath.Page.Forms;
 
+import Steps.Xpath.tools.*;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import tools.*;
 
 import java.io.File;
 

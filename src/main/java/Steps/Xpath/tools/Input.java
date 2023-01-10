@@ -1,4 +1,4 @@
-package tools;
+package Steps.Xpath.tools;
 
 import com.codeborne.selenide.SelenideElement;
 import lombok.Getter;
@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 @Getter
-public class Button {
+public class Input {
     private final SelenideElement id;
-    public Button(String id){
-        this.id = $(By.xpath("//button[@id='"+id+"']"));
+    public Input(String id){
+        this.id = $(By.xpath("//input[@id='"+id+"']"));
     }
 }

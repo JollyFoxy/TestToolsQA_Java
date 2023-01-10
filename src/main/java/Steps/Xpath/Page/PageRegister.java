@@ -1,9 +1,9 @@
-package Steps.Page;
+package Steps.Xpath.Page;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import tools.Button;
-import tools.Input;
+import Steps.Xpath.tools.Button;
+import Steps.Xpath.tools.Input;
 
 public class PageRegister {
 

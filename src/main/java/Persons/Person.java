@@ -12,6 +12,7 @@ public class Person {
     private final String userName;
     private final String PermanentAddress;
     private final String CurrentAddress;
-    private final String eMail;
+    private final String email;
     private final String phoneNumber;
+    private final int age;
 }

@@ -3,14 +3,12 @@ package Steps.Xpath.Page;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import Steps.Xpath.tools.Transition;
-import Steps.Xpath.tools.TransitionElement;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class PageMenu {
-    private final SelenideElement widgets = new Transition("Widgets").getH5();
-    private final SelenideElement menu = new TransitionElement("Menu").getSpan();
+    private final SelenideElement widgets =$(By.xpath("//div[@class='card-body']//h5[.='Widgets']"));
+    private final SelenideElement menu =$(By.xpath("//div[@class='element-group']//span[.='Menu']"));
     private final SelenideElement leftPanel = $(By.xpath("//div[@class='row']"));
     private final SelenideElement mainItem2 = $(By.xpath("//a[.='Main Item 2']"));
     private final SelenideElement subList = $(By.xpath("//a[.='SUB SUB LIST »']"));

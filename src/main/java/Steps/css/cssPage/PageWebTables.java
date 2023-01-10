@@ -1,21 +1,25 @@
 package Steps.css.cssPage;
 
-import Steps.css.cssTools.*;
+import Steps.tools.Button;
+import Steps.tools.Input;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class PageWebTables {
-    private final SelenideElement elements = new cssTransition(1).getNClass();
-    private final SelenideElement webTable = new cssTransitionElement(1,3).getItemId();
-    private final SelenideElement btnAdd = new cssButton("addNewRecordButton").getIdButton();
-    private final SelenideElement firstName = new cssInput("firstName").getId();
-    private final SelenideElement lastName = new cssInput("lastName").getId();
-    private final SelenideElement eMail = new cssInput("userEmail").getId();
-    private final SelenideElement age = new cssInput("age").getId();
-    private final SelenideElement salary = new cssInput("salary").getId();
-    private final SelenideElement department = new cssInput("department").getId();
-    private final SelenideElement submit= new cssButton("submit").getIdButton();
+    private final SelenideElement elements = $(By.cssSelector("div.category-cards > div:nth-of-type(1)"));
+    private final SelenideElement webTable = $(By.cssSelector("div.accordion > div:nth-child(1) li#item-3"));
+    private final SelenideElement btnAdd = Button.getButton("addNewRecordButton");
+    private final SelenideElement firstName = Input.getCssInput("firstName");
+    private final SelenideElement lastName = Input.getCssInput("lastName");
+    private final SelenideElement eMail = Input.getCssInput("userEmail");
+    private final SelenideElement age = Input.getCssInput("age");
+    private final SelenideElement salary = Input.getCssInput("salary");
+    private final SelenideElement department = Input.getCssInput("department");
+    private final SelenideElement submit= Button.getButton("submit");
     @Step("Переход на страницу \"Web Tables\"")
     public void transitionElements(){
         elements.should(Condition.visible).click();

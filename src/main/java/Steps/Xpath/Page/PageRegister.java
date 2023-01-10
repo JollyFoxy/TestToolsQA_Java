@@ -2,17 +2,17 @@ package Steps.Xpath.Page;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import Steps.Xpath.tools.Button;
-import Steps.Xpath.tools.Input;
+import Steps.tools.Button;
+import Steps.tools.Input;
 
 public class PageRegister {
 
-    private final SelenideElement btnNewUser = new Button("newUser").getId();
-    private final SelenideElement firstName= new Input("firstname").getId();
-    private final SelenideElement lastName = new Input("lastname").getId();
-    private final SelenideElement userName = new Input("userName").getId();
-    private final SelenideElement password = new Input("password").getId();
-    private final SelenideElement register = new Button("register").getId();
+    private final SelenideElement btnNewUser = Button.getButton("newUser");
+    private final SelenideElement firstName= Input.getXpathInput("firstname");
+    private final SelenideElement lastName = Input.getXpathInput("lastname");
+    private final SelenideElement userName = Input.getXpathInput("userName");
+    private final SelenideElement password = Input.getXpathInput("password");
+    private final SelenideElement register = Button.getButton("register");
 
 
     @Step("Нажимание кнопки \"New User\"")

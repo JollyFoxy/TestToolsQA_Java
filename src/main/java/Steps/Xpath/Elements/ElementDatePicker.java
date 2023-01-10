@@ -5,14 +5,14 @@ import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import Steps.Xpath.tools.Input;
+import Steps.tools.Input;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class ElementDatePicker {
     private final SelenideElement widgets = $(By.xpath("//div[@class='card-body']//h5[.='Widgets']"));
     private final SelenideElement datePicker = $(By.xpath("//div[@class='element-group']//li[@id='item-2']//span[.='Date Picker']"));
-    private final SelenideElement dateAndTimePickerInput = new Input("dateAndTimePickerInput").getId();
+    private final SelenideElement dateAndTimePickerInput = Input.getXpathInput("dateAndTimePickerInput");
 
     @Step("Переход с домашней страницы на страницу \"Date Picker\"")
     public void transitionDatePicker(){

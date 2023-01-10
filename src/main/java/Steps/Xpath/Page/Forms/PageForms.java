@@ -1,6 +1,7 @@
 package Steps.Xpath.Page.Forms;
 
-import Steps.Xpath.tools.*;
+import Steps.tools.Button;
+import Steps.tools.Input;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -12,14 +13,14 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class PageForms {
     File file =new File("foxy.png");
-    private final SelenideElement forms = new Transition("Forms").getH5();
-    private final SelenideElement registrationForm = new TransitionElement("Practice Form").getSpan();
-    private final SelenideElement firstName = new Input("firstName").getId();
-    private final SelenideElement lastName = new Input("lastName").getId();
-    private final SelenideElement userEmail = new Input("userEmail").getId();
+    private final SelenideElement forms =  $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
+    private final SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//span[.='Practice Form']"));
+    private final SelenideElement firstName = Input.getXpathInput("firstName");
+    private final SelenideElement lastName = Input.getXpathInput("lastName");
+    private final SelenideElement userEmail = Input.getXpathInput("userEmail");
     private final SelenideElement genderMale = $(By.xpath("//label[.='Male']"));
-    private final SelenideElement userNumber = new Input("userNumber").getId();
-    private final SelenideElement dateOfBirth = new  Input("dateOfBirthInput").getId();
+    private final SelenideElement userNumber = Input.getXpathInput("userNumber");
+    private final SelenideElement dateOfBirth = Input.getXpathInput("dateOfBirthInput");
     private final SelenideElement monthSelect = $(By.xpath("//select[@class='react-datepicker__month-select']"));
     private final SelenideElement november = $(By.xpath("//option[@value='10']"));
     private final SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
@@ -27,9 +28,9 @@ public class PageForms {
     private final SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
 //    private final SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
     private final SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
-    private final SelenideElement btnSubmit = new Button("submit").getId();
+    private final SelenideElement btnSubmit = Button.getButton("submit");
     private final SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
-    private final SelenideElement uploadPicture = new Input("uploadPicture").getId();
+    private final SelenideElement uploadPicture =Input.getXpathInput("uploadPicture");
     private final SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
     private final SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
 

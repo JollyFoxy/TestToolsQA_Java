@@ -1,7 +1,5 @@
 package Steps.css.cssElement;
 
-import Steps.css.cssTools.cssTransition;
-import Steps.css.cssTools.cssTransitionElement;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -12,8 +10,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
 public class ElementDroppable {
-    private final SelenideElement interactions = new cssTransition(5).getNClass();
-    private final SelenideElement droppable = new  cssTransitionElement(5,3).getItemId();
+    private final SelenideElement interactions = $(By.cssSelector("div.category-cards > div:nth-of-type(5)"));
+    private final SelenideElement droppable =  $(By.cssSelector("div.accordion > div:nth-child(5) li#item-3"));
     private final SelenideElement draggableObject = $(By.cssSelector("div#draggable"));
     private final SelenideElement droppableObject = $(By.cssSelector("#droppable"));
     private final SelenideElement scroll = $(By.cssSelector("div.left-pannel"));

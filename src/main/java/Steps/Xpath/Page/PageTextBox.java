@@ -1,6 +1,6 @@
 package Steps.Xpath.Page;
 
-import Steps.Xpath.tools.*;
+import Steps.tools.*;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -11,13 +11,13 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class PageTextBox {
-    private final SelenideElement element =new Transition("Elements").getH5();
-    private final SelenideElement textBox = new TransitionElement("Text Box").getSpan();
-    private final SelenideElement fulName = new Input("userName").getId();
-    private final SelenideElement eMail = new Input("userEmail").getId();
-    private final SelenideElement currentAddress = new TextArea("currentAddress").getId();
-    private final SelenideElement permanentAddress = new TextArea("permanentAddress").getId();
-    private final SelenideElement btnSubmit = new Button("submit").getId();
+    private final SelenideElement element =  $(By.xpath("//div[@class='card-body']//h5[.='Elements']"));
+    private final SelenideElement textBox = $(By.xpath("//div[@class='element-group']//span[.='Text Box']"));
+    private final SelenideElement fulName = Input.getXpathInput("userName");
+    private final SelenideElement eMail = Input.getXpathInput("userEmail");
+    private final SelenideElement currentAddress = TextArea.getTextarea("currentAddress");
+    private final SelenideElement permanentAddress = TextArea.getTextarea("permanentAddress");
+    private final SelenideElement btnSubmit = Button.getButton("submit");
     private final SelenideElement checkName = $(By.xpath("//p[@id='name']"));
     private final SelenideElement checkEmail = $(By.xpath("//p[@id='email']"));
     private final SelenideElement checkCurrentAddress = $(By.xpath("//p[@id='currentAddress']"));

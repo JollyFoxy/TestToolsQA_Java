@@ -13,7 +13,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class XpathTest {
     private static final String baseUrl ="https://demoqa.com/";
@@ -47,7 +46,6 @@ public class XpathTest {
         textBox.inputCurrentAddress(person.getCurrentAddress());
         textBox.inputPermanentAddress(person.getPermanentAddress());
         textBox.submit();
-        sleep(500000);
         textBox.checkInfo();
     }
 

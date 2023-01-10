@@ -4,29 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 12">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageWebTables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssTools/cssButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssTools/cssInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssTools/cssTransition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssTools/cssTransitionElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CssTests.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 13: больше cssSelector">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageButtons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssTools/cssP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persons/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persons/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Elements/ElementDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssElement/ElementDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/Forms/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/Forms/SwitcherHobbies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/Forms/SwitcherHobbies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageTextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/tools/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/tools/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/tools/TextArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/tools/Transition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/TransitionElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/tools/TransitionElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/XpathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CssTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CssTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/XpathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/XpathTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +58,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CssTests.testDrop">
+  <component name="RunManager" selected="JUnit.CssTests.testButtons">
     <configuration name="CssTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -87,6 +70,22 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CssTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CssTests.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CssTests" />
+      <option name="METHOD_NAME" value="testButtons" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XpathTest.testElementsTextBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XpathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -133,35 +132,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.XpathTest" />
-      <option name="METHOD_NAME" value="testElementsTextBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XpathTest.testWeb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.XpathTest" />
-      <option name="METHOD_NAME" value="testWeb" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CssTests.testDrop" />
+        <item itemvalue="JUnit.CssTests.testButtons" />
+        <item itemvalue="JUnit.XpathTest" />
         <item itemvalue="JUnit.CssTests" />
+        <item itemvalue="JUnit.CssTests.testDrop" />
         <item itemvalue="JUnit.CssTests.testWebTables" />
-        <item itemvalue="JUnit.XpathTest.testElementsTextBox" />
-        <item itemvalue="JUnit.XpathTest.testWeb" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673334568748</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update 13: больше cssSelector">
+      <created>1673346197757</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673346197757</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +230,7 @@
     <MESSAGE value="Update 6" />
     <MESSAGE value="Update 7" />
     <MESSAGE value="Update 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 12" />
+    <MESSAGE value="Update 13: больше cssSelector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 13: больше cssSelector" />
   </component>
 </project>

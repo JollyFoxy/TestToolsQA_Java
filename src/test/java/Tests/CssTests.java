@@ -2,6 +2,7 @@ package Tests;
 
 import Persons.Person;
 import Steps.css.cssElement.ElementDroppable;
+import Steps.css.cssPage.PageButtons;
 import Steps.css.cssPage.PageWebTables;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,6 +15,7 @@ public class CssTests {
     private static final String baseUrl ="https://demoqa.com/";
     ElementDroppable elementDroppable =new ElementDroppable();
     PageWebTables webTables= new PageWebTables();
+    PageButtons pageButtons = new PageButtons();
 
 
     Person person =new Person("Павел","Мизирев",
@@ -45,6 +47,13 @@ public class CssTests {
     public void testDrop(){
         elementDroppable.transitionDroppable();
         elementDroppable.drop();
+    }
+    @Test
+    public void testButtons(){
+        pageButtons.inputBtn();
+        pageButtons.oneClick();
+        pageButtons.doubleClick();
+        pageButtons.rightClick();
     }
 
 }

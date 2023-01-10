@@ -2,15 +2,16 @@ package Persons;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.With;
 
 @AllArgsConstructor
-@Getter
+@Getter @With
 public class Person {
-    private String name;
-    private String lastName;
-    private String userName;
-    private String PermanentAddress;
-    private String CurrentAddress;
-    private String eMail;
-    private String phoneNumber;
+    private final String name;
+    private final String lastName;
+    private final String userName;
+    private final String PermanentAddress;
+    private final String CurrentAddress;
+    private final String eMail;
+    private final String phoneNumber;
 }

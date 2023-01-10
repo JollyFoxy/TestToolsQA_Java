@@ -1,4 +1,4 @@
-package Steps.Page;
+package Steps.Elements;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -8,13 +8,14 @@ import org.openqa.selenium.By;
 import tools.Transition;
 import tools.TransitionElement;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.actions;
 
-public class PageDroppable {
+public class ElementDroppable {
     private final SelenideElement interactions = new Transition("Interactions").getH5();
     private final SelenideElement droppable = new TransitionElement("Droppable").getSpan();
     private final SelenideElement draggableObject = $(By.cssSelector("div#draggable"));
-    private final SelenideElement droppableObject = $(By.cssSelector("div#droppable"));
+    private final SelenideElement droppableObject = $(By.cssSelector("#droppable"));
     private final SelenideElement scroll = $(By.cssSelector("div.left-pannel"));
 
     @Step("Переход на страницу \"droppable\"")
@@ -25,7 +26,7 @@ public class PageDroppable {
     }
     @Step("Перемищение объекта в область")
     public void drop(){
-        draggableObject.shouldBe(Condition.interactable).click();
+        draggableObject.should(Condition.exist);
         actions().dragAndDrop(draggableObject, droppableObject).build().perform();
         Assertions.assertEquals("Dropped!", droppableObject.getText());
     }

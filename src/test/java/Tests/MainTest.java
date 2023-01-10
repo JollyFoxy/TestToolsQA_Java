@@ -2,6 +2,7 @@ package Tests;
 
 import Persons.Person;
 import Steps.Elements.ElementDatePicker;
+import Steps.Elements.ElementDroppable;
 import Steps.Page.Forms.PageForms;
 import Steps.Page.*;
 import com.codeborne.selenide.Configuration;
@@ -20,7 +21,7 @@ public class MainTest {
     PageMenu menu = new PageMenu();
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
-    PageDroppable pageDroppable=new PageDroppable();
+    ElementDroppable elementDroppable =new ElementDroppable();
     Person person =new Person("Павел","Мизирев",
             "JellyFox","Советская 43",
             "Пушкина 23","pavel@mial.com",
@@ -57,7 +58,6 @@ public class MainTest {
         forms.inputNumber(person.getPhoneNumber());
         forms.inputDateOfBirth();
         forms.inputHobbies("Reading","Sports","");
-//        new SwitcherHobbies("Reading");
         forms.avatarUpload();
         forms.inputAddress(person.getPermanentAddress());
         forms.submit();
@@ -96,7 +96,7 @@ public class MainTest {
 
     @Test
     public void testInteractionsDroppable(){
-        pageDroppable.transitionDroppable();
-        pageDroppable.drop();
+        elementDroppable.transitionDroppable();
+        elementDroppable.drop();
     }
 }

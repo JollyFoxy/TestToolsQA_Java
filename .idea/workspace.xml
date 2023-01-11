@@ -5,38 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 16">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IDrop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/ILogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/ITextBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IWebTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestDrop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementsTextBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWebTables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsDatePicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IALL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Elements/ElementDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageTextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/css/cssElement/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssElement/ElementDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageWebTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/P.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/TextArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IDrop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/ILogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persons/IPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/ITextBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IWebTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestElementsTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementsTextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsDatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -60,6 +50,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c1ebe921-705e-4143-996c-184843df975a" />
+        <option name="url" value="https://github.com/JollyFoxy/TestToolsQA.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -69,18 +72,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pavel/IdeaProjects/TestToolsQA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/pavel/IdeaProjects/TestToolsQA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Steps.css.tools" />

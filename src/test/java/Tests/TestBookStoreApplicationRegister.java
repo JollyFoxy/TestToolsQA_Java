@@ -1,11 +1,9 @@
 package Tests;
 
-import Interfasces.ILogin;
-import Interfasces.IPerson;
-import Interfasces.IRegister;
+import Persons.IPerson;
 import org.junit.jupiter.api.Test;
 
-public class TestBookStoreApplicationRegister extends BaseTest implements IPerson, ILogin, IRegister{
+public class TestBookStoreApplicationRegister extends BaseTest implements IPerson{
     @Test
     public void testBookStoreApplicationRegister(){
         loginPage.skroleBody();

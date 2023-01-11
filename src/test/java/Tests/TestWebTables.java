@@ -1,10 +1,9 @@
 package Tests;
 
-import Interfasces.IPerson;
-import Interfasces.IWebTable;
+import Persons.IPerson;
 import org.junit.jupiter.api.Test;
 
-public class TestWebTables extends BaseTest implements IPerson, IWebTable {
+public class TestWebTables extends BaseTest implements IPerson{
     @Test
     public void testWebTables(){
         webTables.transitionElements();

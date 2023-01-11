@@ -1,10 +1,9 @@
 package Tests;
 
-import Interfasces.IPerson;
-import Interfasces.ITextBox;
+import Persons.IPerson;
 import org.junit.jupiter.api.Test;
 
-public class TestElementsTextBox extends BaseTest implements IPerson, ITextBox {
+public class TestElementsTextBox extends BaseTest implements IPerson{
     @Test
     public void testElementsTextBox(){
         textBox.transitionTextBox();

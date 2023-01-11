@@ -1,10 +1,9 @@
 package Tests;
 
-import Interfasces.IForm;
-import Interfasces.IPerson;
+import Persons.IPerson;
 import org.junit.jupiter.api.Test;
 
-public class TestFormsPracticeForm extends BaseTest implements IPerson, IForm {
+public class TestFormsPracticeForm extends BaseTest implements IPerson {
     @Test
     public void testFormsPracticeForm(){
         forms.transitionForms();

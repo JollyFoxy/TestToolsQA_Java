@@ -1,9 +1,8 @@
 package Tests;
 
-import Interfasces.IDate;
 import org.junit.jupiter.api.Test;
 
-public class TestWidgetsDatePicker extends BaseTest implements IDate {
+public class TestWidgetsDatePicker extends BaseTest{
     @Test
     public void testWidgetsDatePicker(){
         datePicker.transitionDatePicker();

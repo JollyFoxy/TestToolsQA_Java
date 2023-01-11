@@ -1,6 +1,4 @@
-package Interfasces;
-
-import Persons.Person;
+package Persons;
 
 public interface IPerson {
     Person person =new Person("Павел","Мизирев",

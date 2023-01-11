@@ -43,15 +43,15 @@ public class PageForms {
     }
     @Step("Ввод имени в поле \"First Name\"")
     public void inputFirstName(String first_name) {
-        firstName.setValue(first_name);
+        firstName.setValueInput(first_name);
     }
     @Step("Ввод фамилии в поле \"Last Name\"")
     public void inputLastName(String last_name){
-        lastName.setValue(last_name);
+        lastName.setValueInput(last_name);
     }
     @Step("Ввод почты в поле \"Email\"")
     public void inputEmail(String email) {
-        userEmail.setValue(email);
+        userEmail.setValueInput(email);
     }
     @Step("Выбор гендера")
     public void inputGender(){
@@ -59,11 +59,11 @@ public class PageForms {
     }
     @Step("Ввод номера телефона в поле \"Mobile\"")
     public void inputNumber(String number){
-        userNumber.setValue(number);
+        userNumber.setValueInput(number);
     }
     @Step("Выбор даты рождения (18/11/2002)")
     public void inputDateOfBirth() {
-        dateOfBirth.inputClick();
+        dateOfBirth.clickInput();
         monthSelect.click();
         november.click();
         yearSelect.click();
@@ -81,7 +81,7 @@ public class PageForms {
     }
     @Step("Загрузка аватара")
     public void avatarUpload(){
-        uploadPicture.uploadFile(file);
+        uploadPicture.uploadFileInput(file);
     }
     @Step("Ввод адреса в поле \"Address\"")
     public void inputAddress(String address ){
@@ -93,7 +93,7 @@ public class PageForms {
         element.click();
         scroll.scrollTo();
         scroll.scrollIntoView(true);
-        btnSubmit.click();
+        btnSubmit.clickBtn();
     }
     @Step("Нажатие кнопки \"Close\"")
     public void closeWidow(){

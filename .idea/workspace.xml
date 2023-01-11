@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 15.1: Попытка сделать правельно">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 16">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IDrop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/ILogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/ITextBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IWebTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestDrop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementsTextBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWebTables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsDatePicker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persons/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persons/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Elements/ElementDatePicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageForms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageRegister.java" afterDir="false" />
@@ -18,8 +36,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/P.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/TextArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CssTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,7 +86,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testWidgetsDatePicker">
+  <component name="RunManager" selected="JUnit.Tests in TestToolsQA">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -116,22 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testElementsTextBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MainTest" />
-      <option name="METHOD_NAME" value="testElementsTextBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainTest.testWidgetsDatePicker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -148,13 +150,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests in TestToolsQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests in TestToolsQA" />
+        <item itemvalue="JUnit.MainTest.testDrop" />
         <item itemvalue="JUnit.MainTest.testWidgetsDatePicker" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testButtons" />
-        <item itemvalue="JUnit.MainTest.testElementsTextBox" />
-        <item itemvalue="JUnit.MainTest.testDrop" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673361833234</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update 16">
+      <created>1673432030714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673432030714</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +289,7 @@
     <MESSAGE value="Update 14: больше cssSelector" />
     <MESSAGE value="Update 15: Попытка сделать правельно" />
     <MESSAGE value="Update 15.1: Попытка сделать правельно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 15.1: Попытка сделать правельно" />
+    <MESSAGE value="Update 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 16" />
   </component>
 </project>

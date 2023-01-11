@@ -1,6 +1,5 @@
 package Steps.Xpath.Page;
 
-import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import Steps.tools.Button;
 import Steps.tools.Input;
@@ -17,26 +16,26 @@ public class PageRegister {
 
     @Step("Нажимание кнопки \"New User\"")
     public void newUser(){
-        btnNewUser.click();
+        btnNewUser.clickBtn();
     }
     @Step("Ввод в поле \"First Name\"")
     public void inputFirstName(String first_name){
-        firstName.setValue(first_name);
+        firstName.setValueInput(first_name);
     }
     @Step("Ввод в поле \"Last Name\"")
     public void inputLastName(String last_name){
-        lastName.setValue(last_name);
+        lastName.setValueInput(last_name);
     }
     @Step("Ввод в поле \"User Name\"")
     public void inputUserName(String user_name) {
-        userName.setValue(user_name);
+        userName.setValueInput(user_name);
     }
     @Step("Ввод в поле \"Password\"")
     public void inputPassword(String pass){
-        password.setValue(pass);
+        password.setValueInput(pass);
     }
     @Step("нажатие кнопки \"Register\"")
     public void registerNewUser (){
-        register.click();
+        register.clickBtn();
     }
 }

@@ -5,7 +5,6 @@ import Steps.tools.*;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 
 
@@ -32,29 +31,29 @@ public class PageTextBox {
     }
     @Step("Заполнить поле \"Full Name\"")
     public void inputFullName(String name){
-        fulName.setValue(name);
+        fulName.setValueInput(name);
     }
     @Step("Заполнить поле \"Email\"")
     public void inputEmail(String email) {
-        eMail.setValue(email);
+        eMail.setValueInput(email);
     }
     @Step("Зполнить поле \"Current Address\"")
     public void inputCurrentAddress(String address) {
-        currentAddress.setValue(address);
+        currentAddress.setValueTextArea(address);
     }
     @Step("Зполнить поле \"Permanent Address\"")
     public void inputPermanentAddress(String address) {
-        permanentAddress.setValue(address);
+        permanentAddress.setValueTextArea(address);
     }
     @Step("Кликнуть на  кнопку \"Submit\"")
     public void submit(){
-        btnSubmit.click();
+        btnSubmit.clickBtn();
     }
     @Step("Проверка введёной информации")
     public void checkInfo(Person person){
-        checkName.checkText(person.getName());
-        checkEmail.checkText(person.getEmail());
-        checkCurrentAddress.checkText(person.getCurrentAddress());
-        checkPermanentAddress.checkText(person.getPermanentAddress());
+        checkName.checkTextP(person.getName());
+        checkEmail.checkTextP(person.getEmail());
+        checkCurrentAddress.checkTextP(person.getCurrentAddress());
+        checkPermanentAddress.checkTextP(person.getPermanentAddress());
     }
 }

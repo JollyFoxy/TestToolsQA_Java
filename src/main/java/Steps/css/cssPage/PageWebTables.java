@@ -27,35 +27,35 @@ public class PageWebTables {
     }
     @Step("Нажатие кнопки \"Add\"")
     public void addUser(){
-        btnAdd.click();
+        btnAdd.clickBtn();
     }
     @Step("Ввод имени")
     public void inputFirstUserName(String userFirstName){
-        firstName.setValue(userFirstName);
+        firstName.setValueInput(userFirstName);
     }
     @Step("Ввод фамилии")
     public void inputLastUserName(String userLastName){
-        lastName.setValue(userLastName);
+        lastName.setValueInput(userLastName);
     }
     @Step("Ввод почты")
     public void inputUserEmail(String userEmail){
-        eMail.setValue(userEmail);
+        eMail.setValueInput(userEmail);
     }
     @Step("Ввод возраста")
     public void inputUserAge(int  userAge){
-        age.setValue(String.valueOf(userAge));
+        age.setValueInput(String.valueOf(userAge));
     }
     @Step("Ввод зарплвты")
     public void inputSalary(int userSalary){
-        salary.setValue(String.valueOf(userSalary));
+        salary.setValueInput(String.valueOf(userSalary));
     }
     @Step("Ввод департаминта")
     public void inputDepartment(String userDepartment){
-        department.setValue(String.valueOf(userDepartment));
+        department.setValueInput(String.valueOf(userDepartment));
     }
     @Step("Нажатие кнопки\"submit\"")
     public void submit(){
-        submit.click();
+        submit.clickBtn();
     }
 
 }

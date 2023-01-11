@@ -27,16 +27,16 @@ public class PageButtons {
     @Step
     public void oneClick(){
         clickBtn.click();
-        dynamicClickMessage.checkText("dynamic click");
+        dynamicClickMessage.checkTextP("dynamic click");
     }
     @Step
     public void doubleClick(){
-        doubleClickBtn.doubleClick();
-        doubleClickMessage.checkText("double click");
+        doubleClickBtn.doubleClickBtn();
+        doubleClickMessage.checkTextP("double click");
     }
     @Step
     public void rightClick(){
-        rightClickBtn.rightClick();
-        rightClickMessage.checkText("right click");
+        rightClickBtn.rightClickBtn();
+        rightClickMessage.checkTextP("right click");
     }
 }

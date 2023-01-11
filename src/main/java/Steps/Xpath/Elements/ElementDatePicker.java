@@ -21,11 +21,11 @@ public class ElementDatePicker {
     @Step("Ввод в поле \"Date And Time\"")
     public void inputDate(String date,String expected){
         //Предварительная очистка поля
-        while (dateAndTimePickerInput.getValue().length()>0)
-            dateAndTimePickerInput.sendKeysBackSpase();
+        while (dateAndTimePickerInput.getValueInput().length()>0)
+            dateAndTimePickerInput.sendKeysBackSpaseInput();
         //Ввод даты
-        dateAndTimePickerInput.setValue(date);
-        dateAndTimePickerInput.sendKeysEnter();
-        dateAndTimePickerInput.checkText(expected);
+        dateAndTimePickerInput.setValueInput(date);
+        dateAndTimePickerInput.sendKeysEnterInput();
+        dateAndTimePickerInput.checkTextInput(expected);
     }
 }

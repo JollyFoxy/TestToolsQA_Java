@@ -14,25 +14,25 @@ public class Input {
     public Input(String id){
         input= $(By.cssSelector("input#"+id));
     }
-    public void setValue(String value){
+    public void setValueInput(String value){
         input.setValue(value);
     }
-    public String getValue(){
+    public String getValueInput(){
         return input.getValue();
     }
-    public void sendKeysBackSpase(){
+    public void sendKeysBackSpaseInput(){
         input.sendKeys(Keys.BACK_SPACE);
     }
-    public void sendKeysEnter(){
+    public void sendKeysEnterInput(){
         input.sendKeys(Keys.ENTER);
     }
-    public void inputClick(){
+    public void clickInput(){
         input.click();
     }
-    public void uploadFile(File file){
+    public void uploadFileInput(File file){
         input.uploadFile(file);
     }
-    public void checkText(String value){
+    public void checkTextInput(String value){
         input.should(Condition.value(value));
     }
 }

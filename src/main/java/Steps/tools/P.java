@@ -11,10 +11,7 @@ public class P {
     public P(String id){
         p = $(By.cssSelector("p#"+id));
     }
-    public void checkText(String text){
+    public void checkTextP(String text){
         p.should(Condition.text(text));
-    }
-    public String getText(){
-        return p.getText();
     }
 }

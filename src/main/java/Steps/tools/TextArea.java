@@ -12,7 +12,7 @@ public class TextArea {
     public TextArea(String id) {
         textArea = $(By.xpath("//textarea[@id='" + id + "']"));
     }
-    public void setValue(String value) {
+    public void setValueTextArea(String value) {
         textArea.setValue(value);
     }
 }

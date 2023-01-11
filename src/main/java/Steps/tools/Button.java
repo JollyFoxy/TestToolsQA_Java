@@ -12,13 +12,13 @@ public class Button {
     public Button(String id){
         button = $(By.cssSelector("button#"+id));
     }
-    public void click(){
+    public void clickBtn(){
         button.click();
     }
-    public void doubleClick(){
+    public void doubleClickBtn(){
         button.doubleClick();
     }
-    public void rightClick(){
+    public void rightClickBtn(){
         button.contextClick();
     }
 }

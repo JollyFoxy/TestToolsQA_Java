@@ -24,8 +24,8 @@ public class ElementDroppable {
     }
     @Step("Перемищение объекта в область")
     public void drop(){
-        draggableObject.should(Condition.exist).click();
+        draggableObject.shouldBe(Condition.interactable).click();
         actions().dragAndDrop(draggableObject, droppableObject).build().perform();
-        Assertions.assertEquals("Dropped!", droppableObject.getText());
+        droppableObject.should(Condition.text("Dropped"));
     }
 }

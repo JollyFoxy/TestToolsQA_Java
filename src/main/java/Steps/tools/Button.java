@@ -7,7 +7,18 @@ import static com.codeborne.selenide.Selenide.$;
 
 
 public class Button {
-    public static SelenideElement getButton(String id){
-        return $(By.cssSelector("button#"+id));
+    private final SelenideElement button;
+
+    public Button(String id){
+        button = $(By.cssSelector("button#"+id));
+    }
+    public void click(){
+        button.click();
+    }
+    public void doubleClick(){
+        button.doubleClick();
+    }
+    public void rightClick(){
+        button.contextClick();
     }
 }

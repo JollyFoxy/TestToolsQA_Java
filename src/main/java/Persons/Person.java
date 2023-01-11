@@ -7,12 +7,19 @@ import lombok.With;
 @AllArgsConstructor
 @Getter @With
 public class Person {
-    private final String name;
-    private final String lastName;
-    private final String userName;
-    private final String PermanentAddress;
-    private final String CurrentAddress;
-    private final String email;
-    private final String phoneNumber;
-    private final int age;
+    private String name;
+    private String lastName;
+    private String userName;
+    private String PermanentAddress;
+    private String CurrentAddress;
+    private String email;
+    private String phoneNumber;
+    private int age;
+    public Person(){
+        name="";
+    }
+    public Person(String nsme){
+
+    }
 }
+

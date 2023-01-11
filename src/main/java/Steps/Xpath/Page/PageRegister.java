@@ -7,12 +7,12 @@ import Steps.tools.Input;
 
 public class PageRegister {
 
-    private final SelenideElement btnNewUser = Button.getButton("newUser");
-    private final SelenideElement firstName= Input.getXpathInput("firstname");
-    private final SelenideElement lastName = Input.getXpathInput("lastname");
-    private final SelenideElement userName = Input.getXpathInput("userName");
-    private final SelenideElement password = Input.getXpathInput("password");
-    private final SelenideElement register = Button.getButton("register");
+    private final Button btnNewUser = new Button("newUser");
+    private final Input firstName= new Input("firstname");
+    private final Input lastName = new Input("lastname");
+    private final Input userName = new Input("userName");
+    private final Input password = new Input("password");
+    private final Button register = new  Button("register");
 
 
     @Step("Нажимание кнопки \"New User\"")
@@ -21,19 +21,19 @@ public class PageRegister {
     }
     @Step("Ввод в поле \"First Name\"")
     public void inputFirstName(String first_name){
-        firstName.val(first_name);
+        firstName.setValue(first_name);
     }
     @Step("Ввод в поле \"Last Name\"")
     public void inputLastName(String last_name){
-        lastName.val(last_name);
+        lastName.setValue(last_name);
     }
     @Step("Ввод в поле \"User Name\"")
     public void inputUserName(String user_name) {
-        userName.val(user_name);
+        userName.setValue(user_name);
     }
     @Step("Ввод в поле \"Password\"")
     public void inputPassword(String pass){
-        password.val(pass);
+        password.setValue(pass);
     }
     @Step("нажатие кнопки \"Register\"")
     public void registerNewUser (){

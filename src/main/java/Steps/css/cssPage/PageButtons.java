@@ -4,7 +4,6 @@ import Steps.tools.Button;
 import Steps.tools.P;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -12,13 +11,13 @@ import static com.codeborne.selenide.Selenide.$;
 public class PageButtons {
     private final SelenideElement elements = $(By.cssSelector("div.category-cards > div:nth-of-type(1)"));
     private final SelenideElement buttons = $(By.cssSelector("div.accordion > div:nth-child(1) li#item-4"));
-    private final SelenideElement doubleClickBtn = Button.getButton("doubleClickBtn");
+    private final Button doubleClickBtn = new Button("doubleClickBtn");
     private final SelenideElement clickBtn = $(By.cssSelector("div[class$='col-md-6']> div:nth-child(2) > div:nth-child(3)> button"));
 //    ("div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button"))
-    private final SelenideElement rightClickBtn = Button.getButton("rightClickBtn");
-    private final SelenideElement dynamicClickMessage = P.getCssP("dynamicClickMessage");
-    private final SelenideElement rightClickMessage = P.getCssP("rightClickMessage");
-    private final SelenideElement doubleClickMessage = P.getCssP("doubleClickMessage");
+    private final Button rightClickBtn =new Button("rightClickBtn");
+    private final P dynamicClickMessage = new P("dynamicClickMessage");
+    private final P rightClickMessage = new P("rightClickMessage");
+    private final P doubleClickMessage = new P("doubleClickMessage");
 
     @Step
     public void inputBtn(){
@@ -28,18 +27,16 @@ public class PageButtons {
     @Step
     public void oneClick(){
         clickBtn.click();
-        Assertions.assertEquals("You have done a dynamic click",dynamicClickMessage.getText());
+        dynamicClickMessage.checkText("dynamic click");
     }
     @Step
     public void doubleClick(){
         doubleClickBtn.doubleClick();
-        Assertions.assertEquals("You have done a double click",doubleClickMessage.getText());
-
+        doubleClickMessage.checkText("double click");
     }
     @Step
     public void rightClick(){
-        rightClickBtn.contextClick();
-        Assertions.assertEquals("You have done a right click",rightClickMessage.getText());
-
+        rightClickBtn.rightClick();
+        rightClickMessage.checkText("right click");
     }
 }

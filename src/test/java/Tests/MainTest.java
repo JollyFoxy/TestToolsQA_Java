@@ -4,9 +4,13 @@ import Persons.Person;
 import Steps.Xpath.Elements.ElementDatePicker;
 import Steps.Xpath.Page.*;
 import Steps.css.cssElement.ElementDroppable;
-import Steps.css.cssPage.*;
+import Steps.css.cssPage.PageButtons;
+import Steps.css.cssPage.PageWebTables;
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import static com.codeborne.selenide.Selenide.open;
 
 public class MainTest {
@@ -44,7 +48,7 @@ public class MainTest {
         textBox.inputCurrentAddress(person.getCurrentAddress());
         textBox.inputPermanentAddress(person.getPermanentAddress());
         textBox.submit();
-        textBox.checkInfo();
+        textBox.checkInfo(person);
     }
 
     @Test

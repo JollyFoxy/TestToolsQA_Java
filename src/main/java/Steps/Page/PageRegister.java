@@ -1,4 +1,4 @@
-package Steps.Xpath.Page;
+package Steps.Page;
 
 import io.qameta.allure.Step;
 import Steps.tools.Button;

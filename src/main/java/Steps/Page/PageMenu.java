@@ -1,14 +1,17 @@
-package Steps.Xpath.Page;
+package Steps.Page;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class PageMenu {
-    private final SelenideElement widgets =$(By.xpath("//div[@class='card-body']//h5[.='Widgets']"));
-    private final SelenideElement menu =$(By.xpath("//div[@class='element-group']//span[.='Menu']"));
+    private final ElementsCollection widgets = $$("div.category-cards h5");
+    private final ElementsCollection menu=$$("ul.menu-list li");
     private final SelenideElement leftPanel = $(By.xpath("//div[@class='row']"));
     private final SelenideElement mainItem2 = $(By.xpath("//a[.='Main Item 2']"));
     private final SelenideElement subList = $(By.xpath("//a[.='SUB SUB LIST »']"));
@@ -16,10 +19,10 @@ public class PageMenu {
 
     @Step("Перейти с домашней страницы на страницу \"Menu\"")
     public void transitionMenu(){
-        widgets.click();
+        widgets.find(Condition.text("Widgets")).click();
         //Иногда не открываеться в нужном разрешении, прокрутка для перестраховки
         leftPanel.scrollIntoView(false);
-        menu.click();
+        menu.find(Condition.text("Menu")).click();
     }
     @Step("Наводка на элемент\"Main Item 2\"")
     public void hoverMainItem2(){

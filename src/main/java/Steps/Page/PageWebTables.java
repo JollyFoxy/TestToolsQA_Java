@@ -1,17 +1,19 @@
-package Steps.css.cssPage;
+package Steps.Page;
 
 import Steps.tools.Button;
 import Steps.tools.Input;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class PageWebTables {
-    private final SelenideElement elements = $(By.cssSelector("div.category-cards > div:nth-of-type(1)"));
-    private final SelenideElement webTable = $(By.cssSelector("div.accordion > div:nth-child(1) li#item-3"));
+    private final ElementsCollection elements = $$("div.category-cards h5");
+    private final ElementsCollection webTable=$$("ul.menu-list li");
     private final Button btnAdd =new Button("addNewRecordButton");
     private final Input firstName = new Input("firstName");
     private final Input lastName = new Input("lastName");
@@ -22,8 +24,8 @@ public class PageWebTables {
     private final Button submit= new Button("submit");
     @Step("Переход на страницу \"Web Tables\"")
     public void transitionElements(){
-        elements.should(Condition.visible).click();
-        webTable.should(Condition.visible).click();
+        elements.find(Condition.text("Elements")).click();
+        webTable.find(Condition.text("Web Tables")).click();
     }
     @Step("Нажатие кнопки \"Add\"")
     public void addUser(){

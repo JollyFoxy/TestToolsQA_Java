@@ -1,10 +1,8 @@
 package Interfasces;
 
-import Steps.Xpath.Page.*;
-import Steps.Xpath.Elements.ElementDatePicker;
-import Steps.css.cssElement.ElementDroppable;
-import Steps.css.cssPage.PageButtons;
-import Steps.css.cssPage.PageWebTables;
+import Steps.Elements.ElementDatePicker;
+import Steps.Elements.ElementDroppable;
+import Steps.Page.*;
 
 public interface IAll {
     ElementDroppable elementDroppable =new ElementDroppable();
@@ -16,6 +14,7 @@ public interface IAll {
     PageMenu menu = new PageMenu();
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
+    PageBase pageBase = new PageBase();
 
 
 }

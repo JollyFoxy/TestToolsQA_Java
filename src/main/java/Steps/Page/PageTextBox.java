@@ -1,18 +1,19 @@
-package Steps.Xpath.Page;
+package Steps.Page;
 
 import Persons.Person;
-import Steps.tools.*;
+import Steps.tools.Button;
+import Steps.tools.Input;
+import Steps.tools.P;
+import Steps.tools.TextArea;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 
-
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class PageTextBox {
-    private final SelenideElement element =  $(By.xpath("//div[@class='card-body']//h5[.='Elements']"));
-    private final SelenideElement textBox = $(By.xpath("//div[@class='element-group']//span[.='Text Box']"));
+    private final ElementsCollection element = $$("div.category-cards h5");
+    private final ElementsCollection textBox=$$("ul.menu-list li");
     private final Input fulName = new Input("userName");
     private final Input eMail = new Input("userEmail");
     private final TextArea currentAddress = new TextArea("currentAddress");
@@ -25,8 +26,8 @@ public class PageTextBox {
 
     @Step("Перейти с домашней страницы на страницу \"Text Box\"")
     public void transitionTextBox() {
-        element.should(Condition.visible).click();
-        textBox.should(Condition.visible).click();
+        element.find(Condition.text("Elements")).click();
+        textBox.find(Condition.text("Text Box")).click();
 
     }
     @Step("Заполнить поле \"Full Name\"")

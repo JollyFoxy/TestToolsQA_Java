@@ -1,8 +1,9 @@
-package Steps.Xpath.Page;
+package Steps.Page;
 
 import Steps.tools.Button;
 import Steps.tools.Input;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -11,11 +12,12 @@ import java.io.File;
 import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class PageForms {
     File file =new File("foxy.png");
-    private final SelenideElement forms =  $(By.xpath("//div[@class='card-body']//h5[.='Forms']"));
-    private final SelenideElement registrationForm = $(By.xpath("//div[@class='element-group']//span[.='Practice Form']"));
+    private final ElementsCollection forms = $$("div.category-cards h5");
+    private final ElementsCollection registrationForm=$$("ul.menu-list li");
     private final Input firstName = new Input("firstName");
     private final Input lastName = new Input("lastName");
     private final Input userEmail = new Input("userEmail");
@@ -38,8 +40,8 @@ public class PageForms {
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
     public void transitionForms(){
-        forms.should(Condition.visible).click();
-        registrationForm.should(Condition.visible).click();
+        forms.find(Condition.text("Forms")).click();
+        registrationForm.find(Condition.text("Practice Form")).click();
     }
     @Step("Ввод имени в поле \"First Name\"")
     public void inputFirstName(String first_name) {

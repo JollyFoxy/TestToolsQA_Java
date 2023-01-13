@@ -10,9 +10,9 @@ public class TestFormsPracticeForm extends BaseTest implements IPerson {
         forms.inputFirstName(person.getName());
         forms.inputLastName(person.getLastName());
         forms.inputEmail(person.getEmail());
-        forms.inputGender();
+        forms.inputGender("Male");
         forms.inputNumber(person.getPhoneNumber());
-        forms.inputDateOfBirth();
+        forms.inputDateOfBirth("11.18.2002");
         forms.inputHobbies("Reading","Sports","");
         forms.avatarUpload();
         forms.inputAddress(person.getPermanentAddress());

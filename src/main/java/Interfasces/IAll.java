@@ -14,5 +14,5 @@ public interface IAll {
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
-    ElementTimeButton elementTimeButton =new ElementTimeButton();
+    ElementTimeButton elementTimeButton = new ElementTimeButton();
 }

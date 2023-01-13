@@ -2,7 +2,7 @@ package Tests;
 
 import org.junit.jupiter.api.Test;
 
-public class TestWidgetsDatePicker extends BaseTest{
+public class TestElementDatePicker extends BaseTest{
     @Test
     public void testWidgetsDatePicker(){
         datePicker.transitionDatePicker();

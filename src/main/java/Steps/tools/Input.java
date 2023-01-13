@@ -26,13 +26,20 @@ public class Input {
     public void sendKeysEnterInput(){
         input.sendKeys(Keys.ENTER);
     }
-    public void clickInput(){
-        input.click();
-    }
     public void uploadFileInput(File file){
         input.uploadFile(file);
     }
     public void checkTextInput(String value){
         input.should(Condition.value(value));
+    }
+    public void dateInput(String date){
+        setValueInput(date);
+        for(int i=0;i<10;i++){
+            input.sendKeys(Keys.ARROW_LEFT);
+        }
+        while (getValueInput().length()>10){
+            sendKeysBackSpaseInput();
+        }
+        sendKeysEnterInput();
     }
 }

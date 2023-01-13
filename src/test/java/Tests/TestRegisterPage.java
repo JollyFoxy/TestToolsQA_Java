@@ -3,7 +3,7 @@ package Tests;
 import Persons.IPerson;
 import org.junit.jupiter.api.Test;
 
-public class TestBookStoreApplicationRegister extends BaseTest implements IPerson{
+public class TestRegisterPage extends BaseTest implements IPerson{
     @Test
     public void testBookStoreApplicationRegister(){
         loginPage.skrollrBody();

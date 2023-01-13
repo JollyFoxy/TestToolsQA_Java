@@ -1,7 +1,6 @@
 package Interfasces;
 
-import Steps.Elements.ElementDatePicker;
-import Steps.Elements.ElementDroppable;
+import Steps.Elements.*;
 import Steps.Page.*;
 
 public interface IAll {
@@ -15,6 +14,5 @@ public interface IAll {
     ElementDatePicker datePicker = new ElementDatePicker();
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
-
-
+    ElementTimeButton elementTimeButton =new ElementTimeButton();
 }

@@ -1,17 +1,14 @@
 package Steps.Page;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
+import Steps.tools.Transition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 
 public class PageMenu {
-    private final ElementsCollection widgets = $$("div.category-cards h5");
-    private final ElementsCollection menu=$$("ul.menu-list li");
+    private final Transition transition=new Transition("Widgets","Menu");
     private final SelenideElement leftPanel = $(By.xpath("//div[@class='row']"));
     private final SelenideElement mainItem2 = $(By.xpath("//a[.='Main Item 2']"));
     private final SelenideElement subList = $(By.xpath("//a[.='SUB SUB LIST »']"));
@@ -19,10 +16,10 @@ public class PageMenu {
 
     @Step("Перейти с домашней страницы на страницу \"Menu\"")
     public void transitionMenu(){
-        widgets.find(Condition.text("Widgets")).click();
+        transition.transitionOne();
         //Иногда не открываеться в нужном разрешении, прокрутка для перестраховки
         leftPanel.scrollIntoView(false);
-        menu.find(Condition.text("Menu")).click();
+        transition.transitionTwo();
     }
     @Step("Наводка на элемент\"Main Item 2\"")
     public void hoverMainItem2(){

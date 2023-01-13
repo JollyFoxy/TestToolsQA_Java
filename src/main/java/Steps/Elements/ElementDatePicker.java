@@ -1,21 +1,16 @@
 package Steps.Elements;
 
 import Steps.tools.Input;
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
+import Steps.tools.Transition;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Selenide.$$;
-
 public class ElementDatePicker {
-    private final ElementsCollection widgets = $$("div.category-cards h5");
-    private final ElementsCollection datePicker=$$("ul.menu-list li");
+    private final Transition transition =new Transition("Widgets","Date Picker");
     private final Input dateAndTimePickerInput = new Input("dateAndTimePickerInput");
 
     @Step("Переход с домашней страницы на страницу \"Date Picker\"")
     public void transitionDatePicker(){
-        widgets.find(Condition.text("Widgets")).click();
-        datePicker.find(Condition.text("Date Picker")).click();
+        transition.transitionAll();
     }
 
     @Step("Ввод в поле \"Date And Time\"")

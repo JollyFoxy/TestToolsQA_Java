@@ -4,22 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 20">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBasePage.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 21">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Transition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementTimeButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xpath/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageTextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/css/cssElement/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/css/cssPage/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageWebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persons/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persons/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDroppable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageTextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageWebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestElementsTextBox">
+  <component name="RunManager" selected="JUnit.Tests in TestToolsQA">
     <configuration name="TestBasePage.TeatBasePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -100,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestButtons.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestElementTimeButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -109,9 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestButtons" />
-      <option name="METHOD_NAME" value="testButtons" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestElementTimeButton" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestElementsTextBox" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
+        <item itemvalue="JUnit.TestElementTimeButton" />
+        <item itemvalue="JUnit.TestElementsTextBox" />
         <item itemvalue="JUnit.TestBasePage.TeatBasePage" />
         <item itemvalue="JUnit.TestFormsPracticeForm.testFormsPracticeForm" />
-        <item itemvalue="JUnit.TestButtons.testButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673448571169</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update 21">
+      <created>1673533581463</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673533581463</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +304,8 @@
     <MESSAGE value="Update 15.1: Попытка сделать правельно" />
     <MESSAGE value="Update 16" />
     <MESSAGE value="Update 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 20" />
+    <MESSAGE value="Update 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 21" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

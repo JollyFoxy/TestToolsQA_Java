@@ -2,8 +2,7 @@ package Steps.Page;
 
 import Steps.tools.Button;
 import Steps.tools.Input;
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
+import Steps.tools.Transition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -12,12 +11,10 @@ import java.io.File;
 import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 
 public class PageForms {
     File file =new File("foxy.png");
-    private final ElementsCollection forms = $$("div.category-cards h5");
-    private final ElementsCollection registrationForm=$$("ul.menu-list li");
+    private final Transition transition=new Transition("Forms","Practice Form");
     private final Input firstName = new Input("firstName");
     private final Input lastName = new Input("lastName");
     private final Input userEmail = new Input("userEmail");
@@ -29,7 +26,6 @@ public class PageForms {
     private final SelenideElement yearSelect = $(By.xpath("//select[@class='react-datepicker__year-select']"));
     private final SelenideElement year2002 = $(By.xpath("//option[@value='2002']"));
     private final SelenideElement date_18_11_2002 = $(By.xpath("//div[@aria-label='Choose Monday, November 18th, 2002']"));
-//    private final SelenideElement hobbiesMusic = $(By.xpath("//label[.='Music']"));
     private final SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
     private final Button btnSubmit = new Button("submit");
     private final SelenideElement closeLargeModal =$(By.xpath("//button[@id='closeLargeModal']"));
@@ -40,8 +36,7 @@ public class PageForms {
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
     public void transitionForms(){
-        forms.find(Condition.text("Forms")).click();
-        registrationForm.find(Condition.text("Practice Form")).click();
+        transition.transitionAll();
     }
     @Step("Ввод имени в поле \"First Name\"")
     public void inputFirstName(String first_name) {

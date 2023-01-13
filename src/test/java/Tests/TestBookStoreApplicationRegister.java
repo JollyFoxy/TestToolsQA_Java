@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class TestBookStoreApplicationRegister extends BaseTest implements IPerson{
     @Test
     public void testBookStoreApplicationRegister(){
-        loginPage.skroleBody();
+        loginPage.skrollrBody();
         loginPage.transitionBookStoreApplication();
         registerUser.newUser();
         registerUser.inputFirstName(person.getName());

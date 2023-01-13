@@ -15,11 +15,4 @@ public class Person {
     private String email;
     private String phoneNumber;
     private int age;
-    public Person(){
-        name="";
-    }
-    public Person(String nsme){
-
-    }
 }
-

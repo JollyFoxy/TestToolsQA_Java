@@ -1,5 +1,6 @@
 package Steps.tools;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -21,4 +22,8 @@ public class Button {
     public void rightClickBtn(){
         button.contextClick();
     }
+    public void checkExistClickBtn(){
+        button.should(Condition.exist).click();
+    }
+    public String getTextBtn(){return button.getText();}
 }

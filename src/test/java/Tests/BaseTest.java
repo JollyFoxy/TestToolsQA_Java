@@ -12,7 +12,7 @@ public class BaseTest implements IAll{
     private static final String baseUrl ="https://demoqa.com/";
     @BeforeAll
     static void beforeConfig() {
-        Configuration.timeout = 4000;
+        Configuration.timeout = 6000;
         Configuration.browserSize = "1720x1080";
     }
     @BeforeEach

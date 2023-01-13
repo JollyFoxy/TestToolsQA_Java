@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 22">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBookStoreApplicationRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestRegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementDatePicker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673598754431</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update 23">
+      <created>1673606837646</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673606837647</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,7 +306,8 @@
     <MESSAGE value="Update 20" />
     <MESSAGE value="Update 21" />
     <MESSAGE value="Update 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 22" />
+    <MESSAGE value="Update 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 23" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

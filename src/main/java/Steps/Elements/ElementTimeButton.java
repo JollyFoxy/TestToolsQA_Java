@@ -23,8 +23,11 @@ public class ElementTimeButton {
         scroll.scrollTo();
         transition.transitionTwo();
     }
+
     @Step("Ожидание и нажатие кнопки")
     public void btnCheck(){
+        visibleAfterBtn.checkVisibleBtn();
+        Selenide.refresh();
         enableAfter.checkEnabledAndTimeoutClickBtn(6);
         Selenide.refresh();
         colorBtn.checkColorBtn("220, 53, 69, 1",5005);

@@ -28,10 +28,12 @@ public class Button {
         button.should(Condition.visible, Duration.ofSeconds(seconds)).click();
     }
     public void checkEnabledAndTimeoutClickBtn(int seconds){
-        button.should(Condition.enabled,Duration.ofSeconds(seconds)).click();
+        button.shouldBe(Condition.enabled,Duration.ofSeconds(seconds)).click();
     }
     public void checkColorBtn(String css_rgba,int seconds){
         button.should(Condition.cssValue("color","rgba("+css_rgba+")"),Duration.ofMillis(seconds)).click();
     }
-
+    public void checkVisibleBtn(){
+        button.should(Condition.visible).click();
+    }
 }

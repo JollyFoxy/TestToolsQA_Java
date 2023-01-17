@@ -84,6 +84,7 @@ public class PageForms {
         element.click();
         scroll.scrollTo();
         scroll.scrollIntoView(true);
+        scroll.scrollTo();
         btnSubmit.clickBtn();
     }
     @Step("Нажатие кнопки \"Close\"")

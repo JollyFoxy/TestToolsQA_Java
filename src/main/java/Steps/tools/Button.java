@@ -31,7 +31,7 @@ public class Button {
         button.shouldBe(Condition.enabled,Duration.ofSeconds(seconds)).click();
     }
     public void checkColorBtn(String css_rgba,int seconds){
-        button.should(Condition.cssValue("color","rgba("+css_rgba+")"),Duration.ofMillis(seconds)).click();
+        button.should(Condition.cssValue("color","rgba("+css_rgba+")"),Duration.ofSeconds(seconds)).click();
     }
     public void checkVisibleBtn(){
         button.should(Condition.visible).click();

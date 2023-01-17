@@ -30,7 +30,7 @@ public class ElementTimeButton {
         Selenide.refresh();
         enableAfter.checkEnabledAndTimeoutClickBtn(6);
         Selenide.refresh();
-        colorBtn.checkColorBtn("220, 53, 69, 1",5005);
+        colorBtn.checkColorBtn("220, 53, 69, 1",6);
         Selenide.refresh();
         visibleAfterBtn.checkVisibleAndTimeoutClickBtn(6);
 

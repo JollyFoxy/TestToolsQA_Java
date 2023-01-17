@@ -2,6 +2,7 @@ package Interfasces;
 
 import Steps.Elements.*;
 import Steps.Page.*;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public interface IAll {
     ElementDroppable elementDroppable =new ElementDroppable();
@@ -15,4 +16,5 @@ public interface IAll {
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
     ElementTimeButton elementTimeButton = new ElementTimeButton();
+
 }

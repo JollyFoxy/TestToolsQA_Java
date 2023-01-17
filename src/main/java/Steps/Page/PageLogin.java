@@ -13,7 +13,8 @@ public class PageLogin {
 
     @Step("Вход в пункт \"Login\"")
     public void transitionBookStoreApplication(){
-        transition.transitionAll();
+        transition.transitionOne();
+        $(By.xpath("//span[.='Login']")).click();
     }
     @Step("Прокрутка страницы")
     public void skrollrBody(){

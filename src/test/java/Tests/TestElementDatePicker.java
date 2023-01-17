@@ -1,9 +1,11 @@
 package Tests;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class TestElementDatePicker extends BaseTest{
     @Test
+    @DisplayName("Тест поля для ввода даты")
     public void testWidgetsDatePicker(){
         datePicker.transitionDatePicker();
         datePicker.inputDate("November 23 2009 16:20","November 23, 2009 4:20 PM");

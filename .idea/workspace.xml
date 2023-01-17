@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 23" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 24">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/WebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementDatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementTimeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestElementsTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestElementsTextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestFormsPracticeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestRegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestRegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestWidgetsMenu.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +62,14 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2IwddfvdJ5XUASJvcH4EsoccQkc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,24 +77,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pavel/IdeaProjects/TestToolsQA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/pavel/IdeaProjects/WebDriver",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestElementTimeButton">
+  <component name="RunManager" selected="JUnit.TestFormsPracticeForm.testFormsPracticeForm">
     <configuration name="TestElementDatePicker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -99,21 +126,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestElementTimeButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestElementTimeButton" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestFormsPracticeForm.testFormsPracticeForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -125,6 +137,22 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.TestFormsPracticeForm" />
       <option name="METHOD_NAME" value="testFormsPracticeForm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegisterPage.testBookStoreApplicationRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestRegisterPage" />
+      <option name="METHOD_NAME" value="testBookStoreApplicationRegister" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestElementTimeButton" />
-        <item itemvalue="JUnit.TestElementDatePicker" />
-        <item itemvalue="JUnit.TestElementDatePicker.testWidgetsDatePicker" />
         <item itemvalue="JUnit.TestFormsPracticeForm.testFormsPracticeForm" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
+        <item itemvalue="JUnit.TestElementDatePicker.testWidgetsDatePicker" />
+        <item itemvalue="JUnit.TestElementDatePicker" />
+        <item itemvalue="JUnit.TestRegisterPage.testBookStoreApplicationRegister" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673613296277</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update 24">
+      <created>1673613308928</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673613308928</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +344,8 @@
     <MESSAGE value="Update 21" />
     <MESSAGE value="Update 22" />
     <MESSAGE value="Update 23" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 23" />
+    <MESSAGE value="Update 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 24" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -317,5 +353,19 @@
         <PinnedItemInfo parentTag="com.codeborne.selenide.impl.SelenideElementProxy" memberName="webElementSource" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="TestToolsQA" type="b2602c69:ProjectViewProjectNode" />
+        <item name="TestToolsQA" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TestToolsQA$Tests_in_TestToolsQA.ic" NAME="Tests in TestToolsQA Coverage Results" MODIFIED="1673958971251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Tests.*</FILTER>
+    </SUITE>
   </component>
 </project>

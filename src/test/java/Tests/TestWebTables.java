@@ -1,10 +1,12 @@
 package Tests;
 
 import Persons.IPerson;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class TestWebTables extends BaseTest implements IPerson{
     @Test
+    @DisplayName("Тест заполнения таблицы")
     public void testWebTables(){
         webTables.transitionElements();
         webTables.addUser();

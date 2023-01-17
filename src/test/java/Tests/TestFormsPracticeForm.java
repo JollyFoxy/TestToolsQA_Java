@@ -1,10 +1,12 @@
 package Tests;
 
 import Persons.IPerson;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class TestFormsPracticeForm extends BaseTest implements IPerson {
     @Test
+    @DisplayName("Тест заполнения формы")
     public void testFormsPracticeForm(){
         forms.transitionForms();
         forms.inputFirstName(person.getName());

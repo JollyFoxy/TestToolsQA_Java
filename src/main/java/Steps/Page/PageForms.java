@@ -1,13 +1,13 @@
 package Steps.Page;
 
-import Steps.tools.Button;
-import Steps.tools.Input;
-import Steps.tools.Transition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import tools.Button;
+import tools.Input;
+import tools.Transition;
 
 import java.io.File;
 import java.util.Objects;
@@ -31,7 +31,6 @@ public class PageForms {
     private final Input uploadPicture = new Input("uploadPicture");
     private final SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
     private final SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
-
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
     public void transitionForms(){
@@ -57,7 +56,7 @@ public class PageForms {
     public void inputNumber(String number){
         userNumber.setValueInput(number);
     }
-    @Step("Выбор даты рождения (18/11/2002)")
+    @Step("Ввод даты рождения")
     public void inputDateOfBirth(String date) {
         dateOfBirth.dateInput(date);
     }

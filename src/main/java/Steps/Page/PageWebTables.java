@@ -1,9 +1,9 @@
 package Steps.Page;
 
-import Steps.tools.Button;
-import Steps.tools.Input;
-import Steps.tools.Transition;
 import io.qameta.allure.Step;
+import tools.Button;
+import tools.Input;
+import tools.Transition;
 
 public class PageWebTables {
     private final Transition transition =new Transition("Elements","Web Tables");

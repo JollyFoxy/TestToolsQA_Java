@@ -1,9 +1,9 @@
 package Steps.Elements;
 
-import Steps.tools.Input;
-import Steps.tools.Transition;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import tools.Input;
+import tools.Transition;
 
 import static com.codeborne.selenide.Selenide.$;
 

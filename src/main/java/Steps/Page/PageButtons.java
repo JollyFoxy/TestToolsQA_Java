@@ -1,11 +1,11 @@
 package Steps.Page;
 
-import Steps.tools.Button;
-import Steps.tools.P;
-import Steps.tools.Transition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import tools.Button;
+import tools.P;
+import tools.Transition;
 
 import static com.codeborne.selenide.Selenide.$;
 

@@ -1,8 +1,8 @@
 package Steps.Page;
 
 import Persons.Person;
-import Steps.tools.*;
 import io.qameta.allure.Step;
+import tools.*;
 
 public class PageTextBox {
     private final Transition transition = new Transition("Elements","Text Box");

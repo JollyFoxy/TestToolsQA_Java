@@ -1,10 +1,10 @@
 package Tests;
 
 import Interfasces.IAll;
-import Steps.tools.WebDriver;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import tools.WebDriver;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -14,6 +14,7 @@ public class BaseTest implements IAll{
     @BeforeAll
     static void beforeConfig() {
         Configuration.browser= WebDriver.class.getName();
+//        Configuration.browserSize="1920x1080";
     }
     @BeforeEach
     public void before() {

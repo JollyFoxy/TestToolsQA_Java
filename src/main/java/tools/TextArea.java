@@ -1,4 +1,4 @@
-package Steps.tools;
+package tools;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;

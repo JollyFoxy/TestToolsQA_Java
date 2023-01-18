@@ -18,6 +18,7 @@ public class PageButtons {
     private final P dynamicClickMessage = new P("dynamicClickMessage");
     private final P rightClickMessage = new P("rightClickMessage");
     private final P doubleClickMessage = new P("doubleClickMessage");
+
     @Step("Перезод на страницу \"Buttons\"")
     public void inputBtn(){
         transition.transitionAll();

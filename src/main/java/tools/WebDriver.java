@@ -16,10 +16,10 @@ public class WebDriver implements WebDriverProvider {
     @Override
     public org.openqa.selenium.WebDriver createDriver(@Nonnull Capabilities capabilities) {
         ChromeOptions options = new ChromeOptions();
-        WebDriverManager.chromedriver().setup();
-        options.addArguments("headless");
+
 //        options.merge(capabilities);
-        driver = new ChromeDriver(options);
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver(options.addArguments("no-sandbox", "--disable-gpu","headless"));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }

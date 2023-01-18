@@ -14,7 +14,8 @@ public class BaseTest implements IAll{
     @BeforeAll
     static void beforeConfig() {
         Configuration.browser= WebDriver.class.getName();
-//        Configuration.browserSize="1920x1080";
+//        Configuration.timeout = 6000;
+//        Configuration.browserSize = "1720x1080";
     }
     @BeforeEach
     public void before() {

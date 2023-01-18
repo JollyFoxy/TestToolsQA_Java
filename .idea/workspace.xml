@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 26">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Elements/ElementTimeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageButtons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageTextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Page/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Page/PageWebTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/P.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/TextArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Transition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/tools/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/WebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/WebDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -316,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674022811181</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update 27">
+      <created>1674032159037</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674032159037</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,7 +353,8 @@
     <MESSAGE value="Update 24" />
     <MESSAGE value="Update 25" />
     <MESSAGE value="Update 26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 26" />
+    <MESSAGE value="Update 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 27" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

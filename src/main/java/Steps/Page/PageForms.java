@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import tools.Button;
 import tools.Input;
+import tools.TextArea;
 import tools.Transition;
 
 import java.io.File;
@@ -25,7 +26,7 @@ public class PageForms {
     private final ElementsCollection hobbes = $$("#hobbiesWrapper label");
     private final Input userNumber = new Input("userNumber");
     private final Input dateOfBirth = new Input("dateOfBirthInput");
-    private final SelenideElement currentAddress = $(By.xpath("//textarea[@id='currentAddress']"));
+    private final TextArea currentAddress = new TextArea("currentAddress");
     private final Button btnSubmit = new Button("submit");
     private final Button closeLargeModal =new Button("closeLargeModal");
     private final Input uploadPicture = new Input("uploadPicture");
@@ -75,7 +76,7 @@ public class PageForms {
     }
     @Step("Ввод адреса в поле \"Address\"")
     public void inputAddress(String address ){
-        currentAddress.val(address);
+        currentAddress.setValueTextArea(address);
     }
 
     @Step("Нажатие кнопки \"Submit\"")

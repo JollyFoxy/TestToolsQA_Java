@@ -8,7 +8,6 @@ public class TestBasePage extends BaseTest{
     @DisplayName("Тест базовыой страницы")
     public void TeatBasePage(){
         pageBase.transitionElements();
-
         pageBase.checkElement("Text Box","Check Box","Radio Button",
                 "Web Tables","Buttons","Links","Broken Links - Images",
                 "Upload and Download","Dynamic Properties");

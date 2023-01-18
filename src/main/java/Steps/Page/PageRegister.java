@@ -1,8 +1,8 @@
 package Steps.Page;
 
-import io.qameta.allure.Step;
 import Steps.tools.Button;
 import Steps.tools.Input;
+import io.qameta.allure.Step;
 
 public class PageRegister {
 

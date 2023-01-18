@@ -14,7 +14,8 @@ public class PageLogin {
     @Step("Вход в пункт \"Login\"")
     public void transitionBookStoreApplication(){
         transition.transitionOne();
-        $(By.xpath("//span[.='Login']")).click();
+        $(By.xpath("//div[@class='left-pannel']")).scrollTo();
+        transition.transitionTwo();
     }
     @Step("Прокрутка страницы")
     public void skrollrBody(){

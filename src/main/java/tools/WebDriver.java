@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import javax.annotation.Nonnull;
 import java.util.concurrent.TimeUnit;
 
+import static org.openqa.selenium.remote.CapabilityType.PAGE_LOAD_STRATEGY;
+
 public class WebDriver implements WebDriverProvider {
     public org.openqa.selenium.WebDriver driver;
 
@@ -16,11 +18,13 @@ public class WebDriver implements WebDriverProvider {
     @Override
     public org.openqa.selenium.WebDriver createDriver(@Nonnull Capabilities capabilities) {
         ChromeOptions options = new ChromeOptions();
-
-//        options.merge(capabilities);
+        options.addArguments("no-sandbox");
+        options.addArguments("--disable-gpu");
+        options.addArguments("headless");
+        options.merge(capabilities);
+//        options.setCapability(PAGE_LOAD_STRATEGY, "normal");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(options.addArguments("no-sandbox", "--disable-gpu","headless"));
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver = new ChromeDriver(options);
         return driver;
     }
 }

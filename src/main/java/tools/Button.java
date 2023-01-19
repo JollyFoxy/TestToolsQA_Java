@@ -3,6 +3,7 @@ package tools;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 import java.time.Duration;
 
@@ -35,5 +36,9 @@ public class Button {
     }
     public void checkVisibleBtn(){
         button.should(Condition.visible).click();
+    }
+    public void jsClickBtn(WebDriver driver){
+        JavascriptExecutor js =(JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click();", button);
     }
 }

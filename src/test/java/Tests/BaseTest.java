@@ -5,21 +5,18 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.Capabilities;
-import tools.WebDriver;
-
-import java.util.Map;
+import tools.WebDrivers.WebDriver;
 
 import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest implements IAll{
 
-//    private static final String baseUrl ="https://demoqa.com/";
+    private static final String baseUrl ="https://demoqa.com/";
     @BeforeAll
     static void beforeConfig() {
         Configuration.browser= WebDriver.class.getName();
         Configuration.timeout = 10000;
-        open();
+        open(baseUrl);
         WebDriverRunner.getWebDriver().manage().window().maximize();
 
 //        Configuration.timeout = 6000;

@@ -1,9 +1,15 @@
 package Interfasces;
 
-import Steps.Elements.ElementDatePicker;
-import Steps.Elements.ElementDroppable;
-import Steps.Elements.ElementTimeButton;
-import Steps.Page.*;
+import Steps.Elements.Page.PageWebTables;
+import Steps.Widgets.Elements.ElementDatePicker;
+import Steps.Interactions.ElementDroppable;
+import Steps.Elements.Elements.ElementTimeButton;
+import Steps.BookStoreApplication.*;
+import Steps.Elements.Page.PageBase;
+import Steps.Elements.Page.PageButtons;
+import Steps.Elements.Page.PageTextBox;
+import Steps.Forms.PageForms;
+import Steps.Widgets.Page.PageMenu;
 
 public interface IAll {
     ElementDroppable elementDroppable =new ElementDroppable();

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class TestMenuPage extends BaseTest {
     @Test
     @Link(name = "Menu",url = "https://demoqa.com/menu")
-    @DisplayName("Тест новидения на элименты меню")
+    @DisplayName("Тест навидения на элименты меню")
     public void testWidgetsMenu(){
         menu.transitionMenu();
         menu.hoverMainItem2();

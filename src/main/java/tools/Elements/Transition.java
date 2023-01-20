@@ -24,4 +24,9 @@ public class Transition {
         pageMenu.find(Condition.text(arg1)).click();
         menuElements.find(Condition.text(arg2)).click();
     }
+    public void transitionAndScroll(String objectScrolling){
+        pageMenu.find(Condition.text(arg1)).click();
+        new Scrolling(objectScrolling).scrollToObject();
+        menuElements.find(Condition.text(arg2)).click();
+    }
 }

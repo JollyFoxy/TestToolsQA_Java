@@ -2,13 +2,9 @@ package Steps.Forms;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import tools.Elements.Button;
-import tools.Elements.Input;
-import tools.Elements.TextArea;
-import tools.Elements.Transition;
+import tools.Elements.*;
 
 import java.io.File;
 import java.util.Objects;
@@ -30,8 +26,7 @@ public class PageForms {
     private final Button btnSubmit = new Button("submit");
     private final Button closeLargeModal =new Button("closeLargeModal");
     private final Input uploadPicture = new Input("uploadPicture");
-    private final SelenideElement element = $(By.xpath("//span[@class='pr-1']"));
-    private final SelenideElement scroll = $(By.xpath("//div[@class='left-pannel']"));
+    private final Scrolling scroll = new Scrolling("div.left-pannel");
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
     public void transitionForms(){
@@ -81,10 +76,8 @@ public class PageForms {
 
     @Step("Нажатие кнопки \"Submit\"")
     public void submit(){
-        element.click();
-        scroll.scrollTo();
-        scroll.scrollIntoView(true);
-        scroll.scrollTo();
+        $(By.cssSelector("span.pr-1")).click();
+        scroll.scrollingForTact(3);
         btnSubmit.clickBtn();
     }
     @Step("Нажатие кнопки \"Close\"")

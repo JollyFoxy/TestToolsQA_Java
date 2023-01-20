@@ -14,9 +14,7 @@ public class ElementDatePicker {
 
     @Step("Переход с домашней страницы на страницу \"Date Picker\"")
     public void transitionDatePicker(){
-        transition.transitionOne();
-        $(By.xpath("//div[@class='left-pannel']")).scrollTo();
-        transition.transitionTwo();
+        transition.transitionAndScroll("div.left-pannel");
     }
 
     @Step("Ввод в поле \"Date And Time\"")

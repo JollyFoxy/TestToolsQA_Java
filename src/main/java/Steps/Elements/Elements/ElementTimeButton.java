@@ -5,6 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import tools.Elements.Button;
+import tools.Elements.Scrolling;
 import tools.Elements.Transition;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -15,13 +16,10 @@ public class ElementTimeButton {
     private final Button colorBtn = new Button("colorChange");
     private final Button visibleAfterBtn = new Button("visibleAfter");
     private final Button enableAfter = new Button("enableAfter");
-    private final SelenideElement scroll = $(By.cssSelector("div.left-pannel"));
 
     @Step("Переход на страницу\"Dynamic Properties\"")
     public void transitionDynamicProperties(){
-        transition.transitionOne();
-        scroll.scrollTo();
-        transition.transitionTwo();
+        transition.transitionAndScroll("div.left-pannel");
     }
 
     @Step("Ожидание и нажатие кнопки")

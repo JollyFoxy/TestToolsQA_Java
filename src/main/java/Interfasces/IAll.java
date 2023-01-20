@@ -23,5 +23,5 @@ public interface IAll {
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
     ElementTimeButton elementTimeButton = new ElementTimeButton();
-
+    String baseUrl ="https://demoqa.com/";
 }

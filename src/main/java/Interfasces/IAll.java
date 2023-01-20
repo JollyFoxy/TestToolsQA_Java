@@ -1,14 +1,15 @@
 package Interfasces;
 
-import Steps.Elements.Page.PageWebTables;
-import Steps.Widgets.Elements.ElementDatePicker;
-import Steps.Interactions.ElementDroppable;
+import Steps.BookStoreApplication.PageLogin;
+import Steps.BookStoreApplication.PageRegister;
 import Steps.Elements.Elements.ElementTimeButton;
-import Steps.BookStoreApplication.*;
 import Steps.Elements.Page.PageBase;
 import Steps.Elements.Page.PageButtons;
 import Steps.Elements.Page.PageTextBox;
+import Steps.Elements.Page.PageWebTables;
 import Steps.Forms.PageForms;
+import Steps.Interactions.ElementDroppable;
+import Steps.Widgets.Elements.ElementDatePicker;
 import Steps.Widgets.Page.PageMenu;
 
 public interface IAll {

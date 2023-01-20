@@ -1,14 +1,9 @@
 package Steps.Elements.Elements;
 
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import tools.Elements.Button;
-import tools.Elements.Scrolling;
 import tools.Elements.Transition;
-
-import static com.codeborne.selenide.Selenide.$;
 
 public class ElementTimeButton {
     private final Transition transition=new Transition("Elements","Dynamic Properties");

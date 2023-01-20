@@ -3,8 +3,6 @@ package tools.Elements;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import tools.WebDrivers.WebDriver;
 
 import java.time.Duration;
 

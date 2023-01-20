@@ -1,11 +1,8 @@
 package Steps.Widgets.Elements;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import tools.Elements.Input;
 import tools.Elements.Transition;
-
-import static com.codeborne.selenide.Selenide.$;
 
 public class ElementDatePicker {
     private final Transition transition =new Transition("Widgets","Date Picker");

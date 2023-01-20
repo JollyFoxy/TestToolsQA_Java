@@ -4,7 +4,6 @@ import Interfasces.IAll;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import tools.WebDrivers.WebDriver;
 
 import static com.codeborne.selenide.Selenide.open;

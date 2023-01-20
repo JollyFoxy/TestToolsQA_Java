@@ -1,18 +1,15 @@
 package Steps.Widgets.Page;
 
-import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
+import tools.Elements.A;
 import tools.Elements.Scrolling;
 import tools.Elements.Transition;
 
-import static com.codeborne.selenide.Selenide.$;
-
 public class PageMenu {
     private final Transition transition=new Transition("Widgets","Menu");
-    private final SelenideElement mainItem2 = $(By.xpath("//a[.='Main Item 2']"));
-    private final SelenideElement subList = $(By.xpath("//a[.='SUB SUB LIST »']"));
-    private final SelenideElement subItem2 = $(By.xpath("//a[.='Sub Sub Item 2']"));
+    private final A mainItem2 =new A("Main Item 2");
+    private final A subList =new A("SUB SUB LIST »");
+    private final A subItem2 = new A("Sub Sub Item 2");
 
     @Step("Перейти с домашней страницы на страницу \"Menu\"")
     public void transitionMenu(){
@@ -23,14 +20,14 @@ public class PageMenu {
     }
     @Step("Наводка на элемент\"Main Item 2\"")
     public void hoverMainItem2(){
-        mainItem2.hover();
+        mainItem2.hoverA();
     }
     @Step("Наводка на элемент\"SUB SUB LIST »\"")
     public void hoverSubList(){
-        subList.hover();
+        subList.hoverA();
     }
     @Step("Наводка на элемент\"Sub Sub Item 2\"")
     public void hoverSubItem2(){
-        subItem2.hover();
+        subItem2.hoverA();
     }
 }

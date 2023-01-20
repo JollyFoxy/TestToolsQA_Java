@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import javax.annotation.Nonnull;
-import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.remote.CapabilityType.PAGE_LOAD_STRATEGY;
 
@@ -22,7 +21,7 @@ public class WebDriver implements WebDriverProvider {
         options.addArguments("--disable-gpu");
         options.addArguments("headless");
         options.merge(capabilities);
-//        options.setCapability(PAGE_LOAD_STRATEGY, "normal");
+        options.setCapability(PAGE_LOAD_STRATEGY, "normal");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         return driver;

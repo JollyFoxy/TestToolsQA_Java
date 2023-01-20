@@ -17,12 +17,8 @@ public class WebDriver implements WebDriverProvider {
     @Override
     public org.openqa.selenium.WebDriver createDriver(@Nonnull Capabilities capabilities) {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("no-sandbox");
-        options.addArguments("--disable-gpu");
-//        options.addArguments("headless");
+        options.addArguments("headless");
         options.addArguments("start-maximized");
-        options.addArguments("disable-infobars");
-        options.addArguments("--disable-extensions");
         options.merge(capabilities);
         options.setCapability(PAGE_LOAD_STRATEGY, "normal");
         WebDriverManager.chromedriver().setup();

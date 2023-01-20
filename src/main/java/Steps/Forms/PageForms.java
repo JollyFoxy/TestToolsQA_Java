@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class PageForms {
-    File file =new File("foxy.png");
+    private final File file =new File("foxy.png");
     private final Transition transition=new Transition("Forms","Practice Form");
     private final Input firstName = new Input("firstName");
     private final Input lastName = new Input("lastName");

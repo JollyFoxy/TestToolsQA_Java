@@ -15,8 +15,6 @@ public class BaseTest implements IAll{
         Configuration.timeout = 10000;
         open(baseUrl);
         WebDriverRunner.getWebDriver().manage().window().maximize();
-//        Configuration.timeout = 6000;
-//        Configuration.browserSize = "1720x1080";
     }/*
     @BeforeEach
     public void before() {

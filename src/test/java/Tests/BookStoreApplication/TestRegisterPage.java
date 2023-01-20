@@ -20,6 +20,7 @@ public class TestRegisterPage extends BaseTest implements IPerson{
         registerUser.inputLastName(person.getLastName());
         registerUser.inputUserName(person.getUserName());
         registerUser.inputPassword("Qq-123456!");
+        registerUser.captchaClick();
         registerUser.registerNewUser();
     }
 }

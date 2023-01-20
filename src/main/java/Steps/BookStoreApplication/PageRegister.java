@@ -1,8 +1,11 @@
 package Steps.BookStoreApplication;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import tools.Elements.Button;
 import tools.Elements.Input;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class PageRegister {
 
@@ -37,5 +40,11 @@ public class PageRegister {
     @Step("нажатие кнопки \"Register\"")
     public void registerNewUser (){
         register.clickBtn();
+    }
+    @Step
+    public void captchaClick(){
+       $(By.xpath("//iframe[starts-with(@name, 'a-') and " +
+               "starts-with(@src, 'https://www.google.com/recaptcha')]")).click();
+
     }
 }

@@ -2,6 +2,7 @@ package tools.Elements;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
@@ -41,5 +42,12 @@ public class Input {
             sendKeysBackSpaseInput();
         }
         sendKeysEnterInput();
+    }
+    @Step("Загрузить файл")
+    public void addFile(String fileName) {
+        String absolutePath = new File("").getAbsolutePath();
+        String relativePath = "/src/main/resources/forUpload/";
+        File file = new File(absolutePath + relativePath + fileName);
+        input.uploadFile(file);
     }
 }

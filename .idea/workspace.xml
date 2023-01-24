@@ -6,8 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 34">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Forms/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Elements/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/BookStoreApplication/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/BookStoreApplication/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/Elements/ElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/Elements/ElementTimeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/Page/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/Page/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageTextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Elements/Page/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageWebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Forms/PageForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Home/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Home/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Interactions/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Interactions/ElementDroppable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Widgets/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Widgets/Elements/ElementDatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Widgets/Page/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Widgets/Page/PageMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Forms/TestPracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Forms/TestPracticeFormPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +97,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPracticeFormPage.testFormsPracticeForm">
+  <component name="RunManager" selected="JUnit.TestPracticeFormPage">
     <configuration name="All in TestToolsQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,18 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMenuPage.testWidgetsMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPracticeFormPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Widgets.*" />
+          <option name="PATTERN" value="Tests.Forms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Widgets" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Widgets.TestMenuPage" />
-      <option name="METHOD_NAME" value="testWidgetsMenu" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Tests.Forms" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Forms.TestPracticeFormPage" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPracticeFormPage" />
         <item itemvalue="JUnit.TestPracticeFormPage.testFormsPracticeForm" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
         <item itemvalue="JUnit.TestRegisterPage" />
         <item itemvalue="JUnit.All in TestToolsQA" />
-        <item itemvalue="JUnit.TestMenuPage.testWidgetsMenu" />
       </list>
     </recent_temporary>
   </component>

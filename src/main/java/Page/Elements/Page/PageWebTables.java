@@ -1,4 +1,4 @@
-package Steps.Elements.Page;
+package Page.Elements.Page;
 
 import io.qameta.allure.Step;
 import tools.Elements.Button;

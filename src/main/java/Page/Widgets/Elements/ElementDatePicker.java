@@ -1,4 +1,4 @@
-package Steps.Widgets.Elements;
+package Page.Widgets.Elements;
 
 import io.qameta.allure.Step;
 import tools.Elements.Input;

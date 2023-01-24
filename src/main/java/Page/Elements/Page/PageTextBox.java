@@ -1,4 +1,4 @@
-package Steps.Elements.Page;
+package Page.Elements.Page;
 
 import Persons.Person;
 import io.qameta.allure.Step;

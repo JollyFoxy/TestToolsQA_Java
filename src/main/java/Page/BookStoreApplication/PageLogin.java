@@ -1,4 +1,4 @@
-package Steps.BookStoreApplication;
+package Page.BookStoreApplication;
 
 import io.qameta.allure.Step;
 import tools.Elements.Scrolling;

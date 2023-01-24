@@ -1,4 +1,4 @@
-package Steps.Widgets.Page;
+package Page.Widgets.Page;
 
 import io.qameta.allure.Step;
 import tools.Elements.A;

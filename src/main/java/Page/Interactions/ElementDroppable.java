@@ -1,4 +1,4 @@
-package Steps.Interactions;
+package Page.Interactions;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;

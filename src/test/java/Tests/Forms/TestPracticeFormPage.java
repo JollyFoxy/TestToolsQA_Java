@@ -2,15 +2,12 @@ package Tests.Forms;
 
 import Persons.IPerson;
 import Tests.BaseTest;
-import com.codeborne.selenide.Condition;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-
-import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 

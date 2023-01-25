@@ -1,17 +1,17 @@
 package tools.Elements;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.$;
+public class A extends BaseElement {
 
-public class A {
-    private final SelenideElement a;
-    public A(String text){
-        a = $(By.xpath("//a[.='"+text+"']"));
+    public A(SelenideElement container ){
+        super(container);
     }
     public void hoverA(){
-        a.hover();
+        container.hover();
+    }
+    public void clickA(){
+        container.click();
     }
 
 }

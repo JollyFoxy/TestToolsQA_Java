@@ -5,11 +5,13 @@ import tools.Elements.A;
 import tools.Elements.Scrolling;
 import tools.Elements.Transition;
 
+import static com.codeborne.selenide.Selenide.$x;
+
 public class PageMenu {
     private final Transition transition=new Transition("Widgets","Menu");
-    private final A mainItem2 =new A("Main Item 2");
-    private final A subList =new A("SUB SUB LIST »");
-    private final A subItem2 = new A("Sub Sub Item 2");
+    private final A mainItem2 =new A($x("//a[.='Main Item 2']"));
+    private final A subList =new A($x("//a[.='SUB SUB LIST »']"));
+    private final A subItem2 = new A($x("//a[.='Sub Sub Item 2']"));
 
     @Step("Перейти с домашней страницы на страницу \"Menu\"")
     public void transitionMenu(){

@@ -2,52 +2,54 @@ package tools.Elements;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 import java.io.File;
 
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
-public class Input {
-    private final SelenideElement input;
-    public Input(String id){
-        input= $(By.cssSelector("input#"+id));
+public class Input extends BaseElement {
+    public Input(SelenideElement container) {
+        super(container);
     }
+    public Input(String id) {
+        this($x("//input[@id='" + id + "']"));
+    }
+
     public void setValueInput(String value){
-        input.setValue(value);
+//        cleanWithBackspace();
+        container.setValue(value);
     }
     public String getValueInput(){
-        return input.getValue();
+        return container.getValue();
     }
     public void sendKeysBackSpaseInput(){
-        input.sendKeys(Keys.BACK_SPACE);
+        container.sendKeys(Keys.BACK_SPACE);
     }
     public void sendKeysEnterInput(){
-        input.sendKeys(Keys.ENTER);
+        container.sendKeys(Keys.ENTER);
     }
     public void uploadFileInput(File file){
-        input.uploadFile(file);
+        container.uploadFile(file);
     }
     public void checkTextInput(String value){
-        input.should(Condition.value(value));
+        container.should(Condition.value(value));
     }
     public void dateInput(String date){
         setValueInput(date);
         for(int i=0;i<10;i++){
-            input.sendKeys(Keys.ARROW_LEFT);
+            container.sendKeys(Keys.ARROW_LEFT);
         }
         while (getValueInput().length()>10){
             sendKeysBackSpaseInput();
         }
         sendKeysEnterInput();
     }
-    @Step("Загрузить файл")
-    public void addFile(String fileName) {
-        String absolutePath = new File("").getAbsolutePath();
-        String relativePath = "/src/main/resources/forUpload/";
-        File file = new File(absolutePath + relativePath + fileName);
-        input.uploadFile(file);
+    public void clickInput(){
+        container.click();
     }
+//    public void cleanWithBackspace() {
+//        container.sendKeys(Keys.CONTROL + "a");
+//        container.sendKeys(Keys.BACK_SPACE);
+//    }
 }

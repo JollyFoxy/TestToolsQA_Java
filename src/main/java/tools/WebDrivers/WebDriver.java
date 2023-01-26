@@ -8,6 +8,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import javax.annotation.Nonnull;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.openqa.selenium.remote.CapabilityType.PAGE_LOAD_STRATEGY;
 
 public class WebDriver implements WebDriverProvider {
@@ -17,11 +21,16 @@ public class WebDriver implements WebDriverProvider {
     @Override
     public org.openqa.selenium.WebDriver createDriver(@Nonnull Capabilities capabilities) {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         options.addArguments("--lang=ru");
         options.addArguments("--start-maximized");
-        options.merge(capabilities);
+
         options.setCapability(PAGE_LOAD_STRATEGY, "normal");
+
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("download.default_directory", new File(".").getAbsolutePath() + "/data");
+        options.setExperimentalOption("prefs", prefs);
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         return driver;

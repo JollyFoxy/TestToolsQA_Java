@@ -15,13 +15,13 @@ public class TestTextBoxPage extends BaseTest implements IPerson {
     @Link(name = "Text Box", url = "https://demoqa.com/text-box")
     @DisplayName("Тест текстовых полей")
     public void testElementsTextBox() {
-        textBox.transitionTextBox();
-        textBox.inputFullName(person.getName());
-        textBox.inputEmail(person.getEmail());
-        textBox.inputCurrentAddress(person.getCurrentAddress());
-        textBox.inputPermanentAddress(person.getPermanentAddress());
-        textBox.submit();
-        textBox.checkInfo(person);
+        step1();
+        step2(person.getName());
+        step3(person.getEmail());
+        step4(person.getCurrentAddress());
+        step5(person.getPermanentAddress());
+        step6();
+        step7(person);
     }
 
     @Step("Перейти с домашней страницы на страницу \"Text Box\"")
@@ -40,22 +40,22 @@ public class TestTextBoxPage extends BaseTest implements IPerson {
     }
 
     @Step("Зполнить поле \"Current Address\"")
-    public void inputCurrentAddress(String address) {
+    public void step4(String address) {
         textBox.currentAddress.setValueTextArea(address);
     }
 
     @Step("Зполнить поле \"Permanent Address\"")
-    public void inputPermanentAddress(String address) {
+    public void step5(String address) {
         textBox.permanentAddress.setValueTextArea(address);
     }
 
     @Step("Кликнуть на  кнопку \"Submit\"")
-    public void submit() {
+    public void step6() {
         textBox.btnSubmit.clickBtn();
     }
 
     @Step("Проверка введёной информации")
-    public void checkInfo(Person person) {
+    public void step7(Person person) {
         textBox.checkName.checkTextP(person.getName());
         textBox.checkEmail.checkTextP(person.getEmail());
         textBox.checkCurrentAddress.checkTextP(person.getCurrentAddress());

@@ -15,6 +15,7 @@ public class TestRegisterPage extends BaseTest implements IPerson{
     @DisplayName("Тест регистрации")
     public void testBookStoreApplicationRegister(){
         step1();
+        step2();
         step3(person.getName());
         step4(person.getLastName());
         step5(person.getUserName());
@@ -24,7 +25,7 @@ public class TestRegisterPage extends BaseTest implements IPerson{
     }
     @Step("Вход в пункт \"Login\"")
     public void step1(){
-        loginPage.body.scrollBoolean(false);
+        loginPage.body.scrollToObject();
         loginPage.transition.transitionAndScroll("div.left-pannel");
     }
     @Step("Нажимание кнопки \"New User\"")

@@ -17,7 +17,7 @@ public class BaseTest implements IAll{
     }
     @BeforeEach
     public void before() {
-        open(baseUrl);
+        open(homePage.getBaseUrl());
         WebDriverRunner.getWebDriver().manage().window().maximize();
     }
 }

@@ -8,6 +8,7 @@ import Page.Elements.Page.PageButtons;
 import Page.Elements.Page.PageTextBox;
 import Page.Elements.Page.PageWebTables;
 import Page.Forms.PageForms;
+import Page.Home.HomePage;
 import Page.Interactions.ElementDroppable;
 import Page.Widgets.Elements.ElementDatePicker;
 import Page.Widgets.Page.PageMenu;
@@ -24,5 +25,5 @@ public interface IAll {
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
     ElementTimeButton elementTimeButton = new ElementTimeButton();
-    String baseUrl ="https://demoqa.com/";
+    HomePage homePage = new HomePage();
 }

@@ -1,13 +1,8 @@
 package Page.BookStoreApplication;
 
 import Page.BasePage;
-import com.codeborne.selenide.Selenide;
-import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import tools.Elements.Button;
 import tools.Elements.Input;
-
-import static com.codeborne.selenide.Selenide.$;
 
 public class PageRegister extends BasePage {
 

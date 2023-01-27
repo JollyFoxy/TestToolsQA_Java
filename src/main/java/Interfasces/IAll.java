@@ -15,7 +15,7 @@ import Page.Widgets.PageDatePicker;
 import Page.Widgets.PageMenu;
 
 public interface IAll {
-    PageDroppable elementDroppable =new PageDroppable();
+    PageDroppable pageDroppable =new PageDroppable();
     PageWebTables webTables= new PageWebTables();
     PageButtons pageButtons = new PageButtons();
     PageTextBox textBox = new PageTextBox();
@@ -25,7 +25,7 @@ public interface IAll {
     PageDatePicker datePicker = new PageDatePicker();
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
-    PageTimeButton elementTimeButton = new PageTimeButton();
+    PageTimeButton pageTimeButton = new PageTimeButton();
     HomePage homePage = new HomePage();
     UploadAndDownload upDownload = new UploadAndDownload();
 }

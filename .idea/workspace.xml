@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 42">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 43">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/ElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/PageTimeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Interactions/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Interactions/PageDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Widgets/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Widgets/PageDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestTimeButtonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestTimeButtonPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Interactions/PageDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Interactions/PageDroppable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestTimeButtonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestTimeButtonElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Interactions/TestDropElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Interactions/TestDropElement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Elements.*" />
+          <option name="PATTERN" value="Tests.Elements.TestTimeButtonElement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -433,7 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674805850653</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Update 43">
+      <created>1674806600895</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674806600895</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Update 43">
+      <created>1674806654674</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1674806654674</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 15.1: Попытка сделать правельно" />
     <MESSAGE value="Update 16" />
     <MESSAGE value="Update 20" />
     <MESSAGE value="Update 21" />
@@ -485,7 +498,8 @@
     <MESSAGE value="Update 40" />
     <MESSAGE value="Update 41" />
     <MESSAGE value="Update 42" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 42" />
+    <MESSAGE value="Update 43" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 43" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

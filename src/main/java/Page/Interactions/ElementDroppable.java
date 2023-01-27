@@ -1,5 +1,6 @@
 package Page.Interactions;
 
+import Page.BasePage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -9,7 +10,7 @@ import tools.Elements.Transition;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
-public class ElementDroppable {
+public class ElementDroppable extends BasePage {
     private final Transition transition=new Transition("Interactions","Droppable");
     private final SelenideElement draggableObject = $(By.cssSelector("div#draggable"));
     private final SelenideElement droppableObject = $(By.cssSelector("#droppable"));

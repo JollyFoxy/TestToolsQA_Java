@@ -1,10 +1,11 @@
-package Page.Widgets.Elements;
+package Page.Widgets;
 
+import Page.BasePage;
 import io.qameta.allure.Step;
 import tools.Elements.Input;
 import tools.Elements.Transition;
 
-public class ElementDatePicker {
+public class ElementDatePicker extends BasePage {
     private final Transition transition =new Transition("Widgets","Date Picker");
     private final Input dateAndTimePickerInput = new Input("dateAndTimePickerInput");
 

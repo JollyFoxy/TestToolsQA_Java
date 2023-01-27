@@ -1,11 +1,12 @@
-package Page.Elements.Elements;
+package Page.Elements;
 
+import Page.BasePage;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 import tools.Elements.Button;
 import tools.Elements.Transition;
 
-public class ElementTimeButton {
+public class ElementTimeButton extends BasePage {
     private final Transition transition=new Transition("Elements","Dynamic Properties");
 
     private final Button colorBtn = new Button("colorChange");

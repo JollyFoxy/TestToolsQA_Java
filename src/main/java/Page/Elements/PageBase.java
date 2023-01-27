@@ -1,5 +1,6 @@
-package Page.Elements.Page;
+package Page.Elements;
 
+import Page.BasePage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -10,7 +11,7 @@ import tools.Elements.Transition;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class PageBase {
+public class PageBase extends BasePage {
     private final Transition transition = new Transition("Elements","");
     private final ElementsCollection elementMenu = $$("ul.menu-list li");
     private final SelenideElement sk = $(By.cssSelector(".left-pannel"));

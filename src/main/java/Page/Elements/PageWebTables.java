@@ -1,11 +1,12 @@
-package Page.Elements.Page;
+package Page.Elements;
 
+import Page.BasePage;
 import io.qameta.allure.Step;
 import tools.Elements.Button;
 import tools.Elements.Input;
 import tools.Elements.Transition;
 
-public class PageWebTables {
+public class PageWebTables extends BasePage {
     public final Transition transition =new Transition("Elements","Web Tables");
     public final Button btnAdd =new Button("addNewRecordButton");
     public final Input firstName = new Input("firstName");

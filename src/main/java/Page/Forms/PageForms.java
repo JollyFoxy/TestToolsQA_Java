@@ -1,5 +1,6 @@
 package Page.Forms;
 
+import Page.BasePage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import tools.Elements.*;
@@ -9,7 +10,7 @@ import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$$;
 
-public class PageForms {
+public class PageForms extends BasePage {
     public File file = new File("foxy.png");
     public Transition transition = new Transition("Forms", "Practice Form");
     public Input firstName = new Input("firstName");

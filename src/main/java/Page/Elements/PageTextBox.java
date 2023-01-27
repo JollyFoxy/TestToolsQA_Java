@@ -1,10 +1,11 @@
-package Page.Elements.Page;
+package Page.Elements;
 
+import Page.BasePage;
 import Persons.Person;
 import io.qameta.allure.Step;
 import tools.Elements.*;
 
-public class PageTextBox {
+public class PageTextBox extends BasePage {
     public final Transition transition = new Transition("Elements","Text Box");
     public final Input fulName = new Input("userName");
     public final Input eMail = new Input("userEmail");

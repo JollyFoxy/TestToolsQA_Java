@@ -1,5 +1,6 @@
-package Page.Widgets.Page;
+package Page.Widgets;
 
+import Page.BasePage;
 import io.qameta.allure.Step;
 import tools.Elements.A;
 import tools.Elements.Scrolling;
@@ -7,7 +8,7 @@ import tools.Elements.Transition;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class PageMenu {
+public class PageMenu extends BasePage {
     private final Transition transition=new Transition("Widgets","Menu");
     private final A mainItem2 =new A($x("//a[.='Main Item 2']"));
     private final A subList =new A($x("//a[.='SUB SUB LIST »']"));

@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 40">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/UploadAndDownload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 41">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Page/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Elements/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/Elements/ElementTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/ElementTimeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/PageButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/PageTextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/Page/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/PageWebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/UploadAndDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Elements/UploadAndDownload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Forms/PageForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Home/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Home/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Interactions/ElementDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Interactions/ElementDroppable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Widgets/Elements/ElementDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Widgets/ElementDatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Widgets/Page/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Widgets/PageMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tools/WebDrivers/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/WebDrivers/WebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +82,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/pavel/IdeaProjects/TestToolsQA",
+    "last_opened_file_path": "/home/pavel/IdeaProjects/autotests-develop",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -93,7 +105,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestDownload">
+  <component name="RunManager" selected="JUnit.TestRegisterPage">
     <configuration name="TestDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -171,9 +183,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestDownload" />
         <item itemvalue="JUnit.TestRegisterPage" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
+        <item itemvalue="JUnit.TestDownload" />
         <item itemvalue="JUnit.TestPracticeFormPage.testFormsPracticeForm" />
         <item itemvalue="JUnit.TestPracticeFormPage" />
       </list>
@@ -419,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674728484725</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Update 41">
+      <created>1674742582263</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674742582263</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 14: больше cssSelector" />
     <MESSAGE value="Update 15: Попытка сделать правельно" />
     <MESSAGE value="Update 15.1: Попытка сделать правельно" />
     <MESSAGE value="Update 16" />
@@ -471,7 +489,8 @@
     <MESSAGE value="Update 38" />
     <MESSAGE value="Update 39" />
     <MESSAGE value="Update 40" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 40" />
+    <MESSAGE value="Update 41" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 41" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

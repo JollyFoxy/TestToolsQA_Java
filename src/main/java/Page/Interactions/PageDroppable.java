@@ -10,7 +10,7 @@ import tools.Elements.Transition;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
-public class ElementDroppable extends BasePage {
+public class PageDroppable extends BasePage {
     private final Transition transition=new Transition("Interactions","Droppable");
     private final SelenideElement draggableObject = $(By.cssSelector("div#draggable"));
     private final SelenideElement droppableObject = $(By.cssSelector("#droppable"));

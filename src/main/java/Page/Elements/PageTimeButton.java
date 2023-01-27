@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import tools.Elements.Button;
 import tools.Elements.Transition;
 
-public class ElementTimeButton extends BasePage {
+public class PageTimeButton extends BasePage {
     private final Transition transition=new Transition("Elements","Dynamic Properties");
 
     private final Button colorBtn = new Button("colorChange");

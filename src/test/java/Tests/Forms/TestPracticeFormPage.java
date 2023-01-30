@@ -74,7 +74,7 @@ public class TestPracticeFormPage extends BaseTest implements IPerson {
     @Step("Нажатие кнопки \"Submit\"")
     public void step11(){
         $(By.cssSelector("span.pr-1")).click();
-        forms.scroll.scrollingForTact(3);
+        forms.scroll.scrollingForTact(4);
         forms.btnSubmit.clickBtn();
     }
     @Step("Нажатие кнопки \"Close\"")

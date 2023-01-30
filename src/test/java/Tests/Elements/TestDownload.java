@@ -27,11 +27,11 @@ public class TestDownload extends BaseTest {
     @Step("Загрузка файла с сайта")
     public void step2() {
         upDownload.downloadBtn.clickA();
-        upDownload.waitDownload(new File("/home/pavel/IdeaProjects/TestToolsQA/data"));
+        upDownload.waitDownload(new File("data"));
     }
     @Step("Выгрузка файла на сайт")
     public void step3(){
-        upDownload.upload.uploadFileInput(new File("/home/pavel/IdeaProjects/TestToolsQA/data/sampleFile.jpeg"));
+        upDownload.upload.uploadFileInput(new File("data/sampleFile.jpeg"));
         upDownload.uploadedFilePath.checkTextP("C:\\fakepath\\sampleFile.jpeg");
 
         upDownload.deleteFiles();

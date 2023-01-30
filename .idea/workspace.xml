@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 43">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Interactions/PageDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/Interactions/PageDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestTimeButtonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestTimeButtonElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Interactions/TestDropElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Interactions/TestDropElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Forms/TestPracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Forms/TestPracticeFormPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +68,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "true",
     "last_opened_file_path": "/home/pavel/IdeaProjects/autotests-develop",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -93,12 +92,30 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRegisterPage">
+  <component name="RunManager" selected="JUnit.Tests in TestToolsQA">
+    <configuration name="TestBasePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="PACKAGE_NAME" value="Tests.Elements" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Elements.TestBasePage" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Elements.TestTimeButtonElement" />
+          <option name="PATTERN" value="Tests.Elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,33 +141,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPracticeFormPage.testFormsPracticeForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTextBoxPage.testElementsTextBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Steps.tools.*" />
+          <option name="PATTERN" value="Tests.Elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Forms" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Forms.TestPracticeFormPage" />
-      <option name="METHOD_NAME" value="testFormsPracticeForm" />
+      <option name="PACKAGE_NAME" value="Tests.Elements" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Elements.TestTextBoxPage" />
+      <option name="METHOD_NAME" value="testElementsTextBox" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRegisterPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.BookStoreApplication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.BookStoreApplication" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BookStoreApplication.TestRegisterPage" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,13 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.TestDownload" />
+      <item itemvalue="JUnit.TestPracticeFormPage" />
+      <item itemvalue="JUnit.TestBasePage" />
+      <item itemvalue="JUnit.Tests in TestToolsQA" />
+      <item itemvalue="JUnit.TestTextBoxPage.testElementsTextBox" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRegisterPage" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
-        <item itemvalue="JUnit.TestDownload" />
-        <item itemvalue="JUnit.TestPracticeFormPage.testFormsPracticeForm" />
         <item itemvalue="JUnit.TestPracticeFormPage" />
+        <item itemvalue="JUnit.TestDownload" />
+        <item itemvalue="JUnit.TestBasePage" />
+        <item itemvalue="JUnit.TestTextBoxPage.testElementsTextBox" />
       </list>
     </recent_temporary>
   </component>

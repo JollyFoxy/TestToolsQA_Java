@@ -1,6 +1,6 @@
-package Page.Elements;
+package Pages.Elements;
 
-import Page.BasePage;
+import Pages.BasePage;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 import tools.Elements.Button;

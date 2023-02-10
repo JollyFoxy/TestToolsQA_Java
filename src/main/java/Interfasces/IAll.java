@@ -1,18 +1,18 @@
 package Interfasces;
 
-import Page.BookStoreApplication.PageLogin;
-import Page.BookStoreApplication.PageRegister;
-import Page.Elements.PageTimeButton;
-import Page.Elements.PageBase;
-import Page.Elements.PageButtons;
-import Page.Elements.PageTextBox;
-import Page.Elements.PageWebTables;
-import Page.Elements.UploadAndDownload;
-import Page.Forms.PageForms;
-import Page.Home.HomePage;
-import Page.Interactions.PageDroppable;
-import Page.Widgets.PageDatePicker;
-import Page.Widgets.PageMenu;
+import Pages.BookStoreApplication.PageLogin;
+import Pages.BookStoreApplication.PageRegister;
+import Pages.Elements.PageTimeButton;
+import Pages.Elements.PageBase;
+import Pages.Elements.PageButtons;
+import Pages.Elements.PageTextBox;
+import Pages.Elements.PageWebTables;
+import Pages.Elements.UploadAndDownload;
+import Pages.Forms.PageForms;
+import Pages.Home.HomePage;
+import Pages.Interactions.PageDroppable;
+import Pages.Widgets.PageDatePicker;
+import Pages.Widgets.PageMenu;
 
 public interface IAll {
     PageDroppable pageDroppable =new PageDroppable();

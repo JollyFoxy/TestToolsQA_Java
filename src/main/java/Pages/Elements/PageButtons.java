@@ -1,6 +1,6 @@
-package Page.Elements;
+package Pages.Elements;
 
-import Page.BasePage;
+import Pages.BasePage;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import tools.Elements.Button;

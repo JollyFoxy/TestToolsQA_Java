@@ -1,6 +1,6 @@
-package Page.Home;
+package Pages.Home;
 
-import Page.BasePage;
+import Pages.BasePage;
 
 public class HomePage extends BasePage {
     private final String baseUrl = "https://demoqa.com/";

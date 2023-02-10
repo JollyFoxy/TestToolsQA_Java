@@ -1,4 +1,4 @@
-package Page;
+package Pages;
 
 import io.qameta.allure.Step;
 import lombok.SneakyThrows;

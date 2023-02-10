@@ -1,6 +1,6 @@
-package Page.Interactions;
+package Pages.Interactions;
 
-import Page.BasePage;
+import Pages.BasePage;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import tools.Elements.Transition;

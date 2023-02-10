@@ -1,6 +1,6 @@
-package Page.Widgets;
+package Pages.Widgets;
 
-import Page.BasePage;
+import Pages.BasePage;
 import io.qameta.allure.Step;
 import tools.Elements.Input;
 import tools.Elements.Transition;

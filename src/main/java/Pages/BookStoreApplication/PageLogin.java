@@ -1,6 +1,6 @@
-package Page.BookStoreApplication;
+package Pages.BookStoreApplication;
 
-import Page.BasePage;
+import Pages.BasePage;
 import tools.Elements.Scrolling;
 import tools.Elements.Transition;
 

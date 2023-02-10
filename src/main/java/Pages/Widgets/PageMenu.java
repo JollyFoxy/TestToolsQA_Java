@@ -1,6 +1,6 @@
-package Page.Widgets;
+package Pages.Widgets;
 
-import Page.BasePage;
+import Pages.BasePage;
 import io.qameta.allure.Step;
 import tools.Elements.A;
 import tools.Elements.Scrolling;

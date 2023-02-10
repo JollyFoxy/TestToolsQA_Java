@@ -1,6 +1,6 @@
-package Page.Forms;
+package Pages.Forms;
 
-import Page.BasePage;
+import Pages.BasePage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import tools.Elements.*;

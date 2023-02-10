@@ -1,6 +1,6 @@
-package Page.Elements;
+package Pages.Elements;
 
-import Page.BasePage;
+import Pages.BasePage;
 import com.codeborne.selenide.Selenide;
 import tools.Elements.A;
 import tools.Elements.Input;
@@ -8,7 +8,6 @@ import tools.Elements.P;
 import tools.Elements.Transition;
 
 import java.io.File;
-import java.lang.reflect.Field;
 
 import static com.codeborne.selenide.Selenide.$x;
 

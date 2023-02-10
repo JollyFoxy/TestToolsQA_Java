@@ -1,8 +1,6 @@
-package Page.Elements;
+package Pages.Elements;
 
-import Page.BasePage;
-import Persons.Person;
-import io.qameta.allure.Step;
+import Pages.BasePage;
 import tools.Elements.*;
 
 public class PageTextBox extends BasePage {

@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 45">
-      <change afterPath="$PROJECT_DIR$/jenkinsfiles/first_steps.jenkins" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkinsfiles/HelloWorld.jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BookStoreApplication/PageLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/BookStoreApplication/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BookStoreApplication/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageTextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/PageTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageTimeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageWebTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Elements/UploadAndDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/UploadAndDownload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Forms/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Home/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Home/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Interactions/PageDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Interactions/PageDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Widgets/PageDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Widgets/PageDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Page/Widgets/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Widgets/PageMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkinsfiles/first_steps.jenkins" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfiles/first_steps.jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="post_master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,6 +55,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="Jenkins.Settings">
+    <option name="username" value="Jolly_Fox" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -92,7 +81,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -111,7 +100,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests in TestToolsQA">
+  <component name="RunManager" selected="Docker.Docker Image">
     <configuration name="TestDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -122,21 +111,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Elements" />
       <option name="MAIN_CLASS_NAME" value="Tests.Elements.TestDownload" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPracticeFormPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.Forms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.Forms" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Forms.TestPracticeFormPage" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,13 +161,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="sha256:cd14cecfdb3a657ba7d05bea026e7ac8b9abafc6e5c66253ab327c7211fa6281" />
+          <option name="containerName" value="First" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
         <item itemvalue="JUnit.TestDownload" />
         <item itemvalue="JUnit.TestRegisterPage" />
-        <item itemvalue="JUnit.TestPracticeFormPage.testFormsPracticeForm" />
-        <item itemvalue="JUnit.TestPracticeFormPage" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675157527138</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update 45">
+      <created>1676018728499</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018728499</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,7 +1,7 @@
+/*
 package Tests.Elements;
 
 import Tests.BaseTest;
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
@@ -12,7 +12,7 @@ import java.io.File;
 
 @Feature("Elements")
 public class TestDownload extends BaseTest {
-//    @Test
+    @Test
     @Link(name = "Upload and Download",url="https://demoqa.com/upload-download")
     @DisplayName("Тест заугрузки и выгрузки")
     public void testDownloadUpload(){
@@ -38,3 +38,4 @@ public class TestDownload extends BaseTest {
     }
 
 }
+*/

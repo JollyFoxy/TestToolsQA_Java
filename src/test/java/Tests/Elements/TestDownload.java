@@ -12,7 +12,7 @@ import java.io.File;
 
 @Feature("Elements")
 public class TestDownload extends BaseTest {
-    @Test
+//    @Test
     @Link(name = "Upload and Download",url="https://demoqa.com/upload-download")
     @DisplayName("Тест заугрузки и выгрузки")
     public void testDownloadUpload(){

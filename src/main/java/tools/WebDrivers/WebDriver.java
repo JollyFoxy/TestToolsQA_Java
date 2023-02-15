@@ -28,7 +28,7 @@ public class WebDriver implements WebDriverProvider {
         options.setCapability(PAGE_LOAD_STRATEGY, "normal");
 
         Map<String, Object> prefs = new HashMap<>();
-        prefs.put("download.default_directory", new File(".").getAbsolutePath() + "/data");
+        prefs.put("download.default_directory", new File(".").getAbsolutePath() + "data");
         options.setExperimentalOption("prefs", prefs);
 
         WebDriverManager.chromedriver().version("110.0.5481.77").setup();

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 59" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 61">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleFile.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BookStoreApplication/TestRegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BookStoreApplication/TestRegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,20 +199,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update 6">
-      <created>1672303520196</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1672303520196</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update 7">
-      <created>1672316673763</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1672316673763</updated>
     </task>
     <task id="LOCAL-00005" summary="Update 12">
       <created>1673334568748</created>
@@ -538,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676449028028</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Update 60">
+      <created>1676450171547</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1676450171547</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Update 61">
+      <created>1676450393651</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1676450393651</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,8 +571,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 32" />
-    <MESSAGE value="Update 33" />
     <MESSAGE value="Update 34" />
     <MESSAGE value="Update 35" />
     <MESSAGE value="Update 36" />
@@ -591,7 +594,9 @@
     <MESSAGE value="Update 57" />
     <MESSAGE value="Update 58" />
     <MESSAGE value="Update 59" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 59" />
+    <MESSAGE value="Update 60" />
+    <MESSAGE value="Update 61" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 61" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

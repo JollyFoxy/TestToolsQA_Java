@@ -52,7 +52,7 @@ public class TestRegisterPage extends BaseTest implements IPerson{
     public void step7(){
         registerUser.register.clickBtn();
     }
-    @Step
+    @Step("Нажатие \"reСaptcha\"")
     public void step8(){
         registerUser.captchaClick();
     }

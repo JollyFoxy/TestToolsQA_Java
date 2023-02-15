@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 62">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/WebDrivers/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/WebDrivers/WebDriver.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 63">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,13 +196,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update 13: больше cssSelector">
-      <created>1673346197757</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1673346197757</updated>
     </task>
     <task id="LOCAL-00007" summary="Update 14: больше cssSelector">
       <created>1673354619479</created>
@@ -541,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676462298911</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Update 63">
+      <created>1676468124417</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1676468124418</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,7 +568,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 35" />
     <MESSAGE value="Update 36" />
     <MESSAGE value="Update 37" />
     <MESSAGE value="Update 38" />
@@ -594,7 +592,8 @@
     <MESSAGE value="Update 60" />
     <MESSAGE value="Update 61" />
     <MESSAGE value="Update 62" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 62" />
+    <MESSAGE value="Update 63" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 63" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

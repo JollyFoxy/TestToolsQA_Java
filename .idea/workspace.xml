@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 52">
-      <change afterPath="$PROJECT_DIR$/data/sampleFile.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jenkinsfiles/MvnInstal.jenkins" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfiles/MvnInstal.jenkins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 53">
+      <change afterPath="$PROJECT_DIR$/sampleFile.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sampleFile.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -508,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676384434380</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Update 53">
+      <created>1676441621395</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1676441621395</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +541,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 25" />
     <MESSAGE value="Update 26" />
     <MESSAGE value="Update 27" />
     <MESSAGE value="Update 28" />
@@ -561,7 +565,8 @@
     <MESSAGE value="Update 48" />
     <MESSAGE value="Update 51" />
     <MESSAGE value="Update 52" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 52" />
+    <MESSAGE value="Update 53" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 53" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

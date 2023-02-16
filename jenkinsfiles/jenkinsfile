@@ -3,7 +3,8 @@ pipeline {
         docker{
             image 'maven'
         }
-    }  stages {
+    }
+    stages {
     stage('Stage 1') {
       steps {
          sh "mvn test"

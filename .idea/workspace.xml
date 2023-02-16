@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 64">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 65">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkinsfiles/MvnInstal.jenkins" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfiles/MvnInstal.jenkins" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,13 +198,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Update 15: Попытка сделать правельно">
-      <created>1673359994053</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1673359994053</updated>
     </task>
     <task id="LOCAL-00009" summary="Update 15.1: Попытка сделать правельно">
       <created>1673361833234</created>
@@ -540,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676468434054</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Update 65">
+      <created>1676527734371</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1676527734372</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 37" />
     <MESSAGE value="Update 38" />
     <MESSAGE value="Update 39" />
     <MESSAGE value="Update 40" />
@@ -593,7 +594,8 @@
     <MESSAGE value="Update 62" />
     <MESSAGE value="Update 63" />
     <MESSAGE value="Update 64" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 64" />
+    <MESSAGE value="Update 65" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 65" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

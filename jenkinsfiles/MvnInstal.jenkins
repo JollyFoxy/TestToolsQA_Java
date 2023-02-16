@@ -1,6 +1,9 @@
 pipeline {
-  agent any
-  stages {
+    agent {
+        docker{
+            image 'maven'
+        }
+    }  stages {
     stage('Stage 1') {
       steps {
          sh "mvn test"

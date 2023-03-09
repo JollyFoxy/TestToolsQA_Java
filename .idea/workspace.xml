@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 81">
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 82">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/TestConf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkinsfiles/jenkinsfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfasces/IAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Elements/UploadAndDownload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Elements/TestDownload.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +91,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -104,7 +112,15 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="JUnit.All in TestToolsQA">
+    <configuration name="All in TestToolsQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
@@ -115,21 +131,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Elements" />
       <option name="MAIN_CLASS_NAME" value="Tests.Elements.TestDownload" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRegisterPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.BookStoreApplication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.BookStoreApplication" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BookStoreApplication.TestRegisterPage" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,10 +181,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in TestToolsQA" />
+        <item itemvalue="JUnit.TestDownload" />
         <item itemvalue="JUnit.Tests in TestToolsQA" />
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="JUnit.TestDownload" />
-        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
@@ -196,13 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Update 33">
-      <created>1674206445734</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1674206445734</updated>
     </task>
     <task id="LOCAL-00026" summary="Update 34">
       <created>1674220223059</created>
@@ -540,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676642348579</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Update 82">
+      <created>1677661556415</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1677661556416</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +569,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 56" />
     <MESSAGE value="Update 57" />
     <MESSAGE value="Update 58" />
     <MESSAGE value="Update 59" />
@@ -593,7 +593,8 @@
     <MESSAGE value="Update 79" />
     <MESSAGE value="Update 80" />
     <MESSAGE value="Update 81" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 81" />
+    <MESSAGE value="Update 82" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 82" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

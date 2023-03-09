@@ -3,19 +3,24 @@ package Tests;
 import Interfasces.IAll;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
+import lombok.SneakyThrows;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import tools.TestConf;
 import tools.WebDrivers.WebDriver;
 
 import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest implements IAll{
+
+    protected static TestConf testConfig = ConfigFactory.create(TestConf.class);
     @BeforeAll
     static void beforeConfig() {
         //Url удалённого веб драйвера
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.remote = testConfig.remoteURL();
         //Определяем какой браузер будем использовать
         Configuration.browser = "chrome"/*WebDriver.class.getName()*/;
         //Размер окна браузера
@@ -32,7 +37,7 @@ public class BaseTest implements IAll{
     }
     @BeforeEach
     public void before() {
-        open(homePage.getBaseUrl());
+        open(testConfig.baseURL());
         WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1920,1080));
     }
 }

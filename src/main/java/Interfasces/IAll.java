@@ -7,7 +7,6 @@ import Pages.Elements.PageBase;
 import Pages.Elements.PageButtons;
 import Pages.Elements.PageTextBox;
 import Pages.Elements.PageWebTables;
-import Pages.Elements.UploadAndDownload;
 import Pages.Forms.PageForms;
 import Pages.Home.HomePage;
 import Pages.Interactions.PageDroppable;
@@ -27,5 +26,4 @@ public interface IAll {
     PageBase pageBase = new PageBase();
     PageTimeButton pageTimeButton = new PageTimeButton();
     HomePage homePage = new HomePage();
-    UploadAndDownload upDownload = new UploadAndDownload();
 }

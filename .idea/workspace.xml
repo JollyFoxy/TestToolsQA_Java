@@ -4,41 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 83">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/FirstTestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/CreatedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/DateDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/NewUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/FirstTest.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 85: Api база">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BookStoreApplication/PageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BookStoreApplication/PageLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BookStoreApplication/PageRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BookStoreApplication/PageRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageTextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageTextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageTimeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageTimeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageWebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Elements/PageWebTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Forms/PageForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Forms/PageForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Interactions/PageDroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Interactions/PageDroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Widgets/PageDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Widgets/PageDatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Widgets/PageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Widgets/PageMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/BaseElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/BaseElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Div.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Li.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Li.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/P.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Scrolling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Scrolling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Span.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Span.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/TextArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Elements/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Elements/Transition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/TestConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/TestConf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/WebDrivers/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/WebDrivers/WebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persons/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persons/IPerson.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +105,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest">
+  <component name="RunManager" selected="JUnit.TestPracticeFormPage">
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
@@ -204,16 +173,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPracticeFormPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Elements.TestTimeButtonElement" />
+          <option name="PATTERN" value="Tests.Forms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Elements" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Elements.TestDownload" />
+      <option name="PACKAGE_NAME" value="Tests.Forms" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Forms.TestPracticeFormPage" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPracticeFormPage" />
         <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.FirstTest.testGet" />
         <item itemvalue="JUnit.FirstTest.testPost" />
         <item itemvalue="JUnit.All in TestToolsQA" />
-        <item itemvalue="JUnit.TestDownload" />
       </list>
     </recent_temporary>
   </component>
@@ -237,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Update 35">
-      <created>1674557381043</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1674557381043</updated>
     </task>
     <task id="LOCAL-00028" summary="Update 36">
       <created>1674639188740</created>
@@ -581,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678360333050</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Update 85: Api база">
+      <created>1678449112136</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1678449112137</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -609,7 +578,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 58" />
     <MESSAGE value="Update 59" />
     <MESSAGE value="Update 60" />
     <MESSAGE value="Update 61" />
@@ -634,7 +602,8 @@
     <MESSAGE value="Update 81" />
     <MESSAGE value="Update 82" />
     <MESSAGE value="Update 83" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 83" />
+    <MESSAGE value="Update 85: Api база" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 85: Api база" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

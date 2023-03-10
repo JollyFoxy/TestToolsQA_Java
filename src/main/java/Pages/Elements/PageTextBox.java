@@ -1,7 +1,7 @@
 package Pages.Elements;
 
 import Pages.BasePage;
-import tools.Elements.*;
+import Utils.Elements.*;
 
 public class PageTextBox extends BasePage {
     public final Transition transition = new Transition("Elements","Text Box");

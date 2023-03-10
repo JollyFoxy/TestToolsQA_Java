@@ -2,9 +2,9 @@ package Pages.Widgets;
 
 import Pages.BasePage;
 import io.qameta.allure.Step;
-import tools.Elements.A;
-import tools.Elements.Scrolling;
-import tools.Elements.Transition;
+import Utils.Elements.A;
+import Utils.Elements.Scrolling;
+import Utils.Elements.Transition;
 
 import static com.codeborne.selenide.Selenide.$x;
 

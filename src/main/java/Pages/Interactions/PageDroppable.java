@@ -3,7 +3,7 @@ package Pages.Interactions;
 import Pages.BasePage;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import tools.Elements.Transition;
+import Utils.Elements.Transition;
 
 import static com.codeborne.selenide.Selenide.$;
 

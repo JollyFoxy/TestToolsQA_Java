@@ -1,9 +1,9 @@
 package Pages.Elements;
 
 import Pages.BasePage;
-import tools.Elements.Button;
-import tools.Elements.Input;
-import tools.Elements.Transition;
+import Utils.Elements.Button;
+import Utils.Elements.Input;
+import Utils.Elements.Transition;
 
 public class PageWebTables extends BasePage {
     public final Transition transition =new Transition("Elements","Web Tables");

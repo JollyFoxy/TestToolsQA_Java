@@ -3,8 +3,8 @@ package Pages.Elements;
 import Pages.BasePage;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
-import tools.Elements.Button;
-import tools.Elements.Transition;
+import Utils.Elements.Button;
+import Utils.Elements.Transition;
 
 public class PageTimeButton extends BasePage {
     private final Transition transition=new Transition("Elements","Dynamic Properties");

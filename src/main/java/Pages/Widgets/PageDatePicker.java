@@ -2,8 +2,8 @@ package Pages.Widgets;
 
 import Pages.BasePage;
 import io.qameta.allure.Step;
-import tools.Elements.Input;
-import tools.Elements.Transition;
+import Utils.Elements.Input;
+import Utils.Elements.Transition;
 
 public class PageDatePicker extends BasePage {
     private final Transition transition =new Transition("Widgets","Date Picker");

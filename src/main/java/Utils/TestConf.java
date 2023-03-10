@@ -1,4 +1,4 @@
-package tools;
+package Utils;
 
 import org.aeonbits.owner.Config;
 import static org.aeonbits.owner.Config.LoadPolicy;

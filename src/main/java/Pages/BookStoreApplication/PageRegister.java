@@ -1,8 +1,8 @@
 package Pages.BookStoreApplication;
 
 import Pages.BasePage;
-import tools.Elements.Button;
-import tools.Elements.Input;
+import Utils.Elements.Button;
+import Utils.Elements.Input;
 
 public class PageRegister extends BasePage {
 

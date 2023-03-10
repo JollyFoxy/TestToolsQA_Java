@@ -1,8 +1,8 @@
 package Pages.BookStoreApplication;
 
 import Pages.BasePage;
-import tools.Elements.Scrolling;
-import tools.Elements.Transition;
+import Utils.Elements.Scrolling;
+import Utils.Elements.Transition;
 
 public class PageLogin extends BasePage {
     public final Scrolling body = new Scrolling("div.home-body");

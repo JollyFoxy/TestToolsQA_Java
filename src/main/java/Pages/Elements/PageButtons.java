@@ -3,9 +3,9 @@ package Pages.Elements;
 import Pages.BasePage;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import tools.Elements.Button;
-import tools.Elements.P;
-import tools.Elements.Transition;
+import Utils.Elements.Button;
+import Utils.Elements.P;
+import Utils.Elements.Transition;
 
 import static com.codeborne.selenide.Selenide.$;
 

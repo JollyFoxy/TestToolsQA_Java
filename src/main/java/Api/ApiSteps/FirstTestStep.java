@@ -1,6 +1,6 @@
 package Api.ApiSteps;
 
-import Api.User;
+import Api.ApiSteps.Users.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
@@ -19,10 +19,12 @@ public class FirstTestStep {
         return REQ_SPEC;
     }
 
+
     public static List<User> getUsers(String url){
         return given().spec(REQ_SPEC)
                 .get(url)
-                .jsonPath().getList("data", User.class);
+                .jsonPath()
+                .getList("data", User.class);
     }
 
 

@@ -25,35 +25,44 @@ public class UG {
             return lastName[in];
         }
 
-    public static String genStreet(){
-        String[] street ={"33 Carpenter Street","8798 Magnolia Road",
-                "15 North Del Monte St", "9280 Wild Horse Lane",
-                "973 N. School Dr", "35 Alderwood Dr"};
-        int in = (int) (Math.random() * street.length);
-        return street[in];
-    }
+        public static String genStreet(){
+            String[] street = {"33 Carpenter Street","8798 Magnolia Road",
+                    "15 North Del Monte St", "9280 Wild Horse Lane",
+                    "973 N. School Dr", "35 Alderwood Dr"};
+            int in = (int) (Math.random() * street.length);
+            return street[in];
+        }
 
-    public static String genUserName(){
-        return new StringBuilder(genName().toLowerCase()).reverse().toString();
-    }
+        public static String genUserName(){
+            return new StringBuilder(genName().toLowerCase()).reverse().toString();
+        }
 
-    public static int ageGen(){
-        return (int) (Math.random()*130);
-    }
+        public static int genAge(){
+            return (int) (Math.random()*130);
+        }
 
-    public static UUID idGen(){
-        return UUID.randomUUID();
-    }
+        public static UUID genId(){
+            return UUID.randomUUID();
+        }
 
-    public static String phoneGen(){
-        String num1 = Integer.toString(100+(int) (Math.random()*899));
-        String num2 = Integer.toString(100+(int) (Math.random()*899));
-        String num3 = Integer.toString(100+(int) (Math.random()*8999));
 
-        return ("8"+num1+num2+num3);
-    }
+        public static String genPhone(){
+            String num1 = Integer.toString(100+(int) (Math.random()*899));
+            String num2 = Integer.toString(100+(int) (Math.random()*899));
+            String num3 = Integer.toString(100+(int) (Math.random()*8999));
 
-    public static String emailGen(){
-        return genName().toLowerCase()+genLastName().toLowerCase()+"@mail.ru";
-    }
+            return ("8"+num1+num2+num3);
+        }
+
+        public static String genEmail(){
+            return genName().toLowerCase()+genLastName().toLowerCase()+"@mail.ru";
+        }
+
+        public static String genJob(){
+            String[] job = {"Recreation & Fitness Worker","Civil Engineer","College Professor",
+                    "Actuary", "Economist","Fitness Trainer","Construction Manager",
+                    "Computer Hardware Engineer", "Food Scientist","Systems Analyst"};
+            int in = (int) (Math.random() * job.length);
+            return job[in];
+        }
 }

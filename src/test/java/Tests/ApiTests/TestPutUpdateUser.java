@@ -1,8 +1,8 @@
 package Tests.ApiTests;
 
-import Api.ApiSteps.FirstTestStep;
-import Api.ApiSteps.Users.CreatedUser;
-import Api.ApiSteps.Users.User;
+import Api.BaseConfRequest;
+import Api.Users.CreatedUser;
+import Api.Users.User;
 import UserGenerator.UG;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +17,7 @@ public class TestPutUpdateUser {
                 .job(UG.genJob())
                 .build();
         CreatedUser updateUser =given()
-                .spec(FirstTestStep.getReqSpec())
+                .spec(BaseConfRequest.getReqSpec())
                 .body(newUser)
                 .when().put("/users/2")
                 .then().statusCode(200)

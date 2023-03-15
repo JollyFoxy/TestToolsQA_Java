@@ -1,7 +1,7 @@
 package Tests.ApiTests;
 
-import Api.ApiSteps.FirstTestStep;
-import Api.ApiSteps.Users.User;
+import Api.ApiSteps.StepsGetUserList;
+import Api.Users.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class TestGetUsersList {
 
     @Test
     public void testGet(){
-        List<User> users  = FirstTestStep.getUsers("/users?page=2");
+        List<User> users  = StepsGetUserList.getUsers("/users?page=2");
         assertThat(users)
                 .isNotNull().extracting(User::getEmail)
                 .contains("tobias.funke@reqres.in");

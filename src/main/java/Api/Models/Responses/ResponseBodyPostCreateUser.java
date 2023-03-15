@@ -1,25 +1,23 @@
-package Api.ApiSteps.Users;
+package Api.Models.Responses;
 
 import Api.DateDeserializer;
+import Api.Models.Requests.RequestBodyPostCreateUser;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Data
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class CreatedUser {
-    private String name;
-    private String job;
-    private int id;
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResponseBodyPostCreateUser extends RequestBodyPostCreateUser {
+    @JsonProperty("id")
+    private String id;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSZ")
     @JsonDeserialize(using = DateDeserializer.class)
     private LocalDateTime createdAt;
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSZ")
-    @JsonDeserialize(using = DateDeserializer.class)
-    private LocalDateTime updatedAt;
 }

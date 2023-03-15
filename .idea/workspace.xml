@@ -4,20 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 86: Наворочал генираторов">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 87: Что творю сам не знаю">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsDeleteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetSingleUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetUserList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPostCreatedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/BaseConfRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/ResponseGetSingleUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Support.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseBodyPostCreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetSingleUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/FirstTestStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/FirstTestStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/CreatedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/Users/CreatedUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/NewUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persons/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persons/IPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/FirstTestStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/Users/CreatedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Users/CreatedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/BaseApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/FirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +124,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestGetUsersList">
+  <component name="RunManager" selected="JUnit.TestGetSingleUser.testSingleUser">
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
@@ -128,7 +137,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="TestGetUsersList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetSingleUser.testSingleUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -137,29 +146,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetUsersList" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestGetUsersList.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.ApiTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetUsersList" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetSingleUser" />
+      <option name="METHOD_NAME" value="testSingleUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetUsersList.testPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetUsersList.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -169,13 +163,44 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
       <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetUsersList" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPostCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.ApiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.ApiTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPostCreateUser" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPostCreateUser.testPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.ApiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.ApiTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPostCreateUser" />
       <option name="METHOD_NAME" value="testPost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetUsersList.testPut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.ApiTests in TestToolsQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -184,35 +209,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetUsersList" />
-      <option name="METHOD_NAME" value="testPut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPracticeFormPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.Forms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.Forms" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Forms.TestPracticeFormPage" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGetUsersList" />
-        <item itemvalue="JUnit.TestGetUsersList.testDelete" />
-        <item itemvalue="JUnit.TestGetUsersList.testPut" />
-        <item itemvalue="JUnit.TestGetUsersList.testPost" />
-        <item itemvalue="JUnit.TestPracticeFormPage" />
+        <item itemvalue="JUnit.TestGetSingleUser.testSingleUser" />
+        <item itemvalue="JUnit.Tests.ApiTests in TestToolsQA" />
+        <item itemvalue="JUnit.TestPostCreateUser" />
+        <item itemvalue="JUnit.TestPostCreateUser.testPost" />
+        <item itemvalue="JUnit.TestGetUsersList.testGet" />
       </list>
     </recent_temporary>
   </component>
@@ -224,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Update 37">
-      <created>1674649098146</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1674649098146</updated>
     </task>
     <task id="LOCAL-00030" summary="Update 38">
       <created>1674651631309</created>
@@ -568,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678456869718</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Update 87: Что творю сам не знаю">
+      <created>1678799588628</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1678799588629</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 60" />
     <MESSAGE value="Update 61" />
     <MESSAGE value="Update 62" />
     <MESSAGE value="Update 63" />
@@ -621,7 +628,8 @@
     <MESSAGE value="Update 83" />
     <MESSAGE value="Update 85: Api база" />
     <MESSAGE value="Update 86: Наворочал генираторов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 86: Наворочал генираторов" />
+    <MESSAGE value="Update 87: Что творю сам не знаю" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 87: Что творю сам не знаю" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -629,6 +637,11 @@
         <PinnedItemInfo parentTag="com.codeborne.selenide.impl.SelenideElementProxy" memberName="webElementSource" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="createdUser.name" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

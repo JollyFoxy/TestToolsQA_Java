@@ -1,4 +1,4 @@
-package Api.ApiSteps.Users;
+package Api.Users;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

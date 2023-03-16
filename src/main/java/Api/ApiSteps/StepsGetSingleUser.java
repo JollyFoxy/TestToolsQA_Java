@@ -9,9 +9,10 @@ import static io.restassured.RestAssured.given;
 public class StepsGetSingleUser {
     @Step
     public void getSingleUser(){
-        given()
+        ResponseGetSingleUser response = given()
                 .spec(BaseConfRequest.getReqSpec())
                 .when().get()
-                .then().extract().as(ResponseGetSingleUser.class);
+                .then().extract().body()
+                .as(ResponseGetSingleUser.class);
     }
 }

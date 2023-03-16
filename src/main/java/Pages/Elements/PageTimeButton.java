@@ -1,10 +1,10 @@
 package Pages.Elements;
 
 import Pages.BasePage;
-import com.codeborne.selenide.Selenide;
-import io.qameta.allure.Step;
 import Utils.Elements.Button;
 import Utils.Elements.Transition;
+import com.codeborne.selenide.Selenide;
+import io.qameta.allure.Step;
 
 public class PageTimeButton extends BasePage {
     private final Transition transition=new Transition("Elements","Dynamic Properties");

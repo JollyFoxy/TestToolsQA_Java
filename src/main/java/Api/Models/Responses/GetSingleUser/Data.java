@@ -1,7 +1,15 @@
 package Api.Models.Responses.GetSingleUser;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Data{
 	@JsonProperty("last_name")
 	private String lastName;
@@ -10,24 +18,4 @@ public class Data{
 	@JsonProperty("first_name")
 	private String firstName;
 	private String email;
-
-	public String getLastName(){
-		return lastName;
-	}
-
-	public int getId(){
-		return id;
-	}
-
-	public String getAvatar(){
-		return avatar;
-	}
-
-	public String getFirstName(){
-		return firstName;
-	}
-
-	public String getEmail(){
-		return email;
-	}
 }

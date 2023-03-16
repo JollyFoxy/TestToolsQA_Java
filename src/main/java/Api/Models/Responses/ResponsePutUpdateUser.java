@@ -1,9 +1,7 @@
 package Api.Models.Responses;
 
 import Api.DateDeserializer;
-import Api.Models.Requests.RequestBodyPostCreateUser;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,10 +14,11 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseBodyPostCreateUser extends RequestBodyPostCreateUser {
-    @JsonProperty("id")
-    private String id;
+public class ResponsePutUpdateUser{
+    private String name;
+    private String job;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSZ")
     @JsonDeserialize(using = DateDeserializer.class)
-    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+
 }

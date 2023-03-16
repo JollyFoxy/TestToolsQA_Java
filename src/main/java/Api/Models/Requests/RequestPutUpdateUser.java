@@ -6,10 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RequestBodyPostCreateUser {
+@Builder
+public class RequestPutUpdateUser {
     private String name;
     private String job;
 }

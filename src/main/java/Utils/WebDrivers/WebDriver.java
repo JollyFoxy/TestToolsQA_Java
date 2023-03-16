@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import javax.annotation.Nonnull;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;

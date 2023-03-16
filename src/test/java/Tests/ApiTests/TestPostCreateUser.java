@@ -1,6 +1,5 @@
 package Tests.ApiTests;
 
-import UserGenerator.UG;
 import org.junit.jupiter.api.Test;
 
 public class TestPostCreateUser extends BaseApiTest {

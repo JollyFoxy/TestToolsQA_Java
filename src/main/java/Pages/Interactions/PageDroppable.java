@@ -1,9 +1,9 @@
 package Pages.Interactions;
 
 import Pages.BasePage;
+import Utils.Elements.Transition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import Utils.Elements.Transition;
 
 import static com.codeborne.selenide.Selenide.$;
 

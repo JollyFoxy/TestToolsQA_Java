@@ -2,11 +2,7 @@ package Interfasces;
 
 import Pages.BookStoreApplication.PageLogin;
 import Pages.BookStoreApplication.PageRegister;
-import Pages.Elements.PageTimeButton;
-import Pages.Elements.PageBase;
-import Pages.Elements.PageButtons;
-import Pages.Elements.PageTextBox;
-import Pages.Elements.PageWebTables;
+import Pages.Elements.*;
 import Pages.Forms.PageForms;
 import Pages.Home.HomePage;
 import Pages.Interactions.PageDroppable;

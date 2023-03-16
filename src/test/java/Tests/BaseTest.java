@@ -1,6 +1,7 @@
 package Tests;
 
 import Interfasces.IAll;
+import Utils.TestConf;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.aeonbits.owner.ConfigFactory;
@@ -8,7 +9,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import Utils.TestConf;
 
 import static com.codeborne.selenide.Selenide.open;
 

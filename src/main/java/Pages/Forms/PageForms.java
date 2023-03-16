@@ -1,9 +1,9 @@
 package Pages.Forms;
 
 import Pages.BasePage;
+import Utils.Elements.*;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
-import Utils.Elements.*;
 
 import java.io.File;
 import java.util.Objects;

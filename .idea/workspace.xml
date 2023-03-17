@@ -4,17 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 88: Постепенно приходит понимание">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPostUpdateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestPutUpdateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponsePutUpdateUser.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 88: Я обезательно разберусь">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsNotFoundUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPatchUpdateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseGetUsersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUserNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPatchUpdateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetSingleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetSingleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetUserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPostUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPutUpdateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestPutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestUpdateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/ResponseGetSingleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/ResponseGetSingleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Support.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Support.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponsePutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseUpdateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Users/CreatedUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Users/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetSingleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetSingleUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +124,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPutUpdateUser">
+  <component name="RunManager" selected="JUnit.Tests.ApiTests in TestToolsQA">
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
@@ -125,14 +136,6 @@
         <settings />
       </deployment>
       <method v="2" />
-    </configuration>
-    <configuration name="All in TestToolsQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="TestGetSingleUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
@@ -149,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetSingleUser.testSingleUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetUserNotFound.testNotFoundUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -158,9 +161,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetSingleUser" />
-      <option name="METHOD_NAME" value="testSingleUser" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetUserNotFound" />
+      <option name="METHOD_NAME" value="testNotFoundUser" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPatchUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.ApiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.ApiTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPatchUpdateUser" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -196,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestPutUpdateUser" />
         <item itemvalue="JUnit.Tests.ApiTests in TestToolsQA" />
+        <item itemvalue="JUnit.TestPatchUpdateUser" />
+        <item itemvalue="JUnit.TestPutUpdateUser" />
+        <item itemvalue="JUnit.TestGetUserNotFound.testNotFoundUser" />
         <item itemvalue="JUnit.TestGetSingleUser" />
-        <item itemvalue="JUnit.All in TestToolsQA" />
-        <item itemvalue="JUnit.TestGetSingleUser.testSingleUser" />
       </list>
     </recent_temporary>
   </component>
@@ -212,13 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Update 38">
-      <created>1674719969452</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1674719969452</updated>
     </task>
     <task id="LOCAL-00032" summary="Update 39">
       <created>1674720160437</created>
@@ -556,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678886934457</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Update 88: Я обезательно разберусь">
+      <created>1678965283799</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1678965283800</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 62" />
     <MESSAGE value="Update 63" />
     <MESSAGE value="Update 64" />
     <MESSAGE value="Update 65" />
@@ -609,7 +626,8 @@
     <MESSAGE value="Update 86: Наворочал генираторов" />
     <MESSAGE value="Update 87: Что творю сам не знаю" />
     <MESSAGE value="Update 88: Постепенно приходит понимание" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 88: Постепенно приходит понимание" />
+    <MESSAGE value="Update 88: Я обезательно разберусь" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 88: Я обезательно разберусь" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

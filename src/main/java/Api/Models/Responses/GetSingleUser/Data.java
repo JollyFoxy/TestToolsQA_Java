@@ -11,11 +11,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Data{
-	@JsonProperty("last_name")
-	private String lastName;
 	private int id;
-	private String avatar;
+	private String email;
 	@JsonProperty("first_name")
 	private String firstName;
-	private String email;
+	@JsonProperty("last_name")
+	private String lastName;
+	private String avatar;
 }

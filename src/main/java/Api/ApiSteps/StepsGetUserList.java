@@ -1,7 +1,7 @@
 package Api.ApiSteps;
 
 import Api.BaseConfRequest;
-import Api.Users.User;
+import Api.Models.Responses.ResponseGetUsersList;
 import io.qameta.allure.Step;
 
 import java.util.List;
@@ -9,10 +9,10 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 public class StepsGetUserList {
     @Step
-    public static List<User> getUsers(String endPoint){
+    public static List<ResponseGetUsersList> getUsers(String endPoint){
         return given().spec(BaseConfRequest.getReqSpec())
                 .get(endPoint)
                 .jsonPath()
-                .getList("data", User.class);
+                .getList("data", ResponseGetUsersList.class);
     }
 }

@@ -1,21 +1,24 @@
 package Tests.ApiTests;
 
 import Api.ApiSteps.StepsGetUserList;
-import Api.Users.User;
+import Api.Models.Responses.ResponseGetUsersList;
+import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+@Feature("Api Tests")
 public class TestGetUsersList {
 
     @Test
+    @DisplayName("Получение списка пользователей")
     public void testGet(){
-        List<User> users  = StepsGetUserList.getUsers("/users?page=2");
+        List<ResponseGetUsersList> users  = StepsGetUserList.getUsers("/users?page=2");
         assertThat(users)
-                .isNotNull().extracting(User::getEmail)
+                .isNotNull().extracting(ResponseGetUsersList::getEmail)
                 .contains("tobias.funke@reqres.in");
     }
 }

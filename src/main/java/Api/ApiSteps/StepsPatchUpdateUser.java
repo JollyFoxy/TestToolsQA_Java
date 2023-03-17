@@ -1,23 +1,20 @@
 package Api.ApiSteps;
 
 import Api.BaseConfRequest;
-import Api.Models.Requests.RequestPutUpdateUser;
-import Api.Models.Responses.ResponsePutUpdateUser;
+import Api.Models.Requests.RequestUpdateUser;
+import Api.Models.Responses.ResponseUpdateUser;
 import io.qameta.allure.Step;
 
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
-
-public class StepsPostUpdateUser {
-
-    private ResponsePutUpdateUser updateUser;
-    private RequestPutUpdateUser user;
+public class StepsPatchUpdateUser {
+    private ResponseUpdateUser updateUser;
+    private RequestUpdateUser user;
 
     @Step
     public void confUser(String name, String job){
-        user = RequestPutUpdateUser.builder()
+        user = RequestUpdateUser.builder()
                 .name(name)
                 .job(job)
                 .build();
@@ -29,13 +26,13 @@ public class StepsPostUpdateUser {
                 .body(user)
                 .when().put(endPoint)
                 .then().statusCode(200)
-                .extract().as(ResponsePutUpdateUser.class);
+                .extract().as(ResponseUpdateUser.class);
     }
     @Step
     public void checkUpdate(){
         assertThat(updateUser)
                 .isNotNull()
-                .extracting(ResponsePutUpdateUser::getJob)
+                .extracting(ResponseUpdateUser::getJob)
                 .isEqualTo(user.getJob());
     }
 }

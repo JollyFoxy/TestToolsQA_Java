@@ -1,13 +1,12 @@
 package Api;
 
-import Api.ApiSteps.StepsDeleteUser;
-import Api.ApiSteps.StepsGetSingleUser;
-import Api.ApiSteps.StepsPostCreatedUser;
-import Api.ApiSteps.StepsPostUpdateUser;
+import Api.ApiSteps.*;
 
 public interface ApiAll {
     StepsDeleteUser deleteUser = new StepsDeleteUser();
-    StepsPostCreatedUser createdUser =new StepsPostCreatedUser();
+    StepsPostCreatedUser createdUser = new StepsPostCreatedUser();
     StepsGetSingleUser getSingleUser = new StepsGetSingleUser();
-    StepsPostUpdateUser putUpdateUser = new StepsPostUpdateUser();
+    StepsPutUpdateUser putUpdateUser = new StepsPutUpdateUser();
+    StepsNotFoundUser getUserNotFound = new StepsNotFoundUser();
+    StepsPatchUpdateUser patchUpdateUser = new StepsPatchUpdateUser();
 }

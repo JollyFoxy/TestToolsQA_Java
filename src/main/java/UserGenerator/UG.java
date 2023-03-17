@@ -16,7 +16,7 @@ public class UG {
 
         public static String genLastName(){
             String[] lastName ={"Charles","Mccall", "Foster",
-                    "O'Sullivan","Dunlap","Mack",
+                    "OSullivan","Dunlap","Mack",
                     "Andrews","Bloggs","Nichols",
                     "Summers","Wilkinson","Hull",
                     "Stokes","Ramirez","Hodges",

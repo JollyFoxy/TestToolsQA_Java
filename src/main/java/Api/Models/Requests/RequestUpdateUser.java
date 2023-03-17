@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RequestPutUpdateUser {
+public class RequestUpdateUser {
     private String name;
     private String job;
 }

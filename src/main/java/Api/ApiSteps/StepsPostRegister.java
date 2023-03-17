@@ -1,20 +1,20 @@
 package Api.ApiSteps;
 
 import Api.BaseConfRequest;
-import Api.Models.Requests.RequestSuccessfulRegister;
+import Api.Models.Requests.RequestSuccessfulRegisterLogin;
 import Api.Models.Requests.RequestUnsuccessfulRegister;
 import Api.Models.Responses.ResponseRegisterSuccessful;
 import io.qameta.allure.Step;
 
 import static io.restassured.RestAssured.given;
 
-public class StepsRegister {
-    private RequestSuccessfulRegister user = new RequestSuccessfulRegister();
+public class StepsPostRegister {
+    private RequestSuccessfulRegisterLogin user = new RequestSuccessfulRegisterLogin();
     private RequestUnsuccessfulRegister user2 =new RequestUnsuccessfulRegister();
 
     @Step
     public void confUser(String email, String password){
-        user= RequestSuccessfulRegister.builder()
+        user= RequestSuccessfulRegisterLogin.builder()
                 .email(email)
                 .password(password)
                 .build();

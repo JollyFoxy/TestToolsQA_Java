@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 89: Заработало хоть как то...">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestSuccessfulRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestUnsuccessfulRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseRegisterSuccessful.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestRegister.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 90: Тесты регистрации">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPostLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponsesLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPostRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestSuccessfulRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestSuccessfulRegisterLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRegister.testRegisterUnsuccessful">
+  <component name="RunManager" selected="JUnit.TestLogin">
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
@@ -123,7 +123,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="TestPostCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +132,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPostCreateUser" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestLogin" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestLogin" />
         <item itemvalue="JUnit.TestRegister.testRegisterUnsuccessful" />
         <item itemvalue="JUnit.TestRegister.testRegisterSuccessful" />
         <item itemvalue="JUnit.TestRegister" />
         <item itemvalue="JUnit.Tests.ApiTests in TestToolsQA" />
-        <item itemvalue="JUnit.TestPostCreateUser" />
       </list>
     </recent_temporary>
   </component>
@@ -217,13 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Update 40">
-      <created>1674728484725</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1674728484725</updated>
     </task>
     <task id="LOCAL-00034" summary="Update 41">
       <created>1674742582263</created>
@@ -561,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679043629144</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Update 90: Тесты регистрации">
+      <created>1679053595178</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1679053595178</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 64" />
     <MESSAGE value="Update 65" />
     <MESSAGE value="Update 68" />
     <MESSAGE value="Update 67" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Update 88: Постепенно приходит понимание" />
     <MESSAGE value="Update 88: Я обезательно разберусь" />
     <MESSAGE value="Update 89: Заработало хоть как то..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 89: Заработало хоть как то..." />
+    <MESSAGE value="Update 90: Тесты регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 90: Тесты регистрации" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,4 +9,5 @@ public interface ApiAll {
     StepsPutUpdateUser putUpdateUser = new StepsPutUpdateUser();
     StepsNotFoundUser getUserNotFound = new StepsNotFoundUser();
     StepsPatchUpdateUser patchUpdateUser = new StepsPatchUpdateUser();
+    StepsRegister postRegister = new StepsRegister();
 }

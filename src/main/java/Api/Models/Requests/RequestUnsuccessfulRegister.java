@@ -5,12 +5,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-@Builder
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RequestBodyPostCreateUser {
-    private String name;
-    private String job;
+public class RequestUnsuccessfulRegister {
+    private String email;
 }

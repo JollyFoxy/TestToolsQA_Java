@@ -4,29 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 88: Я обезательно разберусь">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsNotFoundUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPatchUpdateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseGetUsersList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUserNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPatchUpdateUser.java" afterDir="false" />
+    <list default="true" id="983720f8-99fd-48ec-b89c-e2a888143dc5" name="Changes" comment="Update 89: Заработало хоть как то...">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestSuccessfulRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestUnsuccessfulRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseRegisterSuccessful.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetSingleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetSingleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsGetUserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPostUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiSteps/StepsPutUpdateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestPutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestUpdateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/ResponseGetSingleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/GetSingleUser/ResponseGetSingleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponsePutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Responses/ResponseUpdateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Users/CreatedUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Users/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserGenerator/UG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestDeleteUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetSingleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetSingleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestGetUsersList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPostCreateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ApiTests/TestPutUpdateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/Models/Requests/RequestBodyPostCreateUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +110,7 @@
       <recent name="Steps.css.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.ApiTests in TestToolsQA">
+  <component name="RunManager" selected="JUnit.TestRegister.testRegisterUnsuccessful">
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
@@ -137,7 +123,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="TestGetSingleUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPostCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -146,13 +132,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetSingleUser" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPostCreateUser" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetUserNotFound.testNotFoundUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -161,14 +147,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestGetUserNotFound" />
-      <option name="METHOD_NAME" value="testNotFoundUser" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestRegister" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegister.testRegisterSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestToolsQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.ApiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.ApiTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestRegister" />
+      <option name="METHOD_NAME" value="testRegisterSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPatchUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRegister.testRegisterUnsuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestToolsQA" />
       <extension name="coverage">
         <pattern>
@@ -177,23 +178,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPatchUpdateUser" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPutUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestToolsQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.ApiTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.ApiTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestPutUpdateUser" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ApiTests.TestRegister" />
+      <option name="METHOD_NAME" value="testRegisterUnsuccessful" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRegister.testRegisterUnsuccessful" />
+        <item itemvalue="JUnit.TestRegister.testRegisterSuccessful" />
+        <item itemvalue="JUnit.TestRegister" />
         <item itemvalue="JUnit.Tests.ApiTests in TestToolsQA" />
-        <item itemvalue="JUnit.TestPatchUpdateUser" />
-        <item itemvalue="JUnit.TestPutUpdateUser" />
-        <item itemvalue="JUnit.TestGetUserNotFound.testNotFoundUser" />
-        <item itemvalue="JUnit.TestGetSingleUser" />
+        <item itemvalue="JUnit.TestPostCreateUser" />
       </list>
     </recent_temporary>
   </component>
@@ -230,13 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671096672066</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Update 39">
-      <created>1674720160437</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1674720160437</updated>
     </task>
     <task id="LOCAL-00033" summary="Update 40">
       <created>1674728484725</created>
@@ -574,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678965283800</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Update 89: Заработало хоть как то...">
+      <created>1679043629143</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1679043629144</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update 63" />
     <MESSAGE value="Update 64" />
     <MESSAGE value="Update 65" />
     <MESSAGE value="Update 68" />
@@ -627,9 +613,19 @@
     <MESSAGE value="Update 87: Что творю сам не знаю" />
     <MESSAGE value="Update 88: Постепенно приходит понимание" />
     <MESSAGE value="Update 88: Я обезательно разберусь" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 88: Я обезательно разберусь" />
+    <MESSAGE value="Update 89: Заработало хоть как то..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 89: Заработало хоть как то..." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Api/BaseConfRequest.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.codeborne.selenide.impl.SelenideElementProxy" memberName="webElementSource" />
@@ -653,6 +649,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestToolsQA$Tests_in_TestToolsQA.ic" NAME="Tests in TestToolsQA Coverage Results" MODIFIED="1673958971251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Tests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestToolsQA$Tests_ApiTests_in_TestToolsQA.ic" NAME="Tests.ApiTests in TestToolsQA Coverage Results" MODIFIED="1679050715467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Tests.ApiTests.*</FILTER>
     </SUITE>
   </component>
 </project>

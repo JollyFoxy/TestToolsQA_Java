@@ -1,7 +1,8 @@
-package Tests.Interactions;
+package Tests.UI.Interactions;
 
-import Tests.BaseTest;
+import Tests.UI.BaseTest;
 import com.codeborne.selenide.Condition;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.actions;
 
+@Epic("Ui tests")
 @Feature("Interactions")
 public class TestDropElement extends BaseTest {
     @Test

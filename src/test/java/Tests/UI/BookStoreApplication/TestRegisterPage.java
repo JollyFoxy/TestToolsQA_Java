@@ -1,13 +1,15 @@
-package Tests.BookStoreApplication;
+package Tests.UI.BookStoreApplication;
 
 import Persons.IPerson;
-import Tests.BaseTest;
+import Tests.UI.BaseTest;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Epic("Ui tests")
 @Feature("BookStoreApplication")
 public class TestRegisterPage extends BaseTest implements IPerson{
     @Test

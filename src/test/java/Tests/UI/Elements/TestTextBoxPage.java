@@ -1,14 +1,16 @@
-package Tests.Elements;
+package Tests.UI.Elements;
 
 import Persons.IPerson;
 import Persons.Person;
-import Tests.BaseTest;
+import Tests.UI.BaseTest;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Epic("Ui tests")
 @Feature("Elements")
 public class TestTextBoxPage extends BaseTest implements IPerson {
     @Test

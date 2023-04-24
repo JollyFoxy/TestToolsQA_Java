@@ -1,7 +1,8 @@
-package Tests.Forms;
+package Tests.UI.Forms;
 
 import Persons.IPerson;
-import Tests.BaseTest;
+import Tests.UI.BaseTest;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Step;
@@ -11,6 +12,7 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
+@Epic("Ui tests")
 @Feature("Forms")
 public class TestPracticeFormPage extends BaseTest implements IPerson {
     @Test

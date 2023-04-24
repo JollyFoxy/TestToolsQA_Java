@@ -29,5 +29,4 @@ public class PageTimeButton extends BasePage {
         visibleAfterBtn.checkVisibleAndTimeoutClickBtn(6);
 
     }
-
 }

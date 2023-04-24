@@ -10,7 +10,4 @@ import static org.aeonbits.owner.Config.Sources;
 public interface TestConf extends Config {
     @Key("baseUrl")
     String baseURL();
-
-    @Key("remoteUrl")
-    String remoteURL();
 }

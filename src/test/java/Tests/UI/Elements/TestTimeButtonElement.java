@@ -1,11 +1,13 @@
-package Tests.Elements;
+package Tests.UI.Elements;
 
-import Tests.BaseTest;
+import Tests.UI.BaseTest;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Epic("Ui tests")
 @Feature("Elements")
 public class TestTimeButtonElement extends BaseTest {
     @Test

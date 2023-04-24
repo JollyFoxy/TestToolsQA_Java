@@ -1,11 +1,13 @@
-package Tests.Widgets;
+package Tests.UI.Widgets;
 
-import Tests.BaseTest;
+import Tests.UI.BaseTest;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Epic("Ui tests")
 @Feature("Interactions")
 public class TestMenuPage extends BaseTest {
     @Test

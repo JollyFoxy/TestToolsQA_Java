@@ -5,7 +5,6 @@ import Tests.UI.BaseTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -16,59 +15,14 @@ public class TestWebTablesPage extends BaseTest implements IPerson {
     @Link(name = "Web Tables", url = "https://demoqa.com/webtables")
     @DisplayName("Тест заполнения таблицы")
     public void testWebTables() {
-        step1();
-        step2();
-        step3(person.getName());
-        step4(person.getLastName());
-        step5(person.getEmail());
-        step6(person.getAge());
-        step7(20000);
-        step8("AAAaaaa");
-        step9();
-    }
-
-    @Step("Переход на страницу \"Web Tables\"")
-    public void step1() {
-        webTables.transition.transitionAll();
-    }
-
-    @Step("Нажатие кнопки \"Add\"")
-    public void step2() {
-        webTables.btnAdd.clickBtn();
-    }
-
-    @Step("Ввод имени")
-    public void step3(String userFirstName) {
-        webTables.firstName.setValueInput(userFirstName);
-    }
-
-    @Step("Ввод фамилии")
-    public void step4(String userLastName) {
-        webTables.lastName.setValueInput(userLastName);
-    }
-
-    @Step("Ввод почты")
-    public void step5(String userEmail) {
-        webTables.eMail.setValueInput(userEmail);
-    }
-
-    @Step("Ввод возраста")
-    public void step6(int userAge) {
-        webTables.age.setValueInput(String.valueOf(userAge));
-    }
-
-    @Step("Ввод зарплаты")
-    public void step7(int userSalary) {
-        webTables.salary.setValueInput(String.valueOf(userSalary));
-    }
-
-    @Step("Ввод департаминта")
-    public void step8(String userDepartment) {
-        webTables.department.setValueInput(String.valueOf(userDepartment));
-    }
-
-    @Step("Нажатие кнопки\"submit\"")
-    public void step9() {
-        webTables.submit.clickBtn();
+        pageWebTables.step1_Transition();
+        pageWebTables.step2_Add();
+        pageWebTables.step3_InputFirstName(person.getName());
+        pageWebTables.step4_InputLastName(person.getLastName());
+        pageWebTables.step5_InputEmail(person.getEmail());
+        pageWebTables.step6_InputAge(person.getAge());
+        pageWebTables.step7_InputSalary(20000);
+        pageWebTables.step8_InputDepartment("AAAaaaa");
+        pageWebTables.step9_Submit();
     }
 }

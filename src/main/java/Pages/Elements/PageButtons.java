@@ -5,17 +5,38 @@ import Utils.Elements.Button;
 import Utils.Elements.P;
 import Utils.Elements.Transition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class PageButtons extends BasePage {
-    public final Transition transition=new Transition("Elements","Buttons");
-    public final Button doubleClickBtn = new Button("doubleClickBtn");
-    public final SelenideElement clickBtn = $(By.cssSelector("div[class$='col-md-6']> div:nth-child(2) > div:nth-child(3)> button"));
+    private final Transition transition=new Transition("Elements","Buttons");
+    private final Button doubleClickBtn = new Button("doubleClickBtn");
+    private final SelenideElement clickBtn = $(By.cssSelector("div[class$='col-md-6']> div:nth-child(2) > div:nth-child(3)> button"));
 //    ("div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button"))
-    public final Button rightClickBtn =new Button("rightClickBtn");
-    public final P dynamicClickMessage = new P("dynamicClickMessage");
-    public final P rightClickMessage = new P("rightClickMessage");
-    public final P doubleClickMessage = new P("doubleClickMessage");
+    private final Button rightClickBtn =new Button("rightClickBtn");
+    private final P dynamicClickMessage = new P("dynamicClickMessage");
+    private final P rightClickMessage = new P("rightClickMessage");
+    private final P doubleClickMessage = new P("doubleClickMessage");
+
+    @Step("Перезод на страницу \"Buttons\"")
+    public void step1_Transition(){
+        transition.transitionAll();
+    }
+    @Step("Один клик")
+    public void step2_OneClick(){
+        clickBtn.click();
+        dynamicClickMessage.checkTextP("dynamic click");
+    }
+    @Step("Двойной клик")
+    public void step3_DoubleClick(){
+        doubleClickBtn.doubleClickBtn();
+        doubleClickMessage.checkTextP("double click");
+    }
+    @Step("Тройной клик")
+    public void step4_RightCLick(){
+        rightClickBtn.rightClickBtn();
+        rightClickMessage.checkTextP("right click");
+    }
 }

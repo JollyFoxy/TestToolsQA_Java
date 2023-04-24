@@ -11,11 +11,11 @@ import Pages.Widgets.PageMenu;
 
 public interface IAll {
     PageDroppable pageDroppable =new PageDroppable();
-    PageWebTables webTables= new PageWebTables();
+    PageWebTables pageWebTables= new PageWebTables();
     PageButtons pageButtons = new PageButtons();
-    PageTextBox textBox = new PageTextBox();
-    PageForms forms = new PageForms();
-    PageRegister registerUser= new PageRegister();
+    PageTextBox pageTextBox = new PageTextBox();
+    PageForms pageForms = new PageForms();
+    PageRegister pageRegisterUser= new PageRegister();
     PageMenu menu = new PageMenu();
     PageDatePicker datePicker = new PageDatePicker();
     PageLogin loginPage = new PageLogin();

@@ -1,6 +1,6 @@
-package Tests.ApiTests;
+package Tests.ApiTests.Get;
 
-import Api.ApiSteps.StepsGetUserList;
+import Api.ApiSteps.Get.StepsGetUserList;
 import Api.Models.Responses.ResponseGetUsersList;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @Epic("API tests")
-@Feature("Api Tests")
+@Feature("Get")
 public class TestGetUsersList {
 
     @Test

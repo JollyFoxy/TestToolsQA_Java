@@ -1,5 +1,6 @@
-package Tests.ApiTests;
+package Tests.ApiTests.Get;
 
+import Tests.ApiTests.BaseApiTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -7,8 +8,8 @@ import org.junit.jupiter.api.Test;
 
 
 @Epic("API tests")
-@Feature("Api Tests")
-public class TestGetSingleUser extends BaseApiTest{
+@Feature("Get")
+public class TestGetSingleUser extends BaseApiTest {
     @Test
     @DisplayName("Получение одногнопользователя")
     public void testSingleUser() {

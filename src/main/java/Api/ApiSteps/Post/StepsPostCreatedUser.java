@@ -1,4 +1,4 @@
-package Api.ApiSteps;
+package Api.ApiSteps.Post;
 
 import Api.BaseConfRequest;
 import Api.Models.Requests.RequestBodyPostCreateUser;

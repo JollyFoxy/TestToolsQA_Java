@@ -1,4 +1,4 @@
-package Api.ApiSteps;
+package Api.ApiSteps.Putch;
 
 import Api.BaseConfRequest;
 import Api.Models.Requests.RequestUpdateUser;
@@ -8,10 +8,7 @@ import io.qameta.allure.Step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
-
-public class StepsPutUpdateUser {
-
+public class StepsPatchUpdateUser {
     private ResponseUpdateUser updateUser;
     private RequestUpdateUser user;
 

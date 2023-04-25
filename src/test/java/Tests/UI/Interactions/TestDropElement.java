@@ -1,15 +1,11 @@
 package Tests.UI.Interactions;
 
 import Tests.UI.BaseTest;
-import com.codeborne.selenide.Condition;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Selenide.actions;
 
 @Epic("Ui tests")
 @Feature("Interactions")
@@ -18,18 +14,8 @@ public class TestDropElement extends BaseTest {
     @Link(name = "Droppable",url = "https://demoqa.com/droppable")
     @DisplayName("Тест перетаскивания объета")
     public void testDrop(){
-        step1();
-        step2();
+        pageDroppable.step1_Transition();
+        pageDroppable.step2_DragAndDrop();
     }
 
-    @Step("Переход на страницу \"droppable\"")
-    public void step1() {
-        pageDroppable.transition.transitionAndScroll("div.left-pannel");
-    }
-    @Step("Перемищение объекта в область")
-    public void step2(){
-        pageDroppable.draggableObject.shouldBe(Condition.exist).click();
-        actions().dragAndDrop(pageDroppable.draggableObject, pageDroppable.droppableObject).build().perform();
-        pageDroppable.droppableObject.should(Condition.text("Dropped"));
-    }
 }

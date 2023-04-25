@@ -1,4 +1,4 @@
-package Api.ApiSteps;
+package Api.ApiSteps.Delete;
 
 import Api.BaseConfRequest;
 

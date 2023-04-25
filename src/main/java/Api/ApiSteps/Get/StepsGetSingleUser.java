@@ -1,4 +1,4 @@
-package Api.ApiSteps;
+package Api.ApiSteps.Get;
 
 import Api.BaseConfRequest;
 import Api.Models.Responses.GetSingleUser.ResponseGetSingleUser;

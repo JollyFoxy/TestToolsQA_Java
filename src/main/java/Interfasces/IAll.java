@@ -4,7 +4,6 @@ import Pages.BookStoreApplication.PageLogin;
 import Pages.BookStoreApplication.PageRegister;
 import Pages.Elements.*;
 import Pages.Forms.PageForms;
-import Pages.Home.HomePage;
 import Pages.Interactions.PageDroppable;
 import Pages.Widgets.PageDatePicker;
 import Pages.Widgets.PageMenu;
@@ -21,5 +20,4 @@ public interface IAll {
     PageLogin loginPage = new PageLogin();
     PageBase pageBase = new PageBase();
     PageTimeButton pageTimeButton = new PageTimeButton();
-    HomePage homePage = new HomePage();
 }

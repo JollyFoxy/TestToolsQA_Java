@@ -12,8 +12,11 @@ public class StepsGetSingleUser {
     public void getSingleUser(String endPoint){
          response = given()
                 .spec(BaseConfRequest.getReqSpec())
-                .when().get(endPoint)
-                .then().extract().body()
+                .when()
+                 .get(endPoint)
+                .then()
+                 .extract()
+                 .body()
                 .as(ResponseGetSingleUser.class);
     }
 }

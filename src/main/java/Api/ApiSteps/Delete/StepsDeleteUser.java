@@ -8,7 +8,9 @@ public class StepsDeleteUser {
     public void deleteUser(String endPoint){
         given()
                 .spec(BaseConfRequest.getReqSpec())
-                .when().delete(endPoint)
-                .then().statusCode(204);
+                .when()
+                .delete(endPoint)
+                .then()
+                .statusCode(204);
     }
 }

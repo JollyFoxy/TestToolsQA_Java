@@ -10,6 +10,7 @@ public class StepsNotFoundUser{
     public void getUser(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
                 .get(endPoint)
-                .then().statusCode(404);
+                .then()
+                .statusCode(404);
     }
 }

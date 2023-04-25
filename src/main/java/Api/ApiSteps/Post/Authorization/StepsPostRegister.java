@@ -23,9 +23,12 @@ public class StepsPostRegister {
     @Step
     public void postRegistrationSuccessful(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
-                .body(user).post(endPoint)
-                .then().statusCode(200)
-                .extract().body()
+                .body(user)
+                .post(endPoint)
+                .then()
+                .statusCode(200)
+                .extract()
+                .body()
                 .as(ResponseRegisterSuccessful.class);
     }
     @Step
@@ -37,7 +40,9 @@ public class StepsPostRegister {
     @Step
     public void postRegisterUnsuccessful(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
-                .body(user2).post(endPoint)
-                .then().statusCode(400);
+                .body(user2)
+                .post(endPoint)
+                .then()
+                .statusCode(400);
     }
 }

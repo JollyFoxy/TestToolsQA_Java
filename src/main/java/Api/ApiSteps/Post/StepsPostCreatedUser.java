@@ -24,9 +24,12 @@ public class StepsPostCreatedUser {
          createdUser = given()
                 .spec(BaseConfRequest.getReqSpec())
                 .body(user)
-                .when().post(endPoint)
-                .then().statusCode(201)
-                .extract().as(ResponseBodyPostCreateUser.class);
+                .when()
+                 .post(endPoint)
+                .then()
+                 .statusCode(201)
+                .extract()
+                 .as(ResponseBodyPostCreateUser.class);
     }
     @Step
     public void checkName(){

@@ -21,8 +21,10 @@ public class StepsPostLogin{
     public void postLogin(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
                 .body(user).post(endPoint)
-                .then().statusCode(200)
-                .extract().body()
+                .then()
+                .statusCode(200)
+                .extract()
+                .body()
                 .as(ResponsesLogin.class);
     }
     @Step
@@ -34,7 +36,9 @@ public class StepsPostLogin{
     @Step
     public void postLoginUnsuccessful(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
-                .body(user2).post(endPoint)
-                .then().statusCode(400);
+                .body(user2)
+                .post(endPoint)
+                .then()
+                .statusCode(400);
     }
 }

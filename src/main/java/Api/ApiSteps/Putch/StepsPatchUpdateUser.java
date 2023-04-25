@@ -24,9 +24,12 @@ public class StepsPatchUpdateUser {
         updateUser =given()
                 .spec(BaseConfRequest.getReqSpec())
                 .body(user)
-                .when().put(endPoint)
-                .then().statusCode(200)
-                .extract().as(ResponseUpdateUser.class);
+                .when()
+                .put(endPoint)
+                .then()
+                .statusCode(200)
+                .extract()
+                .as(ResponseUpdateUser.class);
     }
     @Step
     public void checkUpdate(){

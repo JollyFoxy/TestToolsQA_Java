@@ -6,6 +6,7 @@ import Utils.Elements.Transition;
 import lombok.Getter;
 
 public class PageLogin extends BasePage {
+
     @Getter
     private final Scrolling body = new Scrolling("div.home-body");
     @Getter

@@ -19,6 +19,5 @@ public abstract class BasePage {
     public void captchaClick(){
         $x("//iframe[starts-with(@name, 'a-') and " +
                 "starts-with(@src, 'https://www.google.com/recaptcha')]").click();
-
     }
 }

@@ -1,6 +1,6 @@
-package Tests.UI.Interactions;
+package Tests.UITests.Interactions;
 
-import Tests.UI.BaseTest;
+import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;

@@ -1,4 +1,4 @@
-package Tests.UI;
+package Tests.UITests;
 
 import Interfasces.IAll;
 import Utils.TestConf;

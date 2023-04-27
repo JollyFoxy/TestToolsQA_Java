@@ -13,6 +13,7 @@ import java.util.Map;
 
 import static org.openqa.selenium.remote.CapabilityType.PAGE_LOAD_STRATEGY;
 
+/**Конфигурация ChromeDriver*/
 public class WebDriver implements WebDriverProvider {
     public org.openqa.selenium.WebDriver driver;
 

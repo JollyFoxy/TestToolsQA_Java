@@ -2,6 +2,9 @@ package UserGenerator;
 
 import java.util.UUID;
 
+import static java.lang.Math.random;
+
+/**Генирация пользователя*/
 public class UG {
         public static String genName(){
             String[] name = {"Kristen", "Claire", "Lea",
@@ -10,7 +13,7 @@ public class UG {
                     "Sasha", "Nevaeh", "Pearl",
                     "Jaydon", "Hayden", "Cory",
                     "Kaden", "Harri", "Regan"};
-            int in = (int) (Math.random() * name.length);
+            int in = (int) (random() * name.length);
             return name[in];
         }
 
@@ -21,7 +24,7 @@ public class UG {
                     "Summers","Wilkinson","Hull",
                     "Stokes","Ramirez","Hodges",
                     "Klein","Singleton","Ayers"};
-            int in = (int) (Math.random() * lastName.length);
+            int in = (int) (random() * lastName.length);
             return lastName[in];
         }
 
@@ -29,7 +32,7 @@ public class UG {
             String[] street = {"33 Carpenter Street","8798 Magnolia Road",
                     "15 North Del Monte St", "9280 Wild Horse Lane",
                     "973 N. School Dr", "35 Alderwood Dr"};
-            int in = (int) (Math.random() * street.length);
+            int in = (int) (random() * street.length);
             return street[in];
         }
 
@@ -38,7 +41,7 @@ public class UG {
         }
 
         public static int genAge(){
-            return (int) (Math.random()*130);
+            return (int) (random()*130);
         }
 
         public static UUID genId(){
@@ -47,9 +50,9 @@ public class UG {
 
 
         public static String genPhone(){
-            String num1 = Integer.toString(100+(int) (Math.random()*899));
-            String num2 = Integer.toString(100+(int) (Math.random()*899));
-            String num3 = Integer.toString(100+(int) (Math.random()*8999));
+            String num1 = Integer.toString(100+(int) (random()*899));
+            String num2 = Integer.toString(100+(int) (random()*899));
+            String num3 = Integer.toString(100+(int) (random()*8999));
 
             return ("8"+num1+num2+num3);
         }
@@ -62,7 +65,7 @@ public class UG {
             String[] job = {"Recreation & Fitness Worker","Civil Engineer","College Professor",
                     "Actuary", "Economist","Fitness Trainer","Construction Manager",
                     "Computer Hardware Engineer", "Food Scientist","Systems Analyst"};
-            int in = (int) (Math.random() * job.length);
+            int in = (int) (random() * job.length);
             return job[in];
         }
 }

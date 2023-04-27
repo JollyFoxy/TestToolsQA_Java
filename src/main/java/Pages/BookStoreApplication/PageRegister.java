@@ -5,15 +5,15 @@ import Utils.Elements.Button;
 import Utils.Elements.Input;
 import io.qameta.allure.Step;
 
+/**Страница Регистрации*/
 public class PageRegister extends BasePage {
 
-    private final Button btnNewUser = new Button("newUser");
     private final Input firstName= new Input("firstname");
     private final Input lastName = new Input("lastname");
     private final Input userName = new Input("userName");
     private final Input password = new Input("password");
     private final Button register = new  Button("register");
-    private PageLogin pageLogin = new PageLogin();
+    private final PageLogin pageLogin = new PageLogin();
 
     @Step("Вход в пункт \"Login\"")
     public void step1_Transition(){
@@ -22,7 +22,7 @@ public class PageRegister extends BasePage {
     }
     @Step("Нажимание кнопки \"New User\"")
     public void step2_NewUser(){
-        btnNewUser.clickBtn();
+        pageLogin.getBtnNewUser().clickBtn();
     }
     @Step("Ввод в поле \"First Name\"")
     public void step3_InputFirstName(String first_name){

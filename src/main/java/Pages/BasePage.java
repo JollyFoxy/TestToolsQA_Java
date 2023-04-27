@@ -8,6 +8,7 @@ import java.io.File;
 
 import static com.codeborne.selenide.Selenide.$x;
 
+/**Базовая страница*/
 public abstract class BasePage {
     @SneakyThrows
     @Step("Удалить файлы из дириктории \"data\"")

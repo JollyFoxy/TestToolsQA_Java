@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
+/**Страница Кнопк*/
 public class PageButtons extends BasePage {
     private final Transition transition=new Transition("Elements","Buttons");
     private final Button doubleClickBtn = new Button("doubleClickBtn");

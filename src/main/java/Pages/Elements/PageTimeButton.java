@@ -6,6 +6,7 @@ import Utils.Elements.Transition;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 
+/**Страница Прогружающихся кнопок*/
 public class PageTimeButton extends BasePage {
     private final Transition transition=new Transition("Elements","Dynamic Properties");
 

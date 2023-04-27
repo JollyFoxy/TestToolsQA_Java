@@ -8,7 +8,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$;
 
-
+/**Элемнт кеопка*/
 public class Button extends BaseElement {
 
     public Button(SelenideElement container) {

@@ -6,6 +6,7 @@ import Utils.Elements.Input;
 import Utils.Elements.Transition;
 import io.qameta.allure.Step;
 
+/**Страница Web-таблиц*/
 public class PageWebTables extends BasePage {
     private final Transition transition =new Transition("Elements","Web Tables");
     private final Button btnAdd =new Button("addNewRecordButton");

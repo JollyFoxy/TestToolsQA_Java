@@ -17,7 +17,5 @@ public interface IAll {
     PageRegister pageRegisterUser= new PageRegister();
     PageMenu menu = new PageMenu();
     PageDatePicker datePicker = new PageDatePicker();
-    PageLogin loginPage = new PageLogin();
-    PageBase pageBase = new PageBase();
     PageTimeButton pageTimeButton = new PageTimeButton();
 }

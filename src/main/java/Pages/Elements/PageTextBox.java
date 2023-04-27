@@ -5,6 +5,7 @@ import Persons.Person;
 import Utils.Elements.*;
 import io.qameta.allure.Step;
 
+/**Страница Текстовых полей*/
 public class PageTextBox extends BasePage {
     private final Transition transition = new Transition("Elements","Text Box");
     private final Input fulName = new Input("userName");

@@ -9,7 +9,6 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-
 public class StepsPutUpdateUser {
 
     private ResponseUpdateUser updateUser;

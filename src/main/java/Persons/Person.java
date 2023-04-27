@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.With;
 
+/**Пользователь*/
 @AllArgsConstructor
 @Getter @With
 public class Person {

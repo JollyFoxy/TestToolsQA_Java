@@ -8,6 +8,7 @@ import java.io.File;
 
 import static com.codeborne.selenide.Selenide.$x;
 
+/**Элкемент Div*/
 public class Input extends BaseElement {
     public Input(SelenideElement container) {
         super(container);

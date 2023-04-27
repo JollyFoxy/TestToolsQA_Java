@@ -5,6 +5,7 @@ import com.codeborne.selenide.ElementsCollection;
 
 import static com.codeborne.selenide.Selenide.$$;
 
+/**Переход*/
 public class Transition {
     private final ElementsCollection pageMenu = $$("div.category-cards h5");
     private final ElementsCollection menuElements = $$("ul.menu-list li");

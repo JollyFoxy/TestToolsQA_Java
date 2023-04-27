@@ -31,7 +31,6 @@ public class StepsPostCreatedUser {
                 .extract()
                  .as(ResponseBodyPostCreateUser.class);
     }
-    @Step
     public void checkName(){
         assertThat(createdUser)
                 .isNotNull()

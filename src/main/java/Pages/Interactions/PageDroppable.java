@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
+/**Страница с Движущимися окнами*/
 public class PageDroppable extends BasePage {
     private final Transition transition=new Transition("Interactions","Droppable");
     private final SelenideElement draggableObject = $(By.cssSelector("div#draggable"));

@@ -13,7 +13,9 @@ import java.util.Objects;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-/**Страница Регистрационной формы*/
+/**
+ * Страница Регистрационной формы
+ */
 public class PageForms extends BasePage {
     private final File file = new File("foxy.png");
     private final Transition transition = new Transition("Forms", "Practice Form");
@@ -44,54 +46,64 @@ public class PageForms extends BasePage {
     }
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
-    public void step1_Transition(){
+    public void step1_Transition() {
         transition.transitionAll();
     }
+
     @Step("Ввод имени в поле \"First Name\"")
     public void step2_InputFirstName(String first_name) {
         firstName.setValueInput(first_name);
     }
+
     @Step("Ввод фамилии в поле \"Last Name\"")
-    public void step3_InputLastName(String last_name){
+    public void step3_InputLastName(String last_name) {
         lastName.setValueInput(last_name);
     }
+
     @Step("Ввод почты в поле \"Email\"")
     public void step4_InputEmail(String email) {
         userEmail.setValueInput(email);
     }
+
     @Step("Выбор гендера")
-    public void step5_Gender(String gender){
+    public void step5_Gender(String gender) {
         inputGender(gender);
     }
+
     @Step("Ввод номера телефона в поле \"Mobile\"")
-    public void step6_InputPhoneNumber(String number){
+    public void step6_InputPhoneNumber(String number) {
         userNumber.setValueInput(number);
     }
+
     @Step("Ввод даты рождения")
     public void step7_InputDateOfBirth(String date) {
         dateOfBirth.dateInput(date);
     }
+
     @Step("Выбор хобби")
     public void step8_InputHobbies(String arg, String arg1, String arg2) {
-        inputHobbies(arg,arg1,arg2);
+        inputHobbies(arg, arg1, arg2);
     }
+
     @Step("Загрузка аватара")
-    public void step9_Avatar(){
+    public void step9_Avatar() {
         uploadPicture.uploadFileInput(file);
     }
+
     @Step("Ввод адреса в поле \"Address\"")
-    public void step10_InputAddress(String address){
+    public void step10_InputAddress(String address) {
         currentAddress.setValueTextArea(address);
     }
 
     @Step("Нажатие кнопки \"Submit\"")
-    public void step11_Submit(){
+    public void step11_Submit() {
         $(By.cssSelector("span.pr-1")).click();
         scroll.scrollingForTact(4);
         btnSubmit.clickBtn();
     }
+
     @Step("Нажатие кнопки \"Close\"")
-    public void step12_Close(){
+    public void step12_Close() {
         closeLargeModal.clickBtn();
     }
 }

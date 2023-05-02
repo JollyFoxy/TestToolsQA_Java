@@ -13,8 +13,6 @@ public class TestPutUpdateUser extends BaseApiTest {
     @Test
     @DisplayName("Обновление пользователя через \"Put\"")
     public void testPut(){
-        putUpdateUser.confUser("morpheus", "zion resident");
-        putUpdateUser.updateUser("/users/2");
-        putUpdateUser.checkUpdate();
+        putUpdateUser.updateUser("/users/2", "morpheus", "zion resident");
     }
 }

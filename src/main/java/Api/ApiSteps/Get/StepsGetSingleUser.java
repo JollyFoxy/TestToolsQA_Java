@@ -7,16 +7,15 @@ import io.qameta.allure.Step;
 import static io.restassured.RestAssured.given;
 
 public class StepsGetSingleUser {
-    private ResponseGetSingleUser response;
-    @Step
+    @Step("Отправить get запрос пользователя по URL(https://reqres.in/api/users/2)")
     public void getSingleUser(String endPoint){
-         response = given()
+        ResponseGetSingleUser response = given()
                 .spec(BaseConfRequest.getReqSpec())
                 .when()
-                 .get(endPoint)
+                .get(endPoint)
                 .then()
-                 .extract()
-                 .body()
+                .extract()
+                .body()
                 .as(ResponseGetSingleUser.class);
     }
 }

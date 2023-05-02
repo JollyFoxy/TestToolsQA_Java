@@ -15,14 +15,12 @@ public class TestLogin extends BaseApiTest {
     @Test
     @DisplayName("Тест авторизации (позитивный)")
     public void testLogin(){
-        postLogin.confUser("eve.holt@reqres.in","cityslicka");
-        postLogin.postLogin("/login");
+        postLogin.postLogin("/login", "eve.holt@reqres.in","cityslicka");
     }
     @Test
     @DisplayName("Тест авторизации (негативный)")
     public void testLoginUnsuccessful(){
-        postLogin.confUser2("peter@klaven");
-        postLogin.postLoginUnsuccessful("/login");
+        postLogin.postLoginUnsuccessful("/login", "peter@klaven");
     }
 
 }

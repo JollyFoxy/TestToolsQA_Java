@@ -15,13 +15,11 @@ public class TestRegister extends BaseApiTest {
     @Test
     @DisplayName("Тест регистрации (позитивный)")
     public void testRegisterSuccessful(){
-        postRegister.confUser("eve.holt@reqres.in","pistol");
-        postRegister.postRegistrationSuccessful("register");
+        postRegister.postRegistrationSuccessful("register", "eve.holt@reqres.in","pistol");
     }
     @Test
     @DisplayName("Тест регистрации (негативный)")
     public void testRegisterUnsuccessful(){
-        postRegister.confUser2("sydney@fife");
-        postRegister.postRegisterUnsuccessful("register");
+        postRegister.postRegisterUnsuccessful("register", "sydney@fife");
     }
 }

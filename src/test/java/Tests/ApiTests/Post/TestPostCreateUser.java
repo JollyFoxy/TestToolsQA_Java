@@ -14,8 +14,6 @@ public class TestPostCreateUser extends BaseApiTest {
     @Test
     @DisplayName("Создание пользователя")
     public void testPost(){
-        createdUser.newUser("morpheus","leader");
-        createdUser.postUser("/users");
-        createdUser.checkName();
+        createdUser.postUser("/users","morpheus","leader");
     }
 }

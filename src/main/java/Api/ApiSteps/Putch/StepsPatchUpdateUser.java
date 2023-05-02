@@ -1,5 +1,6 @@
 package Api.ApiSteps.Putch;
 
+
 import Api.BaseConfRequest;
 import Api.Models.Requests.RequestUpdateUser;
 import Api.Models.Responses.ResponseUpdateUser;
@@ -9,19 +10,14 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepsPatchUpdateUser {
-    private ResponseUpdateUser updateUser;
-    private RequestUpdateUser user;
 
-    @Step
-    public void confUser(String name, String job){
-        user = RequestUpdateUser.builder()
+    @Step("Отправить patch запрос по URL(https://reqres.in/api/users/2)")
+    public void updateUser(String endPoint, String name, String job){
+        RequestUpdateUser user = RequestUpdateUser.builder()
                 .name(name)
                 .job(job)
                 .build();
-    }
-    @Step
-    public void updateUser(String endPoint){
-        updateUser =given()
+        ResponseUpdateUser updateUser = given()
                 .spec(BaseConfRequest.getReqSpec())
                 .body(user)
                 .when()
@@ -30,9 +26,6 @@ public class StepsPatchUpdateUser {
                 .statusCode(200)
                 .extract()
                 .as(ResponseUpdateUser.class);
-    }
-    @Step
-    public void checkUpdate(){
         assertThat(updateUser)
                 .isNotNull()
                 .extracting(ResponseUpdateUser::getJob)

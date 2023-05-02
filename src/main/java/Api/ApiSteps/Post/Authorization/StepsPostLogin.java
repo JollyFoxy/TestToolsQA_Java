@@ -8,17 +8,13 @@ import io.qameta.allure.Step;
 import static io.restassured.RestAssured.given;
 
 public class StepsPostLogin{
-    private RequestSuccessfulRegisterLogin user;
-    private RequestSuccessfulRegisterLogin user2;
-    @Step
-    public void confUser(String email, String password){
-        user = RequestSuccessfulRegisterLogin.builder()
+
+    @Step("Отправить post запрос по URL(https://reqres.in/api/login)")
+    public void postLogin(String endPoint, String email, String password){
+        RequestSuccessfulRegisterLogin user = RequestSuccessfulRegisterLogin.builder()
                 .email(email)
                 .password(password)
                 .build();
-    }
-    @Step
-    public void postLogin(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
                 .body(user).post(endPoint)
                 .then()
@@ -27,14 +23,11 @@ public class StepsPostLogin{
                 .body()
                 .as(ResponsesLogin.class);
     }
-    @Step
-    public void confUser2(String email){
-        user2 = RequestSuccessfulRegisterLogin.builder()
+    @Step("Отправить post запрос по URL(https://reqres.in/api/login)")
+    public void postLoginUnsuccessful(String endPoint, String email){
+        RequestSuccessfulRegisterLogin user2 = RequestSuccessfulRegisterLogin.builder()
                 .email(email)
                 .build();
-    }
-    @Step
-    public void postLoginUnsuccessful(String endPoint){
         given().spec(BaseConfRequest.getReqSpec())
                 .body(user2)
                 .post(endPoint)

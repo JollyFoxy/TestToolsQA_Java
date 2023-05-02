@@ -9,29 +9,22 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepsPostCreatedUser {
-    private RequestBodyPostCreateUser user = new RequestBodyPostCreateUser();
-    private ResponseBodyPostCreateUser createdUser = new ResponseBodyPostCreateUser();
 
-    @Step
-    public void newUser(String name, String job){
-        user = RequestBodyPostCreateUser.builder()
+    @Step("Отправить post запрос по URL(https://reqres.in/api/users)")
+    public void postUser(String endPoint, String name, String job){
+        RequestBodyPostCreateUser user = RequestBodyPostCreateUser.builder()
                 .name(name)
                 .job(job)
                 .build();
-    }
-    @Step
-    public void postUser(String endPoint){
-         createdUser = given()
+        ResponseBodyPostCreateUser createdUser = given()
                 .spec(BaseConfRequest.getReqSpec())
                 .body(user)
                 .when()
-                 .post(endPoint)
+                .post(endPoint)
                 .then()
-                 .statusCode(201)
+                .statusCode(201)
                 .extract()
-                 .as(ResponseBodyPostCreateUser.class);
-    }
-    public void checkName(){
+                .as(ResponseBodyPostCreateUser.class);
         assertThat(createdUser)
                 .isNotNull()
                 .extracting(ResponseBodyPostCreateUser::getName)

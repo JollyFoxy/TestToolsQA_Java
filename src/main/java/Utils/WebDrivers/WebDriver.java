@@ -28,14 +28,15 @@ public class WebDriver implements WebDriverProvider {
         options.addArguments("--start-maximized");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--remote-allow-origins=*");
 
-        options.setCapability(PAGE_LOAD_STRATEGY, "normal");
+        options.setCapability(PAGE_LOAD_STRATEGY, "eager");
 
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("download.default_directory", new File(".").getAbsolutePath() + "data");
         options.setExperimentalOption("prefs", prefs);
 
-        WebDriverManager.chromedriver().version("110.0.5481.77").setup();
+        WebDriverManager.chromedriver().version("113.0.5672.63").setup();
         driver = new ChromeDriver(options);
         return driver;
     }

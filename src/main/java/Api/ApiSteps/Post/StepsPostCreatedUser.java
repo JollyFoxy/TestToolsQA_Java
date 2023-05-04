@@ -4,9 +4,9 @@ import Api.BaseConfRequest;
 import Api.Models.Requests.RequestBodyPostCreateUser;
 import Api.Models.Responses.ResponseBodyPostCreateUser;
 import io.qameta.allure.Step;
+import org.assertj.core.api.Assertions;
 
 import static io.restassured.RestAssured.given;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepsPostCreatedUser {
 
@@ -25,7 +25,7 @@ public class StepsPostCreatedUser {
                 .statusCode(201)
                 .extract()
                 .as(ResponseBodyPostCreateUser.class);
-        assertThat(createdUser)
+        Assertions.assertThat(createdUser)
                 .isNotNull()
                 .extracting(ResponseBodyPostCreateUser::getName)
                 .isEqualTo(user.getName());

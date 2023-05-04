@@ -18,12 +18,12 @@ public class UG {
         }
 
         public static String genLastName(){
-            String[] lastName ={"Charles","Mccall", "Foster",
-                    "OSullivan","Dunlap","Mack",
-                    "Andrews","Bloggs","Nichols",
-                    "Summers","Wilkinson","Hull",
-                    "Stokes","Ramirez","Hodges",
-                    "Klein","Singleton","Ayers"};
+            String[] lastName ={"Charles", "Mccall", "Foster",
+                    "OSullivan", "Dunlap", "Mack",
+                    "Andrews", "Bloggs", "Nichols",
+                    "Summers", "Wilkinson", "Hull",
+                    "Stokes", "Ramirez", "Hodges",
+                    "Klein", "Singleton", "Ayers"};
             int in = (int) (random() * lastName.length);
             return lastName[in];
         }
@@ -37,7 +37,7 @@ public class UG {
         }
 
         public static String genUserName(){
-            return new StringBuilder(genName().toLowerCase()).reverse().toString();
+            return genName().toLowerCase();
         }
 
         public static int genAge(){
@@ -62,10 +62,29 @@ public class UG {
         }
 
         public static String genJob(){
-            String[] job = {"Recreation & Fitness Worker","Civil Engineer","College Professor",
-                    "Actuary", "Economist","Fitness Trainer","Construction Manager",
-                    "Computer Hardware Engineer", "Food Scientist","Systems Analyst"};
+            String[] job = {"Recreation & Fitness Worker", "Civil Engineer", "College Professor",
+                    "Actuary", "Economist", "Fitness Trainer", "Construction Manager",
+                    "Computer Hardware Engineer", "Food Scientist", "Systems Analyst"};
             int in = (int) (random() * job.length);
             return job[in];
+        }
+
+        public static String genPassword(){
+            String[] password = {"Qq-123456!", "Ww-654321!", "Ee-632782!", "123456-uU!", "654321-xX!"};
+            int in = (int) (random() * password.length);
+            return password[in];
+        }
+
+        public static int genSalary(){
+            int[] salary = {20000, 50000, 70000, 140000,
+                    170000, 250000, 280000, 400000};
+            int in = (int) (random() * salary.length);
+            return salary[in];
+        }
+
+        public static String genDepartment(){
+            String[] department = {"education", "medicine", "jurisprudence", "it", "sales", ""};
+            int in = (int) (random() * department.length);
+            return department[in];
         }
 }

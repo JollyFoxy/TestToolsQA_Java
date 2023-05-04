@@ -21,8 +21,8 @@ public class TestWebTablesPage extends BaseTest implements IPerson {
         pageWebTables.step4_InputLastName(person.getLastName());
         pageWebTables.step5_InputEmail(person.getEmail());
         pageWebTables.step6_InputAge(person.getAge());
-        pageWebTables.step7_InputSalary(20000);
-        pageWebTables.step8_InputDepartment("AAAaaaa");
+        pageWebTables.step7_InputSalary(person.getSalary());
+        pageWebTables.step8_InputDepartment(person.getDepartment());
         pageWebTables.step9_Submit();
     }
 }

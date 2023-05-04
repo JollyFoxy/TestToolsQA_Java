@@ -23,6 +23,10 @@ public class WebDriver implements WebDriverProvider {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("--lang=ru");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--start-maximized");
+        options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-dev-shm-usage");
 
         options.setCapability(PAGE_LOAD_STRATEGY, "normal");

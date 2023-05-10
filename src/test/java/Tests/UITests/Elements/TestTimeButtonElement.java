@@ -16,5 +16,7 @@ public class TestTimeButtonElement extends BaseTest {
     public void testElementTimeButton(){
         pageTimeButton.transitionDynamicProperties();
         pageTimeButton.btnCheck();
+        pageTimeButton.btnCheckColor();
+        pageTimeButton.btnVisibleAfterBtn();
     }
 }

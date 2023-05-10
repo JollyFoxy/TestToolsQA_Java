@@ -21,13 +21,16 @@ public class PageTimeButton extends BasePage {
 
     @Step("Ожидание и нажатие кнопки")
     public void btnCheck(){
-        visibleAfterBtn.checkVisibleBtn();
-        Selenide.refresh();
         enableAfter.checkEnabledAndTimeoutClickBtn(6);
         Selenide.refresh();
-        colorBtn.checkColorBtn("220, 53, 69, 1",6);
+    }
+    @Step("")
+    public void btnCheckColor() {
+        colorBtn.checkColorBtn("220, 53, 69, 1", 6);
         Selenide.refresh();
+    }
+    @Step("")
+    public void btnVisibleAfterBtn(){
         visibleAfterBtn.checkVisibleAndTimeoutClickBtn(6);
-
     }
 }

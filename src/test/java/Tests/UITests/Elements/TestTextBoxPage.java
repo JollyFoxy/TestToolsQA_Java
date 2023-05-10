@@ -15,12 +15,12 @@ public class TestTextBoxPage extends BaseTest implements IPerson {
     @Link(name = "Text Box", url = "https://demoqa.com/text-box")
     @DisplayName("Тест текстовых полей")
     public void testElementsTextBox() {
-        pageTextBox.step1_Transition();
-        pageTextBox.step2_InputFullName(person.getName());
-        pageTextBox.step3_InputEmail(person.getEmail());
-        pageTextBox.step4_InputCurrentAddress(person.getCurrentAddress());
-        pageTextBox.step5_InputPermanentAddress(person.getPermanentAddress());
-        pageTextBox.step6_Submit();
-        pageTextBox.step7_CheckInfo(person);
+        pageTextBox.transition();
+        pageTextBox.inputFullName(person.getName());
+        pageTextBox.inputEmail(person.getEmail());
+        pageTextBox.inputCurrentAddress(person.getCurrentAddress());
+        pageTextBox.inputPermanentAddress(person.getPermanentAddress());
+        pageTextBox.submit();
+        pageTextBox.checkInfo(person);
     }
 }

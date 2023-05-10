@@ -19,37 +19,37 @@ public class PageTextBox extends BasePage {
     private final P checkPermanentAddress = new P("permanentAddress");
 
     @Step("Перейти с домашней страницы на страницу \"Text Box\"")
-    public void step1_Transition() {
+    public void transition() {
         transition.transitionAll();
     }
 
     @Step("Заполнить поле \"Full Name\"")
-    public void step2_InputFullName(String name) {
+    public void inputFullName(String name) {
         fulName.setValueInput(name);
     }
 
     @Step("Заполнить поле \"Email\"")
-    public void step3_InputEmail(String email) {
+    public void inputEmail(String email) {
         eMail.setValueInput(email);
     }
 
     @Step("Зполнить поле \"Current Address\"")
-    public void step4_InputCurrentAddress(String address) {
+    public void inputCurrentAddress(String address) {
         currentAddress.setValueTextArea(address);
     }
 
     @Step("Зполнить поле \"Permanent Address\"")
-    public void step5_InputPermanentAddress(String address) {
+    public void inputPermanentAddress(String address) {
         permanentAddress.setValueTextArea(address);
     }
 
     @Step("Кликнуть на  кнопку \"Submit\"")
-    public void step6_Submit() {
+    public void submit() {
         btnSubmit.clickBtn();
     }
 
     @Step("Проверка введёной информации")
-    public void step7_CheckInfo(Person person) {
+    public void checkInfo(Person person) {
         checkName.checkTextP(person.getName());
         checkEmail.checkTextP(person.getEmail());
         checkCurrentAddress.checkTextP(person.getCurrentAddress());

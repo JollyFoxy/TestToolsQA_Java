@@ -14,10 +14,10 @@ public class TestButtonsPage extends BaseTest {
     @Link(name = "Buttons",url="https://demoqa.com/buttons")
     @DisplayName("Тест кнопок")
     public void testButtons(){
-       pageButtons.step1_Transition();
-       pageButtons.step2_OneClick();
-       pageButtons.step3_DoubleClick();
-       pageButtons.step4_RightCLick();
+       pageButtons.transition();
+       pageButtons.oneClick();
+       pageButtons.doubleClick();
+       pageButtons.rightCLick();
     }
 
 }

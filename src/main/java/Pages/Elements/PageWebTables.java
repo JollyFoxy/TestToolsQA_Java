@@ -19,47 +19,47 @@ public class PageWebTables extends BasePage {
     private final Button submit= new Button("submit");
 
     @Step("Переход на страницу \"Web Tables\"")
-    public void step1_Transition() {
+    public void transition() {
         transition.transitionAll();
     }
 
     @Step("Нажатие кнопки \"Add\"")
-    public void step2_Add() {
+    public void add() {
         btnAdd.clickBtn();
     }
 
     @Step("Ввод имени")
-    public void step3_InputFirstName(String userFirstName) {
+    public void inputFirstName(String userFirstName) {
         firstName.setValueInput(userFirstName);
     }
 
     @Step("Ввод фамилии")
-    public void step4_InputLastName(String userLastName) {
+    public void inputLastName(String userLastName) {
         lastName.setValueInput(userLastName);
     }
 
     @Step("Ввод почты")
-    public void step5_InputEmail(String userEmail) {
+    public void inputEmail(String userEmail) {
         eMail.setValueInput(userEmail);
     }
 
     @Step("Ввод возраста")
-    public void step6_InputAge(int userAge) {
+    public void inputAge(int userAge) {
         age.setValueInput(String.valueOf(userAge));
     }
 
     @Step("Ввод зарплаты")
-    public void step7_InputSalary(int userSalary) {
+    public void inputSalary(int userSalary) {
         salary.setValueInput(String.valueOf(userSalary));
     }
 
     @Step("Ввод департаминта")
-    public void step8_InputDepartment(String userDepartment) {
+    public void inputDepartment(String userDepartment) {
         department.setValueInput(String.valueOf(userDepartment));
     }
 
     @Step("Нажатие кнопки\"submit\"")
-    public void step9_Submit() {
+    public void submit() {
         submit.clickBtn();
     }
     

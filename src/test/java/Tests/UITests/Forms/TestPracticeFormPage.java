@@ -17,17 +17,17 @@ public class TestPracticeFormPage extends BaseTest implements IPerson {
     @Link(name = "Practice Form",url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Тест заполнения формы")
     public void testFormsPracticeForm(){
-        pageForms.step1_Transition();
-        pageForms.step2_InputFirstName(person.getName());
-        pageForms.step3_InputLastName(person.getLastName());
-        pageForms.step4_InputEmail(person.getEmail());
-        pageForms.step5_Gender("Male");
-        pageForms.step6_InputPhoneNumber(person.getPhoneNumber());
-        pageForms.step7_InputDateOfBirth("11.18.2002");
-        pageForms.step8_InputHobbies("Reading","Sports","");
-        pageForms.step9_Avatar();
-        pageForms.step10_InputAddress(person.getPermanentAddress());
-        pageForms.step11_Submit();
-        pageForms.step12_Close();
+        pageForms.transition();
+        pageForms.inputFirstName(person.getName());
+        pageForms.inputLastName(person.getLastName());
+        pageForms.inputEmail(person.getEmail());
+        pageForms.gender("Male");
+        pageForms.inputPhoneNumber(person.getPhoneNumber());
+        pageForms.inputDateOfBirth("11.18.2002");
+        pageForms.inputHobbies("Reading","Sports","");
+        pageForms.avatar();
+        pageForms.inputAddress(person.getPermanentAddress());
+        pageForms.submit();
+        pageForms.close();
     }
 }

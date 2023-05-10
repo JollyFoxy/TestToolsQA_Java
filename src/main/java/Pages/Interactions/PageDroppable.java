@@ -18,11 +18,11 @@ public class PageDroppable extends BasePage {
 
 
     @Step("Переход на страницу \"droppable\"")
-    public void step1_Transition() {
+    public void transition() {
         transition.transitionAndScroll("div.left-pannel");
     }
     @Step("Перемищение объекта в область")
-    public void step2_DragAndDrop(){
+    public void dragAndDrop(){
         draggableObject.shouldBe(Condition.exist).click();
         actions().dragAndDrop(draggableObject, droppableObject).build().perform();
         droppableObject.should(Condition.text("Dropped"));

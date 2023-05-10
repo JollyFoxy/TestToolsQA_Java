@@ -26,7 +26,7 @@ public class WebDriver implements WebDriverProvider {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-extensions");
         options.addArguments("--start-maximized");
-        options.addArguments("--window-size=1920,1080");
+//        options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-dev-shm-usage");
 
         options.setCapability(PAGE_LOAD_STRATEGY, "normal");

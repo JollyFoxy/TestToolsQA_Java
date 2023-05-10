@@ -16,36 +16,36 @@ public class PageRegister extends BasePage {
     private final PageLogin pageLogin = new PageLogin();
 
     @Step("Вход в пункт \"Login\"")
-    public void step1_Transition(){
+    public void transition(){
         pageLogin.getBody().scrollToObject();
         pageLogin.getTransition().transitionAndScroll("div.left-pannel");
     }
     @Step("Нажимание кнопки \"New User\"")
-    public void step2_NewUser(){
+    public void newUser(){
         pageLogin.getBtnNewUser().clickBtn();
     }
     @Step("Ввод в поле \"First Name\"")
-    public void step3_InputFirstName(String first_name){
+    public void inputFirstName(String first_name){
         firstName.setValueInput(first_name);
     }
     @Step("Ввод в поле \"Last Name\"")
-    public void step4_InputLastName(String last_name){
+    public void inputLastName(String last_name){
         lastName.setValueInput(last_name);
     }
     @Step("Ввод в поле \"User Name\"")
-    public void step5_InputUserName(String user_name) {
+    public void inputUserName(String user_name) {
         userName.setValueInput(user_name);
     }
     @Step("Ввод в поле \"Password\"")
-    public void step6_InputPassword(String pass){
+    public void inputPassword(String pass){
         password.setValueInput(pass);
     }
     @Step("нажатие кнопки \"Register\"")
-    public void step7_InputRegister(){
+    public void inputRegister(){
         register.clickBtn();
     }
     @Step("Нажатие \"reСaptcha\"")
-    public void step8_reCaptcha(){
+    public void reCaptcha(){
         captchaClick();
     }
 

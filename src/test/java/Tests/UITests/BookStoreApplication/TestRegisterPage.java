@@ -15,13 +15,13 @@ public class TestRegisterPage extends BaseTest implements IPerson{
     @Link(name = "Book Store Application",url = "https://demoqa.com/register")
     @DisplayName("Тест регистрации")
     public void testBookStoreApplicationRegister() {
-        pageRegisterUser.step1_Transition();
-        pageRegisterUser.step2_NewUser();
-        pageRegisterUser.step3_InputFirstName(person.getName());
-        pageRegisterUser.step4_InputLastName(person.getLastName());
-        pageRegisterUser.step5_InputUserName(person.getUserName());
-        pageRegisterUser.step6_InputPassword(person.getPassword());
-        pageRegisterUser.step7_InputRegister();
-        pageRegisterUser.step8_reCaptcha();
+        pageRegisterUser.transition();
+        pageRegisterUser.newUser();
+        pageRegisterUser.inputFirstName(person.getName());
+        pageRegisterUser.inputLastName(person.getLastName());
+        pageRegisterUser.inputUserName(person.getUserName());
+        pageRegisterUser.inputPassword(person.getPassword());
+        pageRegisterUser.inputRegister();
+        pageRegisterUser.reCaptcha();
     }
 }

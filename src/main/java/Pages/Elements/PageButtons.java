@@ -22,21 +22,21 @@ public class PageButtons extends BasePage {
     private final P doubleClickMessage = new P("doubleClickMessage");
 
     @Step("Перезод на страницу \"Buttons\"")
-    public void step1_Transition(){
+    public void transition(){
         transition.transitionAll();
     }
     @Step("Один клик")
-    public void step2_OneClick(){
+    public void oneClick(){
         clickBtn.click();
         dynamicClickMessage.checkTextP("dynamic click");
     }
     @Step("Двойной клик")
-    public void step3_DoubleClick(){
+    public void doubleClick(){
         doubleClickBtn.doubleClickBtn();
         doubleClickMessage.checkTextP("double click");
     }
     @Step("Тройной клик")
-    public void step4_RightCLick(){
+    public void rightCLick(){
         rightClickBtn.rightClickBtn();
         rightClickMessage.checkTextP("right click");
     }

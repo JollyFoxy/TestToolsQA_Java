@@ -36,7 +36,7 @@ public class PageForms extends BasePage {
         this.gender.find(Condition.text(gender)).click();
     }
 
-    private void inputHobbies(String arg, String arg1, String arg2) {
+    private void hobbies(String arg, String arg1, String arg2) {
         if (!Objects.equals(arg, ""))
             hobbes.find(Condition.text(arg)).click();
         if (!Objects.equals(arg1, ""))
@@ -46,64 +46,64 @@ public class PageForms extends BasePage {
     }
 
     @Step("Перейти с домашней страницы на страницу \"Student Registration Form\"")
-    public void step1_Transition() {
+    public void transition() {
         transition.transitionAll();
     }
 
     @Step("Ввод имени в поле \"First Name\"")
-    public void step2_InputFirstName(String first_name) {
+    public void inputFirstName(String first_name) {
         firstName.setValueInput(first_name);
     }
 
     @Step("Ввод фамилии в поле \"Last Name\"")
-    public void step3_InputLastName(String last_name) {
+    public void inputLastName(String last_name) {
         lastName.setValueInput(last_name);
     }
 
     @Step("Ввод почты в поле \"Email\"")
-    public void step4_InputEmail(String email) {
+    public void inputEmail(String email) {
         userEmail.setValueInput(email);
     }
 
     @Step("Выбор гендера")
-    public void step5_Gender(String gender) {
+    public void gender(String gender) {
         inputGender(gender);
     }
 
     @Step("Ввод номера телефона в поле \"Mobile\"")
-    public void step6_InputPhoneNumber(String number) {
+    public void inputPhoneNumber(String number) {
         userNumber.setValueInput(number);
     }
 
     @Step("Ввод даты рождения")
-    public void step7_InputDateOfBirth(String date) {
+    public void inputDateOfBirth(String date) {
         dateOfBirth.dateInput(date);
     }
 
     @Step("Выбор хобби")
-    public void step8_InputHobbies(String arg, String arg1, String arg2) {
-        inputHobbies(arg, arg1, arg2);
+    public void inputHobbies(String arg, String arg1, String arg2) {
+        hobbies(arg, arg1, arg2);
     }
 
     @Step("Загрузка аватара")
-    public void step9_Avatar() {
+    public void avatar() {
         uploadPicture.uploadFileInput(file);
     }
 
     @Step("Ввод адреса в поле \"Address\"")
-    public void step10_InputAddress(String address) {
+    public void inputAddress(String address) {
         currentAddress.setValueTextArea(address);
     }
 
     @Step("Нажатие кнопки \"Submit\"")
-    public void step11_Submit() {
+    public void submit() {
         $(By.cssSelector("span.pr-1")).click();
         scroll.scrollingForTact(4);
         btnSubmit.clickBtn();
     }
 
     @Step("Нажатие кнопки \"Close\"")
-    public void step12_Close() {
+    public void close() {
         closeLargeModal.clickBtn();
     }
 }

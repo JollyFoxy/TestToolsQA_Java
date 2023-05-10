@@ -14,8 +14,7 @@ public class TestDropElement extends BaseTest {
     @Link(name = "Droppable",url = "https://demoqa.com/droppable")
     @DisplayName("Тест перетаскивания объета")
     public void testDrop(){
-        pageDroppable.step1_Transition();
-        pageDroppable.step2_DragAndDrop();
+        pageDroppable.transition();
+        pageDroppable.dragAndDrop();
     }
-
 }

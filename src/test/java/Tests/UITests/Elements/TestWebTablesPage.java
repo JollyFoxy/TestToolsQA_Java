@@ -15,14 +15,14 @@ public class TestWebTablesPage extends BaseTest implements IPerson {
     @Link(name = "Web Tables", url = "https://demoqa.com/webtables")
     @DisplayName("Тест заполнения таблицы")
     public void testWebTables() {
-        pageWebTables.step1_Transition();
-        pageWebTables.step2_Add();
-        pageWebTables.step3_InputFirstName(person.getName());
-        pageWebTables.step4_InputLastName(person.getLastName());
-        pageWebTables.step5_InputEmail(person.getEmail());
-        pageWebTables.step6_InputAge(person.getAge());
-        pageWebTables.step7_InputSalary(person.getSalary());
-        pageWebTables.step8_InputDepartment(person.getDepartment());
-        pageWebTables.step9_Submit();
+        pageWebTables.transition();
+        pageWebTables.add();
+        pageWebTables.inputFirstName(person.getName());
+        pageWebTables.inputLastName(person.getLastName());
+        pageWebTables.inputEmail(person.getEmail());
+        pageWebTables.inputAge(person.getAge());
+        pageWebTables.inputSalary(person.getSalary());
+        pageWebTables.inputDepartment(person.getDepartment());
+        pageWebTables.submit();
     }
 }

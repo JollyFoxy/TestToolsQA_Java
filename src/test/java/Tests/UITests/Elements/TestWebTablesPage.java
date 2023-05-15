@@ -1,5 +1,6 @@
 package Tests.UITests.Elements;
 
+import Pages.Elements.PageWebTables;
 import Persons.IPerson;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
@@ -11,6 +12,8 @@ import org.junit.jupiter.api.Test;
 @Epic("Ui tests")
 @Feature("Elements")
 public class TestWebTablesPage extends BaseTest implements IPerson {
+    PageWebTables pageWebTables= new PageWebTables();
+
     @Test
     @Link(name = "Web Tables", url = "https://demoqa.com/webtables")
     @DisplayName("Тест заполнения таблицы")

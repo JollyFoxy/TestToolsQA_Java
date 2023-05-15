@@ -1,5 +1,6 @@
 package Tests.UITests.Forms;
 
+import Pages.Forms.PageForms;
 import Persons.IPerson;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
@@ -13,6 +14,8 @@ import static com.codeborne.selenide.Selenide.$;
 @Epic("Ui tests")
 @Feature("Forms")
 public class TestPracticeFormPage extends BaseTest implements IPerson {
+    PageForms pageForms = new PageForms();
+
     @Test
     @Link(name = "Practice Form",url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Тест заполнения формы")

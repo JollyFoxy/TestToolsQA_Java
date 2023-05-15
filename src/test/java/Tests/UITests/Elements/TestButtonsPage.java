@@ -1,5 +1,6 @@
 package Tests.UITests.Elements;
 
+import Pages.Elements.PageButtons;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -10,6 +11,8 @@ import org.junit.jupiter.api.Test;
 @Epic("Ui tests")
 @Feature("Elements")
 public class TestButtonsPage extends BaseTest {
+    PageButtons pageButtons = new PageButtons();
+
     @Test
     @Link(name = "Buttons",url="https://demoqa.com/buttons")
     @DisplayName("Тест кнопок")

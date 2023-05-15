@@ -1,5 +1,6 @@
 package Tests.UITests.Widgets;
 
+import Pages.Widgets.PageDatePicker;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -10,6 +11,8 @@ import org.junit.jupiter.api.Test;
 @Epic("Ui tests")
 @Feature("Widgets")
 public class TestDatePickerElement extends BaseTest {
+    PageDatePicker datePicker = new PageDatePicker();
+
     @Test
     @Link(name = "Date Picker",url = "https://demoqa.com/menu")
     @DisplayName("Тест поля для ввода даты")

@@ -1,5 +1,6 @@
 package Tests.UITests.Interactions;
 
+import Pages.Interactions.PageDroppable;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -10,6 +11,8 @@ import org.junit.jupiter.api.Test;
 @Epic("Ui tests")
 @Feature("Interactions")
 public class TestDropElement extends BaseTest {
+    PageDroppable pageDroppable =new PageDroppable();
+
     @Test
     @Link(name = "Droppable",url = "https://demoqa.com/droppable")
     @DisplayName("Тест перетаскивания объета")

@@ -1,5 +1,6 @@
 package Tests.UITests.BookStoreApplication;
 
+import Pages.BookStoreApplication.PageRegister;
 import Persons.IPerson;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
@@ -11,6 +12,8 @@ import org.junit.jupiter.api.Test;
 @Epic("Ui tests")
 @Feature("BookStoreApplication")
 public class TestRegisterPage extends BaseTest implements IPerson{
+    PageRegister pageRegisterUser= new PageRegister();
+
     @Test
     @Link(name = "Book Store Application",url = "https://demoqa.com/register")
     @DisplayName("Тест регистрации")

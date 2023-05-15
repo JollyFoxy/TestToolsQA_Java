@@ -1,5 +1,6 @@
 package Tests.UITests.Elements;
 
+import Pages.Elements.PageTextBox;
 import Persons.IPerson;
 import Tests.UITests.BaseTest;
 import io.qameta.allure.Epic;
@@ -11,6 +12,8 @@ import org.junit.jupiter.api.Test;
 @Epic("Ui tests")
 @Feature("Elements")
 public class TestTextBoxPage extends BaseTest implements IPerson {
+    PageTextBox pageTextBox = new PageTextBox();
+
     @Test
     @Link(name = "Text Box", url = "https://demoqa.com/text-box")
     @DisplayName("Тест текстовых полей")

@@ -12,7 +12,7 @@ import org.openqa.selenium.Dimension;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class BaseTest implements IAll{
+public class BaseTest{
 
     protected static TestConf testConfig = ConfigFactory.create(TestConf.class);
     @BeforeAll

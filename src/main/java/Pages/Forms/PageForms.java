@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Selenide.$$;
  * Страница Регистрационной формы
  */
 public class PageForms extends BasePage {
-    private final File file = new File("foxy.png");
+    private final File file = new File("src/main/resources/ForUpload/foxy1.png");
     private final Transition transition = new Transition("Forms", "Practice Form");
     private final Input firstName = new Input("firstName");
     private final Input lastName = new Input("lastName");

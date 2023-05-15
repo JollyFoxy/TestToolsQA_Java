@@ -1,6 +1,5 @@
 package Tests.UITests;
 
-import Interfasces.IAll;
 import Utils.TestConf;
 import Utils.WebDrivers.WebDriver;
 import com.codeborne.selenide.Configuration;

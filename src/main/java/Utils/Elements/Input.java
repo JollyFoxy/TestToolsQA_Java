@@ -52,8 +52,4 @@ public class Input extends BaseElement {
     public void valInput(String text){
         container.should(Condition.editable).val(text);
     }
-//    public void cleanWithBackspace() {
-//        container.sendKeys(Keys.CONTROL + "a");
-//        container.sendKeys(Keys.BACK_SPACE);
-//    }
 }

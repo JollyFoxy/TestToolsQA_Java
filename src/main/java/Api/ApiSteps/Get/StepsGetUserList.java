@@ -10,7 +10,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 public class StepsGetUserList {
     @Step("Отправить get запрос списка пользователей по URL(https://reqres.in/api/users?page=2)")
-    public static List<ResponseGetUsersList> getUsers(String endPoint){
+    public  List<ResponseGetUsersList> getUsers(String endPoint){
         return given().spec(BaseConfRequest.getReqSpec())
                 .get(endPoint)
                 .jsonPath()

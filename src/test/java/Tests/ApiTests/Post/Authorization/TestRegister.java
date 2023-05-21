@@ -1,6 +1,6 @@
 package Tests.ApiTests.Post.Authorization;
 
-import Tests.ApiTests.BaseApiTest;
+import Api.ApiSteps.Post.Authorization.StepsPostRegister;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
@@ -11,7 +11,8 @@ import org.junit.jupiter.api.Test;
 @Epic("API tests")
 @Feature("Post")
 @Story("Authorization")
-public class TestRegister extends BaseApiTest {
+public class TestRegister {
+    private final StepsPostRegister postRegister = new StepsPostRegister();
     @Test
     @DisplayName("Тест регистрации (позитивный)")
     public void testRegisterSuccessful(){

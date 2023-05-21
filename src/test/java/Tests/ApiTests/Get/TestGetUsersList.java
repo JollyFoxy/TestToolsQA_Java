@@ -14,11 +14,11 @@ import java.util.List;
 @Epic("API tests")
 @Feature("Get")
 public class TestGetUsersList {
-
+    private final StepsGetUserList getUserList = new StepsGetUserList();
     @Test
     @DisplayName("Получение списка пользователей")
     public void testGet(){
-        List<ResponseGetUsersList> users  = StepsGetUserList.getUsers("/users?page=2");
+        List<ResponseGetUsersList> users  = getUserList.getUsers("/users?page=2");
         Assertions.assertThat(users)
                 .isNotNull().extracting(ResponseGetUsersList::getEmail)
                 .contains("tobias.funke@reqres.in");

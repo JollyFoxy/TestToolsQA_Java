@@ -77,6 +77,8 @@ public class PageForms extends BasePage {
 
     @Step("Ввод даты рождения")
     public void inputDateOfBirth(String date) {
+//        dateOfBirth.clearInput();
+//        dateOfBirth.setValueInput(date);
         dateOfBirth.dateInput(date);
     }
 

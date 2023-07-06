@@ -15,7 +15,6 @@ public abstract class BaseElement {
     public boolean isVisibility() {
         return container.is(Condition.visible);
     }
-//    @Step("Проверка элемента на видимость")
     public void checkVisibility(Boolean isVisible) {
         if (isVisible) {
             container.shouldBe(Condition.visible);

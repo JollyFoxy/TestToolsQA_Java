@@ -24,12 +24,12 @@ public class PageTimeButton extends BasePage {
         enableAfter.checkEnabledAndTimeoutClickBtn(6);
         Selenide.refresh();
     }
-    @Step("")
+    @Step("Проверка изменения цвета кнопки")
     public void btnCheckColor() {
         colorBtn.checkColorBtn("220, 53, 69, 1", 6);
         Selenide.refresh();
     }
-    @Step("")
+    @Step("Ожидание явления кнопки народу")
     public void btnVisibleAfterBtn(){
         visibleAfterBtn.checkVisibleAndTimeoutClickBtn(6);
     }

@@ -6,7 +6,6 @@ import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
 @Epic("API tests")
 @Feature("Get")
 public class TestGetUserNotFound {

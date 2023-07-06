@@ -1,7 +1,6 @@
 package Tests.ApiTests.Get;
 
 import Api.ApiSteps.Get.StepsGetSingleUser;
-import Tests.ApiTests.BaseApiTest;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;

@@ -52,4 +52,7 @@ public class Input extends BaseElement {
     public void valInput(String text){
         container.should(Condition.editable).val(text);
     }
+    public void clearInput(){
+        container.clear();
+    }
 }

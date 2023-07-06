@@ -11,13 +11,13 @@ import org.junit.jupiter.api.Test;
 
 @Epic("Ui tests")
 @Feature("Elements")
-public class TestWebTablesPage extends BaseTest implements IPerson {
+public class    TestWebTablesPage extends BaseTest implements IPerson {
     PageWebTables pageWebTables= new PageWebTables();
 
     @Test
     @Link(name = "Web Tables", url = "https://demoqa.com/webtables")
     @DisplayName("Тест заполнения таблицы")
-    public void testWebTables() {
+    public void testWebTables() throws InterruptedException {
         pageWebTables.transition();
         pageWebTables.add();
         pageWebTables.inputFirstName(person.getName());

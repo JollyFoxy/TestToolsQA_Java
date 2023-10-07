@@ -35,7 +35,7 @@ public class WebDriver implements WebDriverProvider {
         prefs.put("download.default_directory", new File(".").getAbsolutePath() + "data");
         options.setExperimentalOption("prefs", prefs);
 
-        WebDriverManager.chromedriver().version("113.0.5672.63").setup();
+        WebDriverManager.chromedriver().driverVersion("117.0.5938.149").setup();
         driver = new ChromeDriver(options);
         return driver;
     }

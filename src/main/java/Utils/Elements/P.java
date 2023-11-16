@@ -6,12 +6,14 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 /**Элкемент P*/
-public class P {
-    private final SelenideElement p;
+public class P extends BaseElement{
+    public P(SelenideElement container){
+        super(container);
+    }
     public P(String id){
-        p = $(By.cssSelector("p#"+id));
+        this($(By.cssSelector("p#"+id)));
     }
     public void checkTextP(String text){
-        p.should(Condition.text(text));
+        container.should(Condition.text(text));
     }
 }
